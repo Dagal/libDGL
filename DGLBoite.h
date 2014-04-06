@@ -1,26 +1,26 @@
 /*
- * CGLBoite.h
+ * DGLBoite.h
  *
  *  Created on: 26 janv. 2014
  *      Author: dagal
  */
 
-#ifndef CGLBOITE_H_
-#define CGLBOITE_H_
+#ifndef DGLBOITE_H_
+#define DGLBOITE_H_
 
-#include "CGLObject.h"
+#include "DGLObject.h"
 
-class CGLBoite: virtual public CGLObject
+class DGLBoite: virtual public DGLObject
 {
 private:
 	double x,y,z;
 
 public:
-	CGLBoite();
-	virtual ~CGLBoite();
+	DGLBoite();
+	virtual ~DGLBoite();
 
 	void setTaille(double,double,double);
 	void drawObject(Uint32 timeEllapsed);
 };
 
-#endif /* CGLBOITE_H_ */
+#endif /* DGLBOITE_H_ */

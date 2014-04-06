@@ -1,34 +1,34 @@
 /*
- * CGLRotation.cpp
+ * DGLRotation.cpp
  *
  *  Created on: 18 févr. 2014
  *      Author: dagal
  */
 
-#include "CGLRotation.h"
+#include "DGLRotation.h"
 
-CGLRotation::CGLRotation() : CGLVector3D()
+DGLRotation::DGLRotation() : DGLVector3D()
 {
 	matrixSaved = false;
 	a = 0;
 }
 
-CGLRotation::~CGLRotation()
+DGLRotation::~DGLRotation()
 {
 	// TODO Auto-generated destructor stub
 }
 
-void CGLRotation::setA(double av)
+void DGLRotation::setA(double av)
 {
 	a = av;
 }
 
-double CGLRotation::getA()
+double DGLRotation::getA()
 {
 	return a;
 }
 
-void CGLRotation::set(double av, double ax, double ay, double az)
+void DGLRotation::set(double av, double ax, double ay, double az)
 {
 	a = av;
 	x = ax;
@@ -36,7 +36,7 @@ void CGLRotation::set(double av, double ax, double ay, double az)
 	z = az;
 }
 
-void CGLRotation::drawObject(Uint32 ellapsedTime)
+void DGLRotation::drawObject(Uint32 ellapsedTime)
 {
 	glRotated(a,x,y,z);
 }

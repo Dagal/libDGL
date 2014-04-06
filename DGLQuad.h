@@ -1,20 +1,20 @@
 /*
- * CGLQuad.h
+ * DGLQuad.h
  *
  *  Created on: 20 janv. 2014
  *      Author: dagal
  */
 
-#ifndef CGLQUAD_H_
-#define CGLQUAD_H_
+#ifndef DGLQUAD_H_
+#define DGLQUAD_H_
 
 #include <iostream>
 
-#include "CGLObject.h"
+#include "DGLObject.h"
 
 using namespace std;
 
-class CGLQuad: public CGLObject
+class DGLQuad: public DGLObject
 {
 	// Variables
 private:
@@ -25,10 +25,10 @@ public:
 private:
 protected:
 public:
-	CGLQuad();
-	CGLQuad(double x, double y, double z, double r);
-	virtual ~CGLQuad();
+	DGLQuad();
+	DGLQuad(double x, double y, double z, double r);
+	virtual ~DGLQuad();
 	void drawObject(Uint32 timeEllapsed);
 };
 
-#endif /* CGLQUAD_H_ */
+#endif /* DGLQUAD_H_ */

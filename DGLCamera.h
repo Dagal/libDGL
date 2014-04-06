@@ -5,15 +5,15 @@
  *      Author: dagal
  */
 
-#ifndef CGLCAMERA_H_
-#define CGLCAMERA_H_
+#ifndef DGLCAMERA_H_
+#define DGLCAMERA_H_
 
 #include <GL/glu.h>
 #include <SDL/SDL.h>
 
-#include "CGLObject.h"
+#include "DGLObject.h"
 
-class CGLCamera : public CGLObject
+class DGLCamera : public DGLObject
 {
 	// Variables
 private:
@@ -31,12 +31,12 @@ private:
 protected:
 
 public:
-	CGLCamera();
-	virtual ~CGLCamera();
+	DGLCamera();
+	virtual ~DGLCamera();
 
 	void draw(Uint32 timeEllapsed);
 	void drawObject(Uint32 timeEllapsed);
 	void onMouseButton(SDL_MouseButtonEvent& event);
 };
 
-#endif /* CGLCAMERA_H_ */
+#endif /* DGLCAMERA_H_ */

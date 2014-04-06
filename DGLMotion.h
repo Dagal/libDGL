@@ -1,20 +1,20 @@
 /*
- * CGLMotion.h
+ * DGLMotion.h
  *
  *  Created on: 19 janv. 2014
  *      Author: dagal
  */
 
-#ifndef CGLMOTION_H_
-#define CGLMOTION_H_
+#ifndef DGLMOTION_H_
+#define DGLMOTION_H_
 
-#include "CGLObject.h"
+#include "DGLObject.h"
 
-class CGLMotion : public CGLObject
+class DGLMotion : public DGLObject
 {
 public:
-	CGLMotion();
-	virtual ~CGLMotion();
+	DGLMotion();
+	virtual ~DGLMotion();
 };
 
-#endif /* CGLMOTION_H_ */
+#endif /* DGLMOTION_H_ */

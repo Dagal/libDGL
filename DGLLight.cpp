@@ -1,18 +1,18 @@
 /*
- * CGLLight.cpp
+ * DGLLight.cpp
  *
  *  Created on: 19 janv. 2014
  *      Author: dagal
  */
 
-#include "CGLLight.h"
+#include "DGLLight.h"
 
-CGLLight::CGLLight() {
+DGLLight::DGLLight() {
 	// TODO Auto-generated constructor stub
 
 }
 
-CGLLight::~CGLLight() {
+DGLLight::~DGLLight() {
 	// TODO Auto-generated destructor stub
 }
 

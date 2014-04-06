@@ -1,26 +1,26 @@
 /*
- * CGLScale.h
+ * DGLScale.h
  *
  *  Created on: 17 févr. 2014
  *      Author: dagal
  */
 
-#ifndef CGLSCALE_H_
-#define CGLSCALE_H_
+#ifndef DGLSCALE_H_
+#define DGLSCALE_H_
 
-#include "CGLVector3D.h"
+#include "DGLVector3D.h"
 
 /*
  *
  */
-class CGLScale : public CGLVector3D
+class DGLScale : public DGLVector3D
 {
 public:
-	CGLScale();
+	DGLScale();
 	virtual
-	~CGLScale();
+	~DGLScale();
 
 	void drawObject(Uint32 ellapsedTime);
 };
 
-#endif /* CGLSCALE_H_ */
+#endif /* DGLSCALE_H_ */

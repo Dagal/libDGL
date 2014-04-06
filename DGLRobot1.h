@@ -1,33 +1,33 @@
 /*
- * CGLRobot1.h
+ * DGLRobot1.h
  *
  *  Created on: 26 janv. 2014
  *      Author: dagal
  */
 
-#ifndef CGLROBOT1_H_
-#define CGLROBOT1_H_
+#ifndef DGLROBOT1_H_
+#define DGLROBOT1_H_
 
 #include <SDL/SDL.h>
-#include "CGLBoite.h"
+#include "DGLBoite.h"
 
-class CGLRobot1 : public CGLObject
+class DGLRobot1 : public DGLObject
 {
 private:
 	Uint32 lastTime, currentTime, ellapsedTime;
-	CGLBoite tete;
-	CGLBoite cou;
+	DGLBoite tete;
+	DGLBoite cou;
 	double angleZCou, sensCou;
-	CGLBoite tronc;
-	CGLBoite brasGauche;
-	CGLBoite brasDroit;
-	CGLBoite jambeGauche;
-	CGLBoite jambeDroite;
+	DGLBoite tronc;
+	DGLBoite brasGauche;
+	DGLBoite brasDroit;
+	DGLBoite jambeGauche;
+	DGLBoite jambeDroite;
 public:
-	CGLRobot1();
-	virtual ~CGLRobot1();
+	DGLRobot1();
+	virtual ~DGLRobot1();
 
 	void drawObject(Uint32 timeEllapsed);
 };
 
-#endif /* CGLROBOT1_H_ */
+#endif /* DGLROBOT1_H_ */

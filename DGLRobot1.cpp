@@ -1,13 +1,13 @@
 /*
- * CGLRobot1.cpp
+ * DGLRobot1.cpp
  *
  *  Created on: 26 janv. 2014
  *      Author: dagal
  */
 
-#include "CGLRobot1.h"
+#include "DGLRobot1.h"
 
-CGLRobot1::CGLRobot1()
+DGLRobot1::DGLRobot1()
 {
 	// TODO Auto-generated constructor stub
 	tete.setTaille(0.20,0.30,0.30);
@@ -24,12 +24,12 @@ CGLRobot1::CGLRobot1()
 
 }
 
-CGLRobot1::~CGLRobot1()
+DGLRobot1::~DGLRobot1()
 {
 	// TODO Auto-generated destructor stub
 }
 
-void CGLRobot1::drawObject(Uint32 timeEllapsed)
+void DGLRobot1::drawObject(Uint32 timeEllapsed)
 {
 	angleZCou += timeEllapsed * 0.05 * sensCou;
 	if (abs(angleZCou) > 90)

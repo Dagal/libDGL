@@ -1,33 +1,33 @@
 /*
- * CGLWorld.cpp
+ * DGLWorld.cpp
  *
  *  Created on: 19 janv. 2014
  *      Author: dagal
  */
 
-#include "CGLWorld.h"
+#include "DGLWorld.h"
 
-CGLWorld::CGLWorld() : CGLObject()
+DGLWorld::DGLWorld() : DGLObject()
 {
 	objectType = 2;
 	name = "Nouveau monde sans nom";
 	matrixSaved = false;
 
-	CGLScene* scene = new CGLScene();
+	DGLScene* scene = new DGLScene();
 	addObject(scene);
 }
 
-CGLWorld::~CGLWorld() {
+DGLWorld::~DGLWorld() {
 	// TODO Auto-generated destructor stub
 }
 
-void CGLWorld::draw(Uint32 timeEllapsed)
+void DGLWorld::draw(Uint32 timeEllapsed)
 {
-	cout << "CGLWorld  : Dessin de la scene courante du monde «" << name << "»." << endl;
-	((CGLScene*)currentObject)->draw(timeEllapsed);
+	cout << "DGLWorld  : Dessin de la scene courante du monde «" << name << "»." << endl;
+	((DGLScene*)currentObject)->draw(timeEllapsed);
 }
 
-CGLScene* CGLWorld::getCurrentScene()
+DGLScene* DGLWorld::getCurrentScene()
 {
-	return (CGLScene*)currentObject;
+	return (DGLScene*)currentObject;
 }

@@ -1,27 +1,27 @@
 /*
- * CGLCameraList.h
+ * DGLCameraList.h
  *
  *  Created on: 16 févr. 2014
  *      Author: dagal
  */
 
-#ifndef CGLCAMERALIST_H_
-#define CGLCAMERALIST_H_
+#ifndef DGLCAMERALIST_H_
+#define DGLCAMERALIST_H_
 
-#include "CGLObject.h"
-#include "CGLCamera.h"
+#include "DGLObject.h"
+#include "DGLCamera.h"
 
 /*
  *
  */
-class CGLCameraList : public CGLObject
+class DGLCameraList : public DGLObject
 {
 public:
-	CGLCameraList();
+	DGLCameraList();
 	virtual
-	~CGLCameraList();
+	~DGLCameraList();
 
-	CGLCamera* getCurrentCamera();
+	DGLCamera* getCurrentCamera();
 };
 
-#endif /* CGLCAMERALIST_H_ */
+#endif /* DGLCAMERALIST_H_ */

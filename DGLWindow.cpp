@@ -1,13 +1,13 @@
 /*
- * CGLWindow.cpp
+ * DGLWindow.cpp
  *
  *  Created on: 1 févr. 2014
  *      Author: dagal
  */
 
-#include "CGLWindow.h"
+#include "DGLWindow.h"
 
-CGLWindow::CGLWindow() : CGLObject()
+DGLWindow::DGLWindow() : DGLObject()
 {
 	objectType = 1;
 	name = "Window1";
@@ -20,17 +20,17 @@ CGLWindow::CGLWindow() : CGLObject()
 
 	startTime = lastTime = currentTime = ellapsedTime = 0;
 
-	CGLWorld* world = new CGLWorld();
+	DGLWorld* world = new DGLWorld();
 	addObject(world);
 }
 
-CGLWindow::~CGLWindow()
+DGLWindow::~DGLWindow()
 {
 	SDL_Quit();
-	cout << "CGLWindow: Quitter SDL" << endl;
+	cout << "DGLWindow: Quitter SDL" << endl;
 }
 
-void CGLWindow::loop()
+void DGLWindow::loop()
 {
 	while(active)
 	{
@@ -78,45 +78,45 @@ void CGLWindow::loop()
 	}
 }
 
-void CGLWindow::draw(Uint32 ellapsedTime)
+void DGLWindow::draw(Uint32 ellapsedTime)
 {
-		cout << endl << "CGLWindow: Dessin du contenu de la fenêtre " << name << endl;
+		cout << endl << "DGLWindow: Dessin du contenu de la fenêtre " << name << endl;
 
 		getCurrentWorld()->draw(ellapsedTime);
 }
 
-void CGLWindow::exec()
+void DGLWindow::exec()
 {
 	// Initialisation de la librairie SDL
-	cout << "CGLWindow : Exec!" << endl;
-	cout << "CGLWindow : Initialisation SDL Video!" << endl;
+	cout << "DGLWindow : Exec!" << endl;
+	cout << "DGLWindow : Initialisation SDL Video!" << endl;
 	SDL_Init(SDL_INIT_VIDEO);
-	cout << "CGLWindow : Renommer la fenêtre!" << endl;
+	cout << "DGLWindow : Renommer la fenêtre!" << endl;
 	SDL_WM_SetCaption("DamierGL", NULL);
-	cout << "CGLWindow : Définir la taille de la fenêtre!" << endl;
+	cout << "DGLWindow : Définir la taille de la fenêtre!" << endl;
 	ecran = SDL_SetVideoMode(640, 480, 32, SDL_OPENGL|SDL_RESIZABLE);
 
 	// Début des fonctions opengl
 
 	glMatrixMode(GL_PROJECTION);
-	cout << "CGLWindow : Mode Projection!" << endl;
+	cout << "DGLWindow : Mode Projection!" << endl;
 	glLoadIdentity();
 	gluPerspective(70, (double)640/480, 1, 1000);
-	cout << "CGLWindow : Définition de la perspective!" << endl;
+	cout << "DGLWindow : Définition de la perspective!" << endl;
 	glEnable(GL_DEPTH_TEST);
-	cout << "CGLWindow : Test de profondeur activé!" << endl;
+	cout << "DGLWindow : Test de profondeur activé!" << endl;
 	glEnable(GL_COLOR_MATERIAL);
-	cout << "CGLWindow : Color Material activé!" << endl;
+	cout << "DGLWindow : Color Material activé!" << endl;
 	glEnable(GL_LIGHTING);
 	glEnable(GL_LIGHT0);
-	cout << "CGLWindow : Lumière 0 activée!" << endl;
+	cout << "DGLWindow : Lumière 0 activée!" << endl;
 	glClearColor(0.5,0.5,1.0,1.0);
-	cout << "CGLWindow : Couleur de fond bleu clair!" << endl;
+	cout << "DGLWindow : Couleur de fond bleu clair!" << endl;
 
 	loop();
 }
 
-void CGLWindow::onResize(SDL_Event &ev)
+void DGLWindow::onResize(SDL_Event &ev)
 {
 	cout << "Resize proc" << endl;
 	ecran = SDL_SetVideoMode(ev.resize.w, ev.resize.h, 32, SDL_OPENGL|SDL_HWSURFACE|SDL_DOUBLEBUF|SDL_RESIZABLE);
@@ -127,7 +127,7 @@ void CGLWindow::onResize(SDL_Event &ev)
 	glClearColor(0.5,0.5,1.0,1.0);
 }
 
-CGLWorld* CGLWindow::getCurrentWorld()
+DGLWorld* DGLWindow::getCurrentWorld()
 {
-	return (CGLWorld*)currentObject;
+	return (DGLWorld*)currentObject;
 }

@@ -1,27 +1,27 @@
 /*
- * CGLRotation.h
+ * DGLRotation.h
  *
  *  Created on: 18 févr. 2014
  *      Author: dagal
  */
 
-#ifndef CGLROTATION_H_
-#define CGLROTATION_H_
+#ifndef DGLROTATION_H_
+#define DGLROTATION_H_
 
-#include "CGLVector3D.h"
+#include "DGLVector3D.h"
 
 /*
  *
  */
-class CGLRotation : public CGLVector3D
+class DGLRotation : public DGLVector3D
 {
 private:
 	double a;
 
 public:
-	CGLRotation();
+	DGLRotation();
 	virtual
-	~CGLRotation();
+	~DGLRotation();
 
 	void setA(double av);
 	double getA();
@@ -30,4 +30,4 @@ public:
 	void drawObject(Uint32 ellapsedTime);
 };
 
-#endif /* CGLROTATION_H_ */
+#endif /* DGLROTATION_H_ */

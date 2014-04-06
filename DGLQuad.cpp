@@ -1,32 +1,32 @@
 /*
- * CGLQuad.cpp
+ * DGLQuad.cpp
  *
  *  Created on: 20 janv. 2014
  *      Author: dagal
  */
 
-#include "CGLQuad.h"
+#include "DGLQuad.h"
 
-CGLQuad::CGLQuad() : CGLObject()
+DGLQuad::DGLQuad() : DGLObject()
 {
 	longueur = 1;
 	// TODO Auto-generated constructor stub
-	CGLQuad(0,0,0,1);
+	DGLQuad(0,0,0,1);
 }
 
-CGLQuad::CGLQuad(double x,double y,double z,double r) : CGLObject()
+DGLQuad::DGLQuad(double x,double y,double z,double r) : DGLObject()
 {
 	longueur = r;
 }
 
-CGLQuad::~CGLQuad()
+DGLQuad::~DGLQuad()
 {
 	// TODO Auto-generated destructor stub
 }
 
-void CGLQuad::drawObject(Uint32 timeEllapsed)
+void DGLQuad::drawObject(Uint32 timeEllapsed)
 {
-	//cout << "Dessin d'un CGLQuad." << endl;
+	//cout << "Dessin d'un DGLQuad." << endl;
 
 	glPushMatrix();
 	glNormal3d(0,0,1);

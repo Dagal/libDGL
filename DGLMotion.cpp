@@ -1,18 +1,18 @@
 /*
- * CGLMotion.cpp
+ * DGLMotion.cpp
  *
  *  Created on: 19 janv. 2014
  *      Author: dagal
  */
 
-#include "CGLMotion.h"
+#include "DGLMotion.h"
 
-CGLMotion::CGLMotion() {
+DGLMotion::DGLMotion() {
 	// TODO Auto-generated constructor stub
 
 }
 
-CGLMotion::~CGLMotion() {
+DGLMotion::~DGLMotion() {
 	// TODO Auto-generated destructor stub
 }
 

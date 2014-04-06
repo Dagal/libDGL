@@ -1,17 +1,17 @@
 /*
- * CGLLight.h
+ * DGLLight.h
  *
  *  Created on: 19 janv. 2014
  *      Author: dagal
  */
 
-#ifndef CGLLIGHT_H_
-#define CGLLIGHT_H_
+#ifndef DGLLIGHT_H_
+#define DGLLIGHT_H_
 
-class CGLLight {
+class DGLLight {
 public:
-	CGLLight();
-	virtual ~CGLLight();
+	DGLLight();
+	virtual ~DGLLight();
 };
 
-#endif /* CGLLIGHT_H_ */
+#endif /* DGLLIGHT_H_ */

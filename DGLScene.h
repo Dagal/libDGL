@@ -1,32 +1,32 @@
 /*
- * CGLScene.h
+ * DGLScene.h
  *
  *  Created on: 19 janv. 2014
  *      Author: dagal
  */
 
-#ifndef CGLSCENE_H_
-#define CGLSCENE_H_
+#ifndef DGLSCENE_H_
+#define DGLSCENE_H_
 
 #include <iostream>
 
 #include <list>
 
-#include "CGLCameraList.h"
-#include "CGLCamera.h"
-#include "CGLLight.h"
-#include "CGLObject.h"
+#include "DGLCameraList.h"
+#include "DGLCamera.h"
+#include "DGLLight.h"
+#include "DGLObject.h"
 
 using namespace std;
 
-class CGLScene : public CGLObject
+class DGLScene : public DGLObject
 {
 	// Variables
 private:
 
 protected:
-	CGLCameraList* cameras;
-	CGLObject* objects;
+	DGLCameraList* cameras;
+	DGLObject* objects;
 
 public:
 
@@ -36,15 +36,15 @@ private:
 protected:
 
 public:
-	CGLScene();
-	virtual ~CGLScene();
+	DGLScene();
+	virtual ~DGLScene();
 	void draw(Uint32 timeEllapsed);
 	//void drawObject(Uint32 timeEllapsed);
 
-	CGLCamera* getCurrentCamera();
+	DGLCamera* getCurrentCamera();
 
-	void addCamera(CGLCamera* cam);
-	void addItem(CGLObject* obj);
+	void addCamera(DGLCamera* cam);
+	void addItem(DGLObject* obj);
 };
 
-#endif /* CGLSCENE_H_ */
+#endif /* DGLSCENE_H_ */

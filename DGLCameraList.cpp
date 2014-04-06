@@ -1,25 +1,25 @@
 /*
- * CGLCameraList.cpp
+ * DGLCameraList.cpp
  *
  *  Created on: 16 févr. 2014
  *      Author: dagal
  */
 
-#include "CGLCameraList.h"
+#include "DGLCameraList.h"
 
-CGLCameraList::CGLCameraList() : CGLObject()
+DGLCameraList::DGLCameraList() : DGLObject()
 {
 	// TODO Auto-generated constructor stub
 	matrixSaved = false;
 }
 
-CGLCameraList::~CGLCameraList()
+DGLCameraList::~DGLCameraList()
 {
 	// TODO Auto-generated destructor stub
 }
 
-CGLCamera* CGLCameraList::getCurrentCamera()
+DGLCamera* DGLCameraList::getCurrentCamera()
 {
-	CGLCamera* cam = (CGLCamera*)currentObject;
+	DGLCamera* cam = (DGLCamera*)currentObject;
 	return cam;
 }

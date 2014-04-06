@@ -1,23 +1,23 @@
 /*
- * CGLWorld.h
+ * DGLWorld.h
  *
  *  Created on: 19 janv. 2014
  *      Author: dagal
  */
 
-#ifndef CGLWORLD_H_
-#define CGLWORLD_H_
+#ifndef DGLWORLD_H_
+#define DGLWORLD_H_
 
 #include <list>
-#include "CGLScene.h"
+#include "DGLScene.h"
 
-#include "CGLObject.h"
+#include "DGLObject.h"
 
-class CGLWorld : public CGLObject
+class DGLWorld : public DGLObject
 {
 	// Variables
 private:
-	list<CGLObject*>::iterator currentScene;
+	list<DGLObject*>::iterator currentScene;
 
 protected:
 
@@ -29,12 +29,12 @@ private:
 protected:
 
 public:
-	CGLWorld();
-	virtual ~CGLWorld();
+	DGLWorld();
+	virtual ~DGLWorld();
 
 	void draw(Uint32 timeEllapsed);
 
-	CGLScene* getCurrentScene();
+	DGLScene* getCurrentScene();
 };
 
-#endif /* CGLWORLD_H_ */
+#endif /* DGLWORLD_H_ */

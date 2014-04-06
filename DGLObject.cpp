@@ -1,13 +1,13 @@
 /*
- * CGLObject.cpp
+ * DGLObject.cpp
  *
  *  Created on: 19 janv. 2014
  *      Author: dagal
  */
 
-#include "CGLObject.h"
+#include "DGLObject.h"
 
-CGLObject::CGLObject()
+DGLObject::DGLObject()
 {
 	objectType = 0;
 	name = "";
@@ -17,14 +17,14 @@ CGLObject::CGLObject()
 	currentObject = NULL;
 }
 
-CGLObject::~CGLObject()
+DGLObject::~DGLObject()
 {
 	//delete position;
 	//delete motion;
 	//delete color;
 }
 
-void CGLObject::draw(Uint32 timeEllapsed)
+void DGLObject::draw(Uint32 timeEllapsed)
 {
 	if (matrixSaved) glPushMatrix();
 
@@ -34,13 +34,13 @@ void CGLObject::draw(Uint32 timeEllapsed)
 	if (matrixSaved) glPopMatrix();
 }
 
-void CGLObject::drawObject(Uint32 timeEllapsed)
+void DGLObject::drawObject(Uint32 timeEllapsed)
 {
-	cout << "CGLObject : drawObject de l'objet de type " << objectType << " nommé " << name << endl;
-	// Nothing to do in CGLObject
+	cout << "DGLObject : drawObject de l'objet de type " << objectType << " nommé " << name << endl;
+	// Nothing to do in DGLObject
 }
 
-void CGLObject::drawCenter()
+void DGLObject::drawCenter()
 {
 	glColor3ub(255,0,0);
 	GLUquadric* params;
@@ -51,7 +51,7 @@ void CGLObject::drawCenter()
 	gluDeleteQuadric(params);
 }
 
-void CGLObject::addObject(CGLObject * object)
+void DGLObject::addObject(DGLObject * object)
 {
 	if (this)
 	{
@@ -64,26 +64,26 @@ void CGLObject::addObject(CGLObject * object)
 	}
 }
 
-void CGLObject::drawChildren(Uint32 timeEllapsed)
+void DGLObject::drawChildren(Uint32 timeEllapsed)
 {
-	list<CGLObject *>::iterator i;
+	list<DGLObject *>::iterator i;
 	for (i = children.begin(); i != children.end(); i++)
 	{
 		(*i)->draw(timeEllapsed);
 	}
 }
 
-void CGLObject::setName(string n)
+void DGLObject::setName(string n)
 {
 	name = n;
 }
 
-string CGLObject::getName()
+string DGLObject::getName()
 {
 	return name;
 }
 
-CGLObject* CGLObject::getCurrentObject()
+DGLObject* DGLObject::getCurrentObject()
 {
 	return currentObject;
 }

@@ -1,23 +1,23 @@
 /*
- * CGLPosition.cpp
+ * DGLPosition.cpp
  *
  *  Created on: 19 janv. 2014
  *      Author: dagal
  */
 
-#include "CGLPosition.h"
+#include "DGLPosition.h"
 
-CGLPosition::CGLPosition() : CGLVector3D()
+DGLPosition::DGLPosition() : DGLVector3D()
 {
 	matrixSaved = false;
 }
 
-CGLPosition::~CGLPosition()
+DGLPosition::~DGLPosition()
 {
 }
 
-void CGLPosition::drawObject(Uint32 ellapsedTime)
+void DGLPosition::drawObject(Uint32 ellapsedTime)
 {
-	cout << "CGLPosition : " << x << " " << y << " " << z << endl;
+	cout << "DGLPosition : " << x << " " << y << " " << z << endl;
 	glTranslated(x,y,z);
 }

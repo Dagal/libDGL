@@ -1,16 +1,16 @@
 /*
- * CGLVector3D.h
+ * DGLVector3D.h
  *
  *  Created on: 25 janv. 2014
  *      Author: dagal
  */
 
-#ifndef CGLVECTOR3D_H_
-#define CGLVECTOR3D_H_
+#ifndef DGLVECTOR3D_H_
+#define DGLVECTOR3D_H_
 
-#include "CGLObject.h"
+#include "DGLObject.h"
 
-class CGLVector3D : public CGLObject
+class DGLVector3D : public DGLObject
 {
 	// Variables
 private:
@@ -27,8 +27,8 @@ private:
 protected:
 
 public:
-	CGLVector3D();
-	virtual ~CGLVector3D();
+	DGLVector3D();
+	virtual ~DGLVector3D();
 
 	double getX();
 	double getY();
@@ -39,4 +39,4 @@ public:
 	void setZ(double val);
 };
 
-#endif /* CGLVECTOR3D_H_ */
+#endif /* DGLVECTOR3D_H_ */

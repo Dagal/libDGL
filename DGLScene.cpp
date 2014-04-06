@@ -1,14 +1,14 @@
 /*
- * CGLScene.cpp
+ * DGLScene.cpp
  *
  *  Created on: 19 janv. 2014
  *      Author: dagal
  */
 
-#include "CGLScene.h"
-#include "CGLBoite.h"
+#include "DGLScene.h"
+#include "DGLBoite.h"
 
-CGLScene::CGLScene() : CGLObject()
+DGLScene::DGLScene() : DGLObject()
 {
 	objectType = 3;
 	name = "Scene sans nom";
@@ -16,49 +16,49 @@ CGLScene::CGLScene() : CGLObject()
 
 	// Attention, l'objet scêne est spécial, il ne contient que 2 objets qui sont des listes
 	// Liste des caméras
-	cameras = new CGLCameraList();
+	cameras = new DGLCameraList();
 	cameras->setName("Cameras");
 	addObject(cameras);
 	// Création d'une caméra obligatoire
-	CGLCamera* camera1 = new CGLCamera();
+	DGLCamera* camera1 = new DGLCamera();
 	camera1->setName("Camera1");
 	cameras->addObject(camera1);
 
 	// Liste des objets
-	objects = new CGLObject();
+	objects = new DGLObject();
 	objects->setName("Objects");
 	addObject(objects);
 	// Création d'un cube de base comme dans blender…
-	//CGLBoite* boite = new CGLBoite();
+	//DGLBoite* boite = new DGLBoite();
 	//boite->setName("Boite");
 	//objects->addObject(boite);
 	// TODO Auto-generated constructor stub
 }
 
-CGLScene::~CGLScene()
+DGLScene::~DGLScene()
 {
 	// TODO Auto-generated destructor stub
 }
 
-void CGLScene::draw(Uint32 timeEllapsed)
+void DGLScene::draw(Uint32 timeEllapsed)
 {
-	cout << "CGLScene   : Dessin de la scène " << name << endl;
+	cout << "DGLScene   : Dessin de la scène " << name << endl;
 	cameras->getCurrentObject()->draw(timeEllapsed);
 	objects->drawChildren(timeEllapsed);
 }
 
-CGLCamera* CGLScene::getCurrentCamera()
+DGLCamera* DGLScene::getCurrentCamera()
 {
-	CGLCamera* cam = (CGLCamera*)(cameras->getCurrentObject());
+	DGLCamera* cam = (DGLCamera*)(cameras->getCurrentObject());
 	return cam;
 }
 
-void CGLScene::addCamera(CGLCamera* cam)
+void DGLScene::addCamera(DGLCamera* cam)
 {
 	cameras->addObject(cam);
 }
 
-void CGLScene::addItem(CGLObject* obj)
+void DGLScene::addItem(DGLObject* obj)
 {
 	objects->addObject(obj);
 }

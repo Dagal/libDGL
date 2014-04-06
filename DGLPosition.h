@@ -1,17 +1,17 @@
 /*
- * CGLPosition.h
+ * DGLPosition.h
  *
  *  Created on: 19 janv. 2014
  *      Author: dagal
  */
 
-#ifndef CGLPOSITION_H_
-#define CGLPOSITION_H_
+#ifndef DGLPOSITION_H_
+#define DGLPOSITION_H_
 
-#include "CGLObject.h"
-#include "CGLVector3D.h"
+#include "DGLObject.h"
+#include "DGLVector3D.h"
 
-class CGLPosition : public CGLVector3D
+class DGLPosition : public DGLVector3D
 {
 	// Variables
 private:
@@ -28,10 +28,10 @@ private:
 protected:
 
 public:
-	CGLPosition();
-	virtual ~CGLPosition();
+	DGLPosition();
+	virtual ~DGLPosition();
 
 	void drawObject(Uint32 ellapsedTime);
 };
 
-#endif /* CGLPOSITION_H_ */
+#endif /* DGLPOSITION_H_ */

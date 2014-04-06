@@ -1,13 +1,13 @@
 /*
- * CGLBoite.cpp
+ * DGLBoite.cpp
  *
  *  Created on: 26 janv. 2014
  *      Author: dagal
  */
 
-#include "CGLBoite.h"
+#include "DGLBoite.h"
 
-CGLBoite::CGLBoite() : CGLObject()
+DGLBoite::DGLBoite() : DGLObject()
 {
 	objectType = 1000;
 	x = y = z = 1;
@@ -15,20 +15,20 @@ CGLBoite::CGLBoite() : CGLObject()
 
 }
 
-CGLBoite::~CGLBoite() {
+DGLBoite::~DGLBoite() {
 	// TODO Auto-generated destructor stub
 }
 
-void CGLBoite::setTaille(double xv, double yv, double zv)
+void DGLBoite::setTaille(double xv, double yv, double zv)
 {
 	x = xv;
 	y = yv;
 	z = zv;
 }
 
-void CGLBoite::drawObject(Uint32 timeEllapsed)
+void DGLBoite::drawObject(Uint32 timeEllapsed)
 {
-	cout << "CGLBoite    : Dessin d'une boite." << endl;
+	cout << "DGLBoite    : Dessin d'une boite." << endl;
 
 	// Face
 	glBegin(GL_QUADS);

@@ -1,25 +1,25 @@
 /*
- * CGLColor.cpp
+ * DGLColor.cpp
  *
  *  Created on: 21 janv. 2014
  *      Author: dagal
  */
 
-#include "CGLColor.h"
+#include "DGLColor.h"
 
-CGLColor::CGLColor() : CGLVector3D()
+DGLColor::DGLColor() : DGLVector3D()
 {
 	matrixSaved = false;
 	// TODO Auto-generated constructor stub
 	alpha = 0;
 }
 
-CGLColor::~CGLColor()
+DGLColor::~DGLColor()
 {
 	// TODO Auto-generated destructor stub
 }
 
-void CGLColor::set(double rv, double gv, double bv, double av)
+void DGLColor::set(double rv, double gv, double bv, double av)
 {
 	x = rv;
 	y = gv;
@@ -27,48 +27,48 @@ void CGLColor::set(double rv, double gv, double bv, double av)
 	alpha = av;
 }
 
-void CGLColor::setR(double rv)
+void DGLColor::setR(double rv)
 {
 	x = rv;
 }
 
-void CGLColor::setG(double gv)
+void DGLColor::setG(double gv)
 {
 	y = gv;
 }
 
-void CGLColor::setB(double bv)
+void DGLColor::setB(double bv)
 {
 	z = bv;
 }
 
-void CGLColor::setA(double av)
+void DGLColor::setA(double av)
 {
 	alpha = av;
 }
 
-double CGLColor::getR()
+double DGLColor::getR()
 {
 	return x;
 }
 
-double CGLColor::getG()
+double DGLColor::getG()
 {
 	return y;
 }
 
-double CGLColor::getB()
+double DGLColor::getB()
 {
 	return z;
 }
 
-double CGLColor::getA()
+double DGLColor::getA()
 {
 	return alpha;
 }
 
-void CGLColor::drawObject(Uint32 timeEllapsed)
+void DGLColor::drawObject(Uint32 timeEllapsed)
 {
-	cout << "CGLColor : " << x << " " << y << " " << z << endl;
+	cout << "DGLColor : " << x << " " << y << " " << z << endl;
 	glColor4d(x,y,z,alpha);
 }

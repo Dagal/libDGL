@@ -1,13 +1,13 @@
 /*
- * CGLCamera.cpp
+ * DGLCamera.cpp
  *
  *  Created on: 19 janv. 2014
  *      Author: dagal
  */
 
-#include "CGLCamera.h"
+#include "DGLCamera.h"
 
-CGLCamera::CGLCamera() : CGLObject()
+DGLCamera::DGLCamera() : DGLObject()
 {
 	objectType = 4;
 	name = "Camera sans nom";
@@ -25,18 +25,18 @@ CGLCamera::CGLCamera() : CGLObject()
 
 }
 
-CGLCamera::~CGLCamera()
+DGLCamera::~DGLCamera()
 {
 	// TODO Auto-generated destructor stub
 }
 
-void CGLCamera::drawObject(Uint32 timeEllapsed)
+void DGLCamera::drawObject(Uint32 timeEllapsed)
 {
-	cout << "CGLCamera   : Place la caméra" << endl;
+	cout << "DGLCamera   : Place la caméra" << endl;
 	gluLookAt(posX,posY,posZ,lookX,lookY,lookZ,angleX,angleY,angleZ);
 }
 
-void CGLCamera::onMouseButton(SDL_MouseButtonEvent& event)
+void DGLCamera::onMouseButton(SDL_MouseButtonEvent& event)
 {
 	if ((event.button == SDL_BUTTON_WHEELUP) && (event.type == SDL_MOUSEBUTTONDOWN))
 	{

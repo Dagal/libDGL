@@ -1,23 +1,23 @@
 /*
- * CGLScale.cpp
+ * DGLScale.cpp
  *
  *  Created on: 17 févr. 2014
  *      Author: dagal
  */
 
-#include "CGLScale.h"
+#include "DGLScale.h"
 
-CGLScale::CGLScale() : CGLVector3D()
+DGLScale::DGLScale() : DGLVector3D()
 {
 	matrixSaved = false;
 }
 
-CGLScale::~CGLScale()
+DGLScale::~DGLScale()
 {
 	// TODO Auto-generated destructor stub
 }
 
-void CGLScale::drawObject(Uint32 ellapsedTime)
+void DGLScale::drawObject(Uint32 ellapsedTime)
 {
 	glScaled(x,y,z);
 }

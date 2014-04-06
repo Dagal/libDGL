@@ -1,12 +1,12 @@
 /*
- * CGLObject.h
+ * DGLObject.h
  *
  *  Created on: 19 janv. 2014
  *      Author: dagal
  */
 
-#ifndef CGLOBJECT_H_
-#define CGLOBJECT_H_
+#ifndef DGLOBJECT_H_
+#define DGLOBJECT_H_
 
 #include <iostream>
 
@@ -17,13 +17,13 @@
 #include <string>
 #include <list>
 
-//#include "CGLPosition.h"
-//#include "CGLMotion.h"
-//#include "CGLColor.h"
+//#include "DGLPosition.h"
+//#include "DGLMotion.h"
+//#include "DGLColor.h"
 
 using namespace std;
 
-class CGLObject
+class DGLObject
 {
 	// Variables
 private:
@@ -34,11 +34,11 @@ protected:
 
 	bool matrixSaved;
 
-	list<CGLObject *> children;
-	list<CGLObject *>::iterator iterCurrentObject;
-	CGLObject *currentObject;
+	list<DGLObject *> children;
+	list<DGLObject *>::iterator iterCurrentObject;
+	DGLObject *currentObject;
 
-	CGLObject *parentObject;
+	DGLObject *parentObject;
 
 public:
 
@@ -48,20 +48,20 @@ private:
 protected:
 
 public:
-	void addObject(CGLObject * object);
+	void addObject(DGLObject * object);
 
 	void setName(string n);
 	string getName();
 
-	CGLObject* getCurrentObject();
+	DGLObject* getCurrentObject();
 
 	void draw(Uint32 timeEllapsed);
 	virtual void drawObject(Uint32 timeEllapsed);
 	void drawChildren(Uint32 timeEllapsed);
 	void drawCenter();
 
-	CGLObject();
-	virtual ~CGLObject();
+	DGLObject();
+	virtual ~DGLObject();
 };
 
-#endif /* CGLOBJECT_H_ */
+#endif /* DGLOBJECT_H_ */

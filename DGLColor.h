@@ -1,24 +1,24 @@
 /*
- * CGLColor.h
+ * DGLColor.h
  *
  *  Created on: 21 janv. 2014
  *      Author: dagal
  */
 
-#ifndef CGLCOLOR_H_
-#define CGLCOLOR_H_
+#ifndef DGLCOLOR_H_
+#define DGLCOLOR_H_
 
-#include "CGLVector3D.h"
+#include "DGLVector3D.h"
 
-class CGLColor : public CGLVector3D
+class DGLColor : public DGLVector3D
 {
 protected:
 	double alpha;
 
 public:
-	CGLColor();
+	DGLColor();
 
-	virtual ~CGLColor();
+	virtual ~DGLColor();
 
 	void set(double rv, double gv, double bv, double av);
 	void setR(double rv);
@@ -34,4 +34,4 @@ public:
 	void drawObject(Uint32 timeEllapsed);
 };
 
-#endif /* CGLCOLOR_H_ */
+#endif /* DGLCOLOR_H_ */

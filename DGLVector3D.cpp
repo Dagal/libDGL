@@ -1,56 +1,56 @@
 /*
- * CGLVector3D.cpp
+ * DGLVector3D.cpp
  *
  *  Created on: 25 janv. 2014
  *      Author: dagal
  */
 
-#include "CGLVector3D.h"
+#include "DGLVector3D.h"
 
-CGLVector3D::CGLVector3D() : CGLObject()
+DGLVector3D::DGLVector3D() : DGLObject()
 {
 	x = 0;
 	y = 0;
 	z = 0;
 }
 
-CGLVector3D::~CGLVector3D() {
+DGLVector3D::~DGLVector3D() {
 	// TODO Auto-generated destructor stub
 }
 
-double CGLVector3D::getX()
+double DGLVector3D::getX()
 {
 	return x;
 }
 
-double CGLVector3D::getY()
+double DGLVector3D::getY()
 {
 	return y;
 }
 
-double CGLVector3D::getZ()
+double DGLVector3D::getZ()
 {
 	return z;
 }
 
-void CGLVector3D::set(double xv, double yv, double zv)
+void DGLVector3D::set(double xv, double yv, double zv)
 {
 	x = xv;
 	y = yv;
 	z = zv;
 }
 
-void CGLVector3D::setX(double val)
+void DGLVector3D::setX(double val)
 {
 	x = val;
 }
 
-void CGLVector3D::setY(double val)
+void DGLVector3D::setY(double val)
 {
 	y = val;
 }
 
-void CGLVector3D::setZ(double val)
+void DGLVector3D::setZ(double val)
 {
 	z = val;
 }

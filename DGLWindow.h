@@ -1,19 +1,19 @@
 /*
- * CGLWindow.h
+ * DGLWindow.h
  *
  *  Created on: 1 févr. 2014
  *      Author: dagal
  */
 
-#ifndef CGLWINDOW_H_
-#define CGLWINDOW_H_
+#ifndef DGLWINDOW_H_
+#define DGLWINDOW_H_
 
-#include "CGLWorld.h"
+#include "DGLWorld.h"
 
 /*
  *
  */
-class CGLWindow : public CGLObject
+class DGLWindow : public DGLObject
 {
 private:
 	bool active;
@@ -29,16 +29,16 @@ private:
 	Uint32 ellapsedTime;
 
 public:
-	CGLWindow();
+	DGLWindow();
 	virtual
-	~CGLWindow();
+	~DGLWindow();
 	void loop();
 	void exec();
 	void onResize(SDL_Event &ev);
 
 	void draw(Uint32 ellapsedTime);
 
-	CGLWorld* getCurrentWorld();
+	DGLWorld* getCurrentWorld();
 };
 
-#endif /* CGLWINDOW_H_ */
+#endif /* DGLWINDOW_H_ */
