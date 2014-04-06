@@ -6,7 +6,7 @@
  */
 
 #include "Scene.h"
-#include "Boite.h"
+#include "Box.h"
 
 namespace DGL
 {
