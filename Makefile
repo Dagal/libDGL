@@ -8,7 +8,8 @@
 EXEC = DGL
 
 LIBS = -lGL -lGLU -lSDL -lpthread
-objlist = Object.o Window.o World.o Scene.o Camera.o Box.o Color.o Light.o Motion.o Position.o Quad.o Robot1.o Rotation.o Scale.o Vector3D.o
+OBJS = Object.o Window.o World.o Scene.o Camera.o Box.o Color.o Light.o \
+       Motion.o Position.o Quad.o Robot1.o Rotation.o Scale.o Vector3D.o
 
 ARFLAGS = -q
 CFLAGS = -W -Wall -shared -fPIC $(LIBS)
@@ -18,12 +19,14 @@ LDFLAGS =
 AR = ar
 CC = gcc $(CFLAGS) 
 CXX = g++ $(CXXFLAGS) 
-RM = rm -rf
+RM = -rm -rf
 TEX = latex
 
-prefix = ~
+installdir = ~
+prefix = .
 exec_prefix = $(prefix)
 bindir = $(exec_prefix)/bin
+objdir = $(exec_prefix)/obj
 libdir = $(exec_prefix)/lib
 datadir = $(exec_prefix)/lib
 statedir = $(exec_prefix)/lib
@@ -35,32 +38,31 @@ srcdir = $(prefix)/src
 
 
 # all
-all: $(EXEC).o
+all: $(libdir)/lib$(EXEC).so
+
+$(libdir)/lib$(EXEC).so: $(objdir)/$(EXEC).o
 	echo "*** MAKE : $@"
-	echo "Création de lib$(EXEC).so"
-	$(CXX) $(EXEC).o -o lib$(EXEC).so
+	mkdir -p $(libdir)
+	$(CXX) $< -o $@
 
-$(EXEC).o: main.o $(objlist)
+$(objdir)/$(EXEC).o: $(objdir)/main.o $(addprefix $(objdir)/,$(OBJS))
 	echo "*** MAKE : $@"
-	$(CXX) $^ -o $(EXEC).o
+	$(CXX) $^ -o $@
 
-main.o: main.cpp
+$(objdir)/%.o: $(srcdir)/%.cpp
 	echo "*** MAKE : $^ (Compilation de $< en $@)"
-	$(CXX) -c $< -o $@
-
-%.o: %.cpp
-	echo "*** MAKE : $^ (Compilation de $< en $@)"
+	mkdir -p $(objdir)
 	$(CXX) -c $< -o $@
 
 # clean
 clean:
 	echo "Clean"
-	$(RM) *.o
+	$(RM) -r $(objdir)
 	$(RM) *~
 
 # mrprorer
 mrproper: clean
-	$(RM) lib$(EXEC).a
+	$(RM) -r (libdir)
 
 # install
 install: uninstall lib$(EXEC).so
