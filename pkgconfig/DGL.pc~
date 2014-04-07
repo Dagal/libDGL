@@ -1,0 +1,13 @@
+prefix=/home/dagal
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: DGL
+Description: Dagal Graphic Library
+Version: 0.0a
+Requires: sdl
+Conflicts: 
+Libs: -L${libdir} -lDGL
+Libs.private:  -lz
+Cflags: -I${includedir}

@@ -36,6 +36,9 @@ manxdir = $(prefix)/manx
 infodir = $(prefix)/info
 srcdir = $(prefix)/src
 
+installlibdir = $(installdir)/lib
+installincludedir = $(installdir)/include
+
 
 # all
 all: $(libdir)/lib$(EXEC).so
@@ -65,13 +68,15 @@ mrproper: clean
 	$(RM) -r (libdir)
 
 # install
-install: uninstall lib$(EXEC).so
-	cp lib$(EXEC).so $(libdir)/lib$(EXEC).so
-	mkdir -p $(includedir)/$(EXEC)
-	cp *.h $(includedir)/$(EXEC)
+install: uninstall $(libdir)/lib$(EXEC).so
+	mkdir -p $(installlibdir)
+	cp $(libdir)/lib$(EXEC).so $(installlibdir)/lib$(EXEC).so
+	mkdir -p $(installincludedir)
+	mkdir -p $(installincludedir)/$(EXEC)
+	cp $(srcdir)/*.h $(installincludedir)/$(EXEC)
 
 # uninstall
 uninstall:
-	$(RM) $(libdir)/lib$(EXEC).so
-	$(RM) $(includedir)/$(EXEC) -r
+	$(RM) $(installlibdir)/lib$(EXEC).so
+	$(RM) $(installincludedir)/$(EXEC) -r
 
