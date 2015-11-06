@@ -9,14 +9,13 @@
 
 namespace DGL
 {
-	Object::Object()
+	Object::Object(Object* parent)
 	{
-		objectType = 0;
-		name = "";
-		matrixSaved = true;
-		parentObject = NULL;
+		mType = 0;
+		mName = "";
+		mMatrixSaved = true;
+		mParent = parent;
 		// iterCurrentObject = NULL; // Y a t'il une valeur d'initialisation quand la liste est vide???
-		currentObject = NULL;
 	}
 
 	Object::~Object()
@@ -28,17 +27,17 @@ namespace DGL
 
 	void Object::draw(Uint32 timeEllapsed)
 	{
-		if (matrixSaved) glPushMatrix();
+		if (mMatrixSaved) glPushMatrix();
 
 		drawChildren(timeEllapsed);
 		drawObject(timeEllapsed);
 
-		if (matrixSaved) glPopMatrix();
+		if (mMatrixSaved) glPopMatrix();
 	}
 
 	void Object::drawObject(Uint32 timeEllapsed)
 	{
-		cout << "Object : drawObject de l'objet de type " << objectType << " nommé " << name << endl;
+		std::cout << "Object : drawObject de l'objet de type " << mType << " nommé " << mName << std::endl;
 		// Nothing to do in Object
 	}
 
@@ -55,38 +54,23 @@ namespace DGL
 
 	void Object::addObject(Object * object)
 	{
-		if (this)
-		{
-			children.push_back(object);
-			if (children.size() == 1)
-			{
-				iterCurrentObject = children.begin();
-				currentObject = *iterCurrentObject;
-			}
-		}
+//		if (this)
+//		{
+//			children.push_back(object);
+//			if (children.size() == 1)
+//			{
+//				iterCurrentObject = children.begin();
+//				currentObject = *iterCurrentObject;
+//			}
+//		}
 	}
 
 	void Object::drawChildren(Uint32 timeEllapsed)
 	{
-		list<Object *>::iterator i;
-		for (i = children.begin(); i != children.end(); i++)
-		{
-			(*i)->draw(timeEllapsed);
-		}
-	}
-
-	void Object::setName(string n)
-	{
-		name = n;
-	}
-
-	string Object::getName()
-	{
-		return name;
-	}
-
-	Object* Object::getCurrentObject()
-	{
-		return currentObject;
+//		list<Object *>::iterator i;
+//		for (i = children.begin(); i != children.end(); i++)
+//		{
+//			(*i)->draw(timeEllapsed);
+//		}
 	}
 }

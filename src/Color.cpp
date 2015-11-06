@@ -9,9 +9,10 @@
 
 namespace DGL
 {
-	Color::Color() : Vector3D()
+	Color::Color(Object* parent) :
+	    Vector3D(parent)
 	{
-		matrixSaved = false;
+		setMatrixSaved(false);
 		// TODO Auto-generated constructor stub
 		alpha = 0;
 	}
@@ -71,7 +72,7 @@ namespace DGL
 
 	void Color::drawObject(Uint32 timeEllapsed)
 	{
-		cout << "Color : " << x << " " << y << " " << z << endl;
+		std::cout << "Color : " << x << " " << y << " " << z << std::endl;
 		glColor4d(x,y,z,alpha);
 	}
 }

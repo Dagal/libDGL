@@ -31,7 +31,7 @@ namespace DGL
 			Uint32 ellapsedTime;
 
 		public:
-			Window();
+			Window(Object* parent);
 			virtual
 				~Window();
 			void loop();

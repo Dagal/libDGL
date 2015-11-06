@@ -9,7 +9,8 @@
 
 namespace DGL
 {
-	Vector3D::Vector3D() : Object()
+	Vector3D::Vector3D(Object* parent) :
+	    Object(parent)
 	{
 		x = 0;
 		y = 0;

@@ -15,7 +15,7 @@ namespace DGL
 	class Motion : public Object
 	{
 		public:
-			Motion();
+			Motion(Object* parent);
 			virtual ~Motion();
 	};
 }

@@ -9,9 +9,10 @@
 
 namespace DGL
 {
-	Position::Position() : Vector3D()
+	Position::Position(Object* parent) :
+	    Vector3D(parent)
 	{
-		matrixSaved = false;
+		setMatrixSaved(false);
 	}
 
 	Position::~Position()
@@ -20,7 +21,7 @@ namespace DGL
 
 	void Position::drawObject(Uint32 ellapsedTime)
 	{
-		cout << "Position : " << x << " " << y << " " << z << endl;
+		std::cout << "Position : " << x << " " << y << " " << z << std::endl;
 		glTranslated(x,y,z);
 	}
 }

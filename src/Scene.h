@@ -38,7 +38,7 @@ namespace DGL
 		protected:
 
 		public:
-			Scene();
+			Scene(Object* parent);
 			virtual ~Scene();
 			void draw(Uint32 timeEllapsed);
 			//void drawObject(Uint32 timeEllapsed);

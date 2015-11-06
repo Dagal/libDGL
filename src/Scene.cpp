@@ -10,11 +10,11 @@
 
 namespace DGL
 {
-	Scene::Scene() : Object()
+	Scene::Scene(Object* parent) : Object(parent)
 	{
-		objectType = 3;
-		name = "Scene sans nom";
-		matrixSaved = false;
+		setType(3);
+		setName("Scene sans nom");
+		setMatrixSaved(false);
 
 		// Attention, l'objet scêne est spécial, il ne contient que 2 objets qui sont des listes
 		// Liste des caméras
@@ -22,12 +22,12 @@ namespace DGL
 		cameras->setName("Cameras");
 		addObject(cameras);
 		// Création d'une caméra obligatoire
-		Camera* camera1 = new Camera();
+		Camera* camera1 = new Camera(this);
 		camera1->setName("Camera1");
 		cameras->addObject(camera1);
 
 		// Liste des objets
-		objects = new Object();
+		objects = new Object(this);
 		objects->setName("Objects");
 		addObject(objects);
 		// Création d'un cube de base comme dans blender…
@@ -44,15 +44,9 @@ namespace DGL
 
 	void Scene::draw(Uint32 timeEllapsed)
 	{
-		cout << "Scene   : Dessin de la scène " << name << endl;
-		cameras->getCurrentObject()->draw(timeEllapsed);
+		std::cout << "Scene   : Dessin de la scène " << getName() << std::endl;
+//		cameras->getCurrentObject()->draw(timeEllapsed);
 		objects->drawChildren(timeEllapsed);
-	}
-
-	Camera* Scene::getCurrentCamera()
-	{
-		Camera* cam = (Camera*)(cameras->getCurrentObject());
-		return cam;
 	}
 
 	void Scene::addCamera(Camera* cam)

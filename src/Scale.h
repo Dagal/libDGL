@@ -18,7 +18,7 @@ namespace DGL
 	class Scale : public Vector3D
 	{
 		public:
-			Scale();
+			Scale(Object* parent);
 			virtual
 				~Scale();
 

@@ -9,11 +9,12 @@
 
 namespace DGL
 {
-	Window::Window() : Object()
+	Window::Window(Object* parent) :
+	    Object(parent)
 	{
-		objectType = 1;
-		name = "Window1";
-		matrixSaved = false;
+		setType(1);
+		setName("Window1");
+		setMatrixSaved(false);
 
 		active = true;
 		animation = true;
@@ -22,7 +23,7 @@ namespace DGL
 
 		startTime = lastTime = currentTime = ellapsedTime = 0;
 
-		World* world = new World();
+		World* world = new World(this);
 		addObject(world);
 	}
 
@@ -82,7 +83,7 @@ namespace DGL
 
 	void Window::draw(Uint32 ellapsedTime)
 	{
-		cout << endl << "Window: Dessin du contenu de la fenêtre " << name << endl;
+		std::cout << std::endl << "Window: Dessin du contenu de la fenêtre " << getName() << std::endl;
 
 		getCurrentWorld()->draw(ellapsedTime);
 	}
@@ -127,10 +128,5 @@ namespace DGL
 		gluPerspective(70, (double)ev.resize.w/ev.resize.h, 1, 1000);
 		glEnable(GL_DEPTH_TEST);
 		glClearColor(0.5,0.5,1.0,1.0);
-	}
-
-	World* Window::getCurrentWorld()
-	{
-		return (World*)currentObject;
 	}
 }

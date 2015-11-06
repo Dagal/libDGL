@@ -9,11 +9,11 @@
 
 namespace DGL
 {
-	Camera::Camera() : Object()
+	Camera::Camera(Object* parent) : Object(parent)
 	{
-		objectType = 4;
-		name = "Camera sans nom";
-		matrixSaved = false;
+		setType(4);
+		setName("Camera sans nom");
+		setMatrixSaved(false);
 		posX=1;
 		posY=-2;
 		posZ=2;
@@ -34,7 +34,7 @@ namespace DGL
 
 	void Camera::drawObject(Uint32 timeEllapsed)
 	{
-		cout << "Camera   : Place la caméra" << endl;
+		std::cout << "Camera   : Place la caméra" << std::endl;
 		gluLookAt(posX,posY,posZ,lookX,lookY,lookZ,angleX,angleY,angleZ);
 	}
 

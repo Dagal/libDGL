@@ -32,7 +32,7 @@ namespace DGL
 		protected:
 
 		public:
-			Camera();
+			Camera(Object* parent);
 			virtual ~Camera();
 
 			void draw(Uint32 timeEllapsed);

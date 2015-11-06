@@ -9,9 +9,10 @@
 
 namespace DGL
 {
-	Rotation::Rotation() : Vector3D()
+	Rotation::Rotation(Object* parent) :
+	    Vector3D(parent)
 	{
-		matrixSaved = false;
+		setMatrixSaved(false);
 		a = 0;
 	}
 

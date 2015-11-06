@@ -9,7 +9,8 @@
 
 namespace DGL
 {
-	Motion::Motion() {
+	Motion::Motion(Object* parent) : Object(parent)
+	{
 		// TODO Auto-generated constructor stub
 
 	}

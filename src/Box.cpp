@@ -8,9 +8,10 @@
 #include "Box.h"
 namespace DGL
 {
-	Box::Box() : Object()
+	Box::Box(Object* parent) :
+	    Object(parent)
 	{
-		objectType = 1000;
+		setType(1000);
 		x = y = z = 1;
 		// TODO Auto-generated constructor stub
 
@@ -29,7 +30,7 @@ namespace DGL
 
 	void Box::drawObject(Uint32 timeEllapsed)
 	{
-		cout << "Box    : Dessin d'une boite." << endl;
+		std::cout << "Box    : Dessin d'une boite." << std::endl;
 
 		// Face
 		glBegin(GL_QUADS);

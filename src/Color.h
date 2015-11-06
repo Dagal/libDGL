@@ -18,7 +18,7 @@ namespace DGL
 			double alpha;
 
 		public:
-			Color();
+			Color(Object* parent);
 
 			virtual ~Color();
 

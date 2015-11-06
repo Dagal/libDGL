@@ -9,13 +9,14 @@
 
 namespace DGL
 {
-	World::World() : Object()
+	World::World(Object* parent) :
+	    Object(parent)
 	{
-		objectType = 2;
-		name = "Nouveau monde sans nom";
-		matrixSaved = false;
+		setType(2);
+		setName("Nouveau monde sans nom");
+		setMatrixSaved(false);
 
-		Scene* scene = new Scene();
+		Scene* scene = new Scene(this);
 		addObject(scene);
 	}
 
@@ -25,12 +26,7 @@ namespace DGL
 
 	void World::draw(Uint32 timeEllapsed)
 	{
-		cout << "World  : Dessin de la scene courante du monde «" << name << "»." << endl;
-		((Scene*)currentObject)->draw(timeEllapsed);
-	}
-
-	Scene* World::getCurrentScene()
-	{
-		return (Scene*)currentObject;
+		std::cout << "World  : Dessin de la scene courante du monde «" << getName() << "»." << std::endl;
+//		((Scene*)currentObject)->draw(timeEllapsed);
 	}
 }

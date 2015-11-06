@@ -31,7 +31,7 @@ namespace DGL
 		protected:
 
 		public:
-			World();
+			World(Object* parent);
 			virtual ~World();
 
 			void draw(Uint32 timeEllapsed);

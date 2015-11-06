@@ -9,9 +9,10 @@
 
 namespace DGL
 {
-	Scale::Scale() : Vector3D()
+	Scale::Scale(Object* parent) :
+	    Vector3D(parent)
 	{
-		matrixSaved = false;
+		setMatrixSaved(false);
 	}
 
 	Scale::~Scale()

@@ -29,7 +29,7 @@ namespace DGL
 		protected:
 
 		public:
-			Vector3D();
+			Vector3D(Object* parent);
 			virtual ~Vector3D();
 
 			double getX();

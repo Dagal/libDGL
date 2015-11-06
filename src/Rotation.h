@@ -21,7 +21,7 @@ namespace DGL
 			double a;
 
 		public:
-			Rotation();
+			Rotation(Object* parent);
 			virtual
 				~Rotation();
 

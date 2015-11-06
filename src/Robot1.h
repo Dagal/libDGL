@@ -26,7 +26,7 @@ namespace DGL
 			Box jambeGauche;
 			Box jambeDroite;
 		public:
-			Robot1();
+			Robot1(Object* parent);
 			virtual ~Robot1();
 
 			void drawObject(Uint32 timeEllapsed);

@@ -17,48 +17,37 @@
 #include <string>
 #include <list>
 
-using namespace std;
-
 namespace DGL
 {
 	class Object
 	{
 		// Variables
 	private:
-	
-	protected:
-		int objectType;
-		string name;
-	
-		bool matrixSaved;
-	
-		list<Object *> children;
-		list<Object *>::iterator iterCurrentObject;
-		Object *currentObject;
+		int mType;
+		std::string mName;
 
-		Object *parentObject;
+		bool mMatrixSaved;
+
+		Object* mParent;
 
 	public:
+	    void setType(const int& type) {mType = type;};
+	    const int& getType() const {return mType;};
 
-		// Méthodes
-	private:
+	    void setName(const std::string& name) {mName = name;};
+	    const std::string& getName() const {return mName;};
 
-	protected:
+	    void setMatrixSaved(const bool& saved = true) {mMatrixSaved = saved;};
+	    const bool& getMatrixSaved() const {return mMatrixSaved;};
 
-	public:
 		void addObject(Object * object);
-
-		void setName(string n);
-		string getName();
-
-		Object* getCurrentObject();
 
 		void draw(Uint32 timeEllapsed);
 		virtual void drawObject(Uint32 timeEllapsed);
 		void drawChildren(Uint32 timeEllapsed);
 		void drawCenter();
 
-		Object();
+		Object(Object* parent);
 		virtual ~Object();
 	};
 }

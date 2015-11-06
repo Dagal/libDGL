@@ -9,14 +9,16 @@
 
 namespace DGL
 {
-	Quad::Quad() : Object()
+	Quad::Quad(Object* parent) :
+	    Object(parent)
 	{
 		longueur = 1;
 		// TODO Auto-generated constructor stub
-		Quad(0,0,0,1);
+		Quad(parent,0,0,0,1);
 	}
 
-	Quad::Quad(double x,double y,double z,double r) : Object()
+	Quad::Quad(Object* parent, double x,double y,double z,double r) :
+	    Object(parent)
 	{
 		longueur = r;
 	}

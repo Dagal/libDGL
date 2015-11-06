@@ -27,8 +27,8 @@ namespace DGL
 		private:
 		protected:
 		public:
-			Quad();
-			Quad(double x, double y, double z, double r);
+			Quad(Object* parent);
+			Quad(Object* parent, double x, double y, double z, double r);
 			virtual ~Quad();
 			void drawObject(Uint32 timeEllapsed);
 	};

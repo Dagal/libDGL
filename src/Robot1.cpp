@@ -9,7 +9,15 @@
 
 namespace DGL
 {
-	Robot1::Robot1()
+	Robot1::Robot1(Object* parent) :
+	    Object(parent),
+	    tete(this),
+	    cou(this),
+	    tronc(this),
+	    brasGauche(this),
+	    brasDroit(this),
+	    jambeGauche(this),
+	    jambeDroite(this)
 	{
 		// TODO Auto-generated constructor stub
 		tete.setTaille(0.20,0.30,0.30);

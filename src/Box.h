@@ -18,7 +18,7 @@ namespace DGL
 			double x,y,z;
 
 		public:
-			Box();
+			Box(Object* parent);
 			virtual ~Box();
 
 			void setTaille(double,double,double);
