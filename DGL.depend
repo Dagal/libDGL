@@ -1,0 +1,117 @@
+# depslib dependency file v1.0
+1446843531 source:/home/dagal/dev/DGL/src/Box.cpp
+	"Box.h"
+
+1446843531 /home/dagal/dev/DGL/src/Box.h
+	"Object.h"
+
+1446846636 /home/dagal/dev/DGL/src/Object.h
+	<iostream>
+	<GL/gl.h>
+	<GL/glu.h>
+	<SDL/SDL.h>
+	<string>
+	<list>
+
+1446843559 source:/home/dagal/dev/DGL/src/Camera.cpp
+	"Camera.h"
+
+1446843559 /home/dagal/dev/DGL/src/Camera.h
+	<GL/glu.h>
+	<SDL/SDL.h>
+	"Object.h"
+
+1446799488 source:/home/dagal/dev/DGL/src/CameraList.cpp
+	"CameraList.h"
+
+1446798417 /home/dagal/dev/DGL/src/CameraList.h
+	"Object.h"
+	"Camera.h"
+
+1446848104 source:/home/dagal/dev/DGL/src/Color.cpp
+	"Color.h"
+
+1446848128 /home/dagal/dev/DGL/src/Color.h
+	"Vector3D.h"
+
+1446848062 /home/dagal/dev/DGL/src/Vector3D.h
+	"Object.h"
+
+1446798417 source:/home/dagal/dev/DGL/src/Light.cpp
+	"Light.h"
+
+1446798417 /home/dagal/dev/DGL/src/Light.h
+
+1446798417 source:/home/dagal/dev/DGL/src/main.cpp
+
+1446843576 source:/home/dagal/dev/DGL/src/Motion.cpp
+	"Motion.h"
+
+1446843576 /home/dagal/dev/DGL/src/Motion.h
+	"Object.h"
+
+1446846710 source:/home/dagal/dev/DGL/src/Object.cpp
+	"Object.h"
+
+1446848163 source:/home/dagal/dev/DGL/src/Position.cpp
+	"Position.h"
+
+1446848163 /home/dagal/dev/DGL/src/Position.h
+	"Object.h"
+	"Vector3D.h"
+
+1446847089 source:/home/dagal/dev/DGL/src/Quad.cpp
+	"Quad.h"
+
+1446847051 /home/dagal/dev/DGL/src/Quad.h
+	<iostream>
+	"Object.h"
+
+1446847446 source:/home/dagal/dev/DGL/src/Robot1.cpp
+	"Robot1.h"
+
+1446847155 /home/dagal/dev/DGL/src/Robot1.h
+	<SDL/SDL.h>
+	"Box.h"
+
+1446848205 source:/home/dagal/dev/DGL/src/Rotation.cpp
+	"Rotation.h"
+
+1446848205 /home/dagal/dev/DGL/src/Rotation.h
+	"Vector3D.h"
+
+1446848236 source:/home/dagal/dev/DGL/src/Scale.cpp
+	"Scale.h"
+
+1446848236 /home/dagal/dev/DGL/src/Scale.h
+	"Vector3D.h"
+
+1446848012 source:/home/dagal/dev/DGL/src/Scene.cpp
+	"Scene.h"
+	"Box.h"
+
+1446847727 /home/dagal/dev/DGL/src/Scene.h
+	<iostream>
+	<list>
+	"CameraList.h"
+	"Camera.h"
+	"Light.h"
+	"Object.h"
+
+1446848062 source:/home/dagal/dev/DGL/src/Vector3D.cpp
+	"Vector3D.h"
+
+1446848537 source:/home/dagal/dev/DGL/src/Window.cpp
+	"Window.h"
+
+1446848310 /home/dagal/dev/DGL/src/Window.h
+	"World.h"
+
+1446848524 /home/dagal/dev/DGL/src/World.h
+	<list>
+	"Scene.h"
+	"Object.h"
+
+1446798417 source:/home/dagal/dev/DGL/src/World.cpp
+	"World.h"
+

@@ -1,0 +1,15 @@
+<map id="DGL::Object" name="DGL::Object">
+<area shape="rect" id="node2" href="$class_d_g_l_1_1_box.html" title="DGL::Box" alt="" coords="168,5,249,32"/>
+<area shape="rect" id="node3" href="$class_d_g_l_1_1_camera.html" title="DGL::Camera" alt="" coords="155,56,262,83"/>
+<area shape="rect" id="node4" href="$class_d_g_l_1_1_motion.html" title="DGL::Motion" alt="" coords="159,107,259,133"/>
+<area shape="rect" id="node5" href="$class_d_g_l_1_1_quad.html" title="DGL::Quad" alt="" coords="163,157,254,184"/>
+<area shape="rect" id="node6" href="$class_d_g_l_1_1_robot1.html" title="DGL::Robot1" alt="" coords="157,208,260,235"/>
+<area shape="rect" id="node7" href="$class_d_g_l_1_1_scene.html" title="DGL::Scene" alt="" coords="160,259,257,285"/>
+<area shape="rect" id="node8" href="$class_d_g_l_1_1_vector3_d.html" title="DGL::Vector3D" alt="" coords="151,309,267,336"/>
+<area shape="rect" id="node13" href="$class_d_g_l_1_1_window.html" title="DGL::Window" alt="" coords="155,360,262,387"/>
+<area shape="rect" id="node14" href="$class_d_g_l_1_1_world.html" title="DGL::World" alt="" coords="161,411,256,437"/>
+<area shape="rect" id="node9" href="$class_d_g_l_1_1_color.html" title="DGL::Color" alt="" coords="325,233,415,260"/>
+<area shape="rect" id="node10" href="$class_d_g_l_1_1_position.html" title="DGL::Position" alt="" coords="317,284,423,311"/>
+<area shape="rect" id="node11" href="$class_d_g_l_1_1_rotation.html" title="DGL::Rotation" alt="" coords="315,335,425,361"/>
+<area shape="rect" id="node12" href="$class_d_g_l_1_1_scale.html" title="DGL::Scale" alt="" coords="324,385,416,412"/>
+</map>
