@@ -1,3 +1,5 @@
 <map id="DGL::Quad" name="DGL::Quad">
-<area shape="rect" id="node2" href="$class_d_g_l_1_1_object.html" title="DGL::Object" alt="" coords="5,5,103,32"/>
+<area shape="rect" id="node2" href="$class_d_g_l_1_1_flat_graphic_object.html" title="DGL::FlatGraphicObject" alt="" coords="5,157,176,184"/>
+<area shape="rect" id="node3" href="$class_d_g_l_1_1_graphic_object.html" title="DGL::GraphicObject" alt="" coords="17,81,164,108"/>
+<area shape="rect" id="node4" href="$class_d_g_l_1_1_object.html" title="DGL::Object" alt="" coords="42,5,139,32"/>
 </map>

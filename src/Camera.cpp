@@ -9,7 +9,8 @@
 
 namespace DGL
 {
-	Camera::Camera(Object* parent) : Object(parent)
+	Camera::Camera(Object* parent) :
+	    GeneralObject(parent)
 	{
 		setType(4);
 		setName("Camera sans nom");

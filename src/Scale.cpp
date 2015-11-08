@@ -22,6 +22,6 @@ namespace DGL
 
 	void Scale::drawObject(Uint32 ellapsedTime)
 	{
-		glScaled(x,y,z);
+		glScaled(getX(), getY(), getZ());
 	}
 }

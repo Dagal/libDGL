@@ -10,14 +10,11 @@
 namespace DGL
 {
 	World::World(Object* parent) :
-	    Object(parent)
+	    GeneralObject(parent)
 	{
 		setType(2);
 		setName("Nouveau monde sans nom");
 		setMatrixSaved(false);
-
-		Scene* scene = new Scene(this);
-		addObject(scene);
 	}
 
 	World::~World() {

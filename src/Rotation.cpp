@@ -31,16 +31,16 @@ namespace DGL
 		return a;
 	}
 
-	void Rotation::set(double av, double ax, double ay, double az)
+	void Rotation::set(const Double& av, const Double& ax, const Double& ay, const Double& az)
 	{
 		a = av;
-		x = ax;
-		y = ay;
-		z = az;
+		setX(ax);
+		setY(ay);
+		setZ(az);
 	}
 
 	void Rotation::drawObject(Uint32 ellapsedTime)
 	{
-		glRotated(a,x,y,z);
+		glRotated(a, getX(), getY(), getZ());
 	}
 }

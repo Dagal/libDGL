@@ -46,6 +46,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
       <li>
@@ -69,6 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -105,7 +107,7 @@ $(document).ready(function(){initNavTree('_camera_8h_source.html','');});
 <div class="title">Camera.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<a href="_camera_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * CCameraGL.h</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *  Created on: 19 janv. 2014</span></div>
@@ -118,16 +120,16 @@ $(document).ready(function(){initNavTree('_camera_8h_source.html','');});
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;GL/glu.h&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;SDL/SDL.h&gt;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;Object.h&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_general_object_8h.html">GeneralObject.h</a>&quot;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_d_g_l.html">DGL</a></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_d_g_l_1_1_camera.html">   17</a></span>&#160;        <span class="keyword">class </span><a class="code" href="class_d_g_l_1_1_camera.html">Camera</a> : <span class="keyword">public</span> <a class="code" href="class_d_g_l_1_1_object.html">Object</a></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_d_g_l_1_1_camera.html">   17</a></span>&#160;        <span class="keyword">class </span><a class="code" href="class_d_g_l_1_1_camera.html">Camera</a> : <span class="keyword">public</span> <a class="code" href="class_d_g_l_1_1_general_object.html">GeneralObject</a></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        {</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                <span class="comment">// Variables</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                        <span class="keywordtype">double</span> posX,posY,posZ;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                        <span class="keywordtype">double</span> lookX,lookY,lookZ;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                        <span class="keywordtype">double</span> angleX,angleY,angleZ;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_d_g_l_1_1_camera.html#a5123d09204c4bfc657ddc2b676ecda20">   21</a></span>&#160;                        <span class="keywordtype">double</span> <a class="code" href="class_d_g_l_1_1_camera.html#aeb15e0edec55463de45b19e83103792f">posX</a>,<a class="code" href="class_d_g_l_1_1_camera.html#afe8d94dcc0cf4346a6af93df8e67f0f2">posY</a>,<a class="code" href="class_d_g_l_1_1_camera.html#a5123d09204c4bfc657ddc2b676ecda20">posZ</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_d_g_l_1_1_camera.html#afb6f570b3fdead6eebcbfcb661251392">   22</a></span>&#160;                        <span class="keywordtype">double</span> <a class="code" href="class_d_g_l_1_1_camera.html#a0db53a5b956dcc78760688297055bf4c">lookX</a>,<a class="code" href="class_d_g_l_1_1_camera.html#aeaa06c5cafae67e9a85a8b25979b9b72">lookY</a>,<a class="code" href="class_d_g_l_1_1_camera.html#afb6f570b3fdead6eebcbfcb661251392">lookZ</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_d_g_l_1_1_camera.html#af6b38b59a49e37393e9baa42d72f7143">   23</a></span>&#160;                        <span class="keywordtype">double</span> <a class="code" href="class_d_g_l_1_1_camera.html#ab4cfe66c9f2becd13e3bac9a9f7cce09">angleX</a>,<a class="code" href="class_d_g_l_1_1_camera.html#abf5b3b52cf84159e76b8970f102ccdb0">angleY</a>,<a class="code" href="class_d_g_l_1_1_camera.html#af6b38b59a49e37393e9baa42d72f7143">angleZ</a>;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                <span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
@@ -139,25 +141,41 @@ $(document).ready(function(){initNavTree('_camera_8h_source.html','');});
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                <span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                        <a class="code" href="class_d_g_l_1_1_camera.html">Camera</a>(<a class="code" href="class_d_g_l_1_1_object.html">Object</a>* parent);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                        <span class="keyword">virtual</span> ~<a class="code" href="class_d_g_l_1_1_camera.html">Camera</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                        <a class="code" href="class_d_g_l_1_1_camera.html#a0fb31d5ea1509e1400c31f1e35bf6bc7">Camera</a>(<a class="code" href="class_d_g_l_1_1_object.html">Object</a>* parent);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                        <span class="keyword">virtual</span> <a class="code" href="class_d_g_l_1_1_camera.html#a34da81210c312201608932bfde7c9033">~Camera</a>();</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                        <span class="keywordtype">void</span> draw(Uint32 timeEllapsed);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                        <span class="keywordtype">void</span> drawObject(Uint32 timeEllapsed);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                        <span class="keywordtype">void</span> onMouseButton(SDL_MouseButtonEvent&amp; event);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                        <span class="keywordtype">void</span> <a class="code" href="class_d_g_l_1_1_camera.html#a7abd538f629e8f62b424f0e3b2e7878c">draw</a>(Uint32 timeEllapsed);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                        <span class="keywordtype">void</span> <a class="code" href="class_d_g_l_1_1_camera.html#aa5064a7bc603e70b66637255de789831">drawObject</a>(Uint32 timeEllapsed);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                        <span class="keywordtype">void</span> <a class="code" href="class_d_g_l_1_1_camera.html#ac0bc172a05ece226fe7f1aa1f19c2b07">onMouseButton</a>(SDL_MouseButtonEvent&amp; event);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        };</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* CAMERA_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="class_d_g_l_1_1_camera_html_aeb15e0edec55463de45b19e83103792f"><div class="ttname"><a href="class_d_g_l_1_1_camera.html#aeb15e0edec55463de45b19e83103792f">DGL::Camera::posX</a></div><div class="ttdeci">double posX</div><div class="ttdef"><b>Definition:</b> Camera.h:21</div></div>
+<div class="ttc" id="class_d_g_l_1_1_camera_html_afe8d94dcc0cf4346a6af93df8e67f0f2"><div class="ttname"><a href="class_d_g_l_1_1_camera.html#afe8d94dcc0cf4346a6af93df8e67f0f2">DGL::Camera::posY</a></div><div class="ttdeci">double posY</div><div class="ttdef"><b>Definition:</b> Camera.h:21</div></div>
+<div class="ttc" id="class_d_g_l_1_1_camera_html_af6b38b59a49e37393e9baa42d72f7143"><div class="ttname"><a href="class_d_g_l_1_1_camera.html#af6b38b59a49e37393e9baa42d72f7143">DGL::Camera::angleZ</a></div><div class="ttdeci">double angleZ</div><div class="ttdef"><b>Definition:</b> Camera.h:23</div></div>
+<div class="ttc" id="class_d_g_l_1_1_camera_html_a34da81210c312201608932bfde7c9033"><div class="ttname"><a href="class_d_g_l_1_1_camera.html#a34da81210c312201608932bfde7c9033">DGL::Camera::~Camera</a></div><div class="ttdeci">virtual ~Camera()</div><div class="ttdef"><b>Definition:</b> Camera.cpp:31</div></div>
+<div class="ttc" id="class_d_g_l_1_1_general_object_html"><div class="ttname"><a href="class_d_g_l_1_1_general_object.html">DGL::GeneralObject</a></div><div class="ttdef"><b>Definition:</b> GeneralObject.h:8</div></div>
 <div class="ttc" id="class_d_g_l_1_1_camera_html"><div class="ttname"><a href="class_d_g_l_1_1_camera.html">DGL::Camera</a></div><div class="ttdef"><b>Definition:</b> Camera.h:17</div></div>
-<div class="ttc" id="namespace_d_g_l_html"><div class="ttname"><a href="namespace_d_g_l.html">DGL</a></div><div class="ttdef"><b>Definition:</b> Rotation.h:13</div></div>
+<div class="ttc" id="class_d_g_l_1_1_camera_html_a0db53a5b956dcc78760688297055bf4c"><div class="ttname"><a href="class_d_g_l_1_1_camera.html#a0db53a5b956dcc78760688297055bf4c">DGL::Camera::lookX</a></div><div class="ttdeci">double lookX</div><div class="ttdef"><b>Definition:</b> Camera.h:22</div></div>
+<div class="ttc" id="class_d_g_l_1_1_camera_html_abf5b3b52cf84159e76b8970f102ccdb0"><div class="ttname"><a href="class_d_g_l_1_1_camera.html#abf5b3b52cf84159e76b8970f102ccdb0">DGL::Camera::angleY</a></div><div class="ttdeci">double angleY</div><div class="ttdef"><b>Definition:</b> Camera.h:23</div></div>
+<div class="ttc" id="namespace_d_g_l_html"><div class="ttname"><a href="namespace_d_g_l.html">DGL</a></div><div class="ttdef"><b>Definition:</b> Quad.h:17</div></div>
+<div class="ttc" id="class_d_g_l_1_1_camera_html_ac0bc172a05ece226fe7f1aa1f19c2b07"><div class="ttname"><a href="class_d_g_l_1_1_camera.html#ac0bc172a05ece226fe7f1aa1f19c2b07">DGL::Camera::onMouseButton</a></div><div class="ttdeci">void onMouseButton(SDL_MouseButtonEvent &amp;event)</div><div class="ttdef"><b>Definition:</b> Camera.cpp:42</div></div>
+<div class="ttc" id="class_d_g_l_1_1_camera_html_afb6f570b3fdead6eebcbfcb661251392"><div class="ttname"><a href="class_d_g_l_1_1_camera.html#afb6f570b3fdead6eebcbfcb661251392">DGL::Camera::lookZ</a></div><div class="ttdeci">double lookZ</div><div class="ttdef"><b>Definition:</b> Camera.h:22</div></div>
+<div class="ttc" id="class_d_g_l_1_1_camera_html_a7abd538f629e8f62b424f0e3b2e7878c"><div class="ttname"><a href="class_d_g_l_1_1_camera.html#a7abd538f629e8f62b424f0e3b2e7878c">DGL::Camera::draw</a></div><div class="ttdeci">void draw(Uint32 timeEllapsed)</div></div>
+<div class="ttc" id="class_d_g_l_1_1_camera_html_aa5064a7bc603e70b66637255de789831"><div class="ttname"><a href="class_d_g_l_1_1_camera.html#aa5064a7bc603e70b66637255de789831">DGL::Camera::drawObject</a></div><div class="ttdeci">void drawObject(Uint32 timeEllapsed)</div><div class="ttdef"><b>Definition:</b> Camera.cpp:36</div></div>
 <div class="ttc" id="class_d_g_l_1_1_object_html"><div class="ttname"><a href="class_d_g_l_1_1_object.html">DGL::Object</a></div><div class="ttdef"><b>Definition:</b> Object.h:22</div></div>
+<div class="ttc" id="class_d_g_l_1_1_camera_html_a0fb31d5ea1509e1400c31f1e35bf6bc7"><div class="ttname"><a href="class_d_g_l_1_1_camera.html#a0fb31d5ea1509e1400c31f1e35bf6bc7">DGL::Camera::Camera</a></div><div class="ttdeci">Camera(Object *parent)</div><div class="ttdef"><b>Definition:</b> Camera.cpp:12</div></div>
+<div class="ttc" id="class_d_g_l_1_1_camera_html_a5123d09204c4bfc657ddc2b676ecda20"><div class="ttname"><a href="class_d_g_l_1_1_camera.html#a5123d09204c4bfc657ddc2b676ecda20">DGL::Camera::posZ</a></div><div class="ttdeci">double posZ</div><div class="ttdef"><b>Definition:</b> Camera.h:21</div></div>
+<div class="ttc" id="class_d_g_l_1_1_camera_html_aeaa06c5cafae67e9a85a8b25979b9b72"><div class="ttname"><a href="class_d_g_l_1_1_camera.html#aeaa06c5cafae67e9a85a8b25979b9b72">DGL::Camera::lookY</a></div><div class="ttdeci">double lookY</div><div class="ttdef"><b>Definition:</b> Camera.h:22</div></div>
+<div class="ttc" id="_general_object_8h_html"><div class="ttname"><a href="_general_object_8h.html">GeneralObject.h</a></div></div>
+<div class="ttc" id="class_d_g_l_1_1_camera_html_ab4cfe66c9f2becd13e3bac9a9f7cce09"><div class="ttname"><a href="class_d_g_l_1_1_camera.html#ab4cfe66c9f2becd13e3bac9a9f7cce09">DGL::Camera::angleX</a></div><div class="ttdeci">double angleX</div><div class="ttdef"><b>Definition:</b> Camera.h:23</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><b>Camera.h</b></li>
-    <li class="footer">Généré le Vendredi 6 Novembre 2015 23:24:54 pour DGL par
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="_camera_8h.html">Camera.h</a></li>
+    <li class="footer">Généré le Dimanche 8 Novembre 2015 18:16:43 pour DGL par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

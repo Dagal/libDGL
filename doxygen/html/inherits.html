@@ -46,6 +46,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Fichiers</span></a></li>
       <li>
@@ -71,6 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
       <li><a href="annotated.html"><span>Liste&#160;des&#160;classes</span></a></li>
       <li><a href="classes.html"><span>Index&#160;des&#160;classes</span></a></li>
       <li class="current"><a href="inherits.html"><span>Hiérarchie&#160;des&#160;classes</span></a></li>
+      <li><a href="functions.html"><span>Membres&#160;de&#160;classe</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -117,20 +119,28 @@ $(document).ready(function(){initNavTree('hierarchy.html','');});
 </td></tr>
 <tr><td><img src="inherit_graph_1.png" border="0" alt="" usemap="#_d_g_l_1_1_object"/>
 <map name="_d_g_l_1_1_object" id="_d_g_l_1_1_object">
-<area shape="rect" id="node1" href="class_d_g_l_1_1_object.html" title="DGL::Object" alt="" coords="5,208,103,235"/>
-<area shape="rect" id="node2" href="class_d_g_l_1_1_box.html" title="DGL::Box" alt="" coords="168,5,249,32"/>
-<area shape="rect" id="node3" href="class_d_g_l_1_1_camera.html" title="DGL::Camera" alt="" coords="155,56,262,83"/>
-<area shape="rect" id="node4" href="class_d_g_l_1_1_motion.html" title="DGL::Motion" alt="" coords="159,107,259,133"/>
-<area shape="rect" id="node5" href="class_d_g_l_1_1_quad.html" title="DGL::Quad" alt="" coords="163,157,254,184"/>
-<area shape="rect" id="node6" href="class_d_g_l_1_1_robot1.html" title="DGL::Robot1" alt="" coords="157,208,260,235"/>
-<area shape="rect" id="node7" href="class_d_g_l_1_1_scene.html" title="DGL::Scene" alt="" coords="160,259,257,285"/>
-<area shape="rect" id="node8" href="class_d_g_l_1_1_vector3_d.html" title="DGL::Vector3D" alt="" coords="151,309,267,336"/>
-<area shape="rect" id="node13" href="class_d_g_l_1_1_window.html" title="DGL::Window" alt="" coords="155,360,262,387"/>
-<area shape="rect" id="node14" href="class_d_g_l_1_1_world.html" title="DGL::World" alt="" coords="161,411,256,437"/>
-<area shape="rect" id="node9" href="class_d_g_l_1_1_color.html" title="DGL::Color" alt="" coords="325,233,415,260"/>
-<area shape="rect" id="node10" href="class_d_g_l_1_1_position.html" title="DGL::Position" alt="" coords="317,284,423,311"/>
-<area shape="rect" id="node11" href="class_d_g_l_1_1_rotation.html" title="DGL::Rotation" alt="" coords="315,335,425,361"/>
-<area shape="rect" id="node12" href="class_d_g_l_1_1_scale.html" title="DGL::Scale" alt="" coords="324,385,416,412"/>
+<area shape="rect" id="node1" href="class_d_g_l_1_1_object.html" title="DGL::Object" alt="" coords="5,259,103,285"/>
+<area shape="rect" id="node2" href="class_d_g_l_1_1_basic_object.html" title="DGL::BasicObject" alt="" coords="160,81,291,108"/>
+<area shape="rect" id="node9" href="class_d_g_l_1_1_general_object.html" title="DGL::GeneralObject" alt="" coords="151,208,299,235"/>
+<area shape="rect" id="node13" href="class_d_g_l_1_1_graphic_object.html" title="DGL::GraphicObject" alt="" coords="152,309,299,336"/>
+<area shape="rect" id="node20" href="class_d_g_l_1_1_physical_object.html" title="DGL::PhysicalObject" alt="" coords="151,436,300,463"/>
+<area shape="rect" id="node3" href="class_d_g_l_1_1_double.html" title="DGL::Double" alt="" coords="399,31,499,57"/>
+<area shape="rect" id="node4" href="class_d_g_l_1_1_vector3_d.html" title="DGL::Vector3D" alt="" coords="391,81,507,108"/>
+<area shape="rect" id="node5" href="class_d_g_l_1_1_color.html" title="DGL::Color" alt="" coords="609,5,699,32"/>
+<area shape="rect" id="node6" href="class_d_g_l_1_1_location.html" title="DGL::Location" alt="" coords="599,56,709,83"/>
+<area shape="rect" id="node7" href="class_d_g_l_1_1_rotation.html" title="DGL::Rotation" alt="" coords="599,107,709,133"/>
+<area shape="rect" id="node8" href="class_d_g_l_1_1_scale.html" title="DGL::Scale" alt="" coords="608,157,700,184"/>
+<area shape="rect" id="node10" href="class_d_g_l_1_1_camera.html" title="DGL::Camera" alt="" coords="396,132,503,159"/>
+<area shape="rect" id="node11" href="class_d_g_l_1_1_window.html" title="DGL::Window" alt="" coords="396,183,503,209"/>
+<area shape="rect" id="node12" href="class_d_g_l_1_1_world.html" title="DGL::World" alt="" coords="402,233,497,260"/>
+<area shape="rect" id="node14" href="class_d_g_l_1_1_complex_graphic_object.html" title="DGL::ComplexGraphicObject" alt="" coords="348,284,551,311"/>
+<area shape="rect" id="node16" href="class_d_g_l_1_1_flat_graphic_object.html" title="DGL::FlatGraphicObject" alt="" coords="364,335,535,361"/>
+<area shape="rect" id="node18" href="class_d_g_l_1_1_volume_graphic_object.html" title="DGL::VolumeGraphicObject" alt="" coords="353,385,546,412"/>
+<area shape="rect" id="node15" href="class_d_g_l_1_1_robot1.html" title="DGL::Robot1" alt="" coords="603,284,705,311"/>
+<area shape="rect" id="node17" href="class_d_g_l_1_1_quad.html" title="DGL::Quad" alt="" coords="609,335,699,361"/>
+<area shape="rect" id="node19" href="class_d_g_l_1_1_box.html" title="DGL::Box" alt="" coords="613,385,695,412"/>
+<area shape="rect" id="node21" href="class_d_g_l_1_1_coordinate.html" title="DGL::Coordinate" alt="" coords="386,436,513,463"/>
+<area shape="rect" id="node22" href="class_d_g_l_1_1_motion.html" title="DGL::Motion" alt="" coords="399,487,499,513"/>
 </map>
 </td></tr>
 </table>
@@ -139,7 +149,7 @@ $(document).ready(function(){initNavTree('hierarchy.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Généré le Vendredi 6 Novembre 2015 23:24:54 pour DGL par
+    <li class="footer">Généré le Dimanche 8 Novembre 2015 18:16:44 pour DGL par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -24,6 +25,7 @@
 				<Option createStaticLib="1" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -37,43 +39,59 @@
 		<Linker>
 			<Add option="-fPIC" />
 		</Linker>
+		<Unit filename="include/BasicObject.h" />
+		<Unit filename="include/Box.h" />
+		<Unit filename="include/Camera.h" />
+		<Unit filename="include/Color.h" />
+		<Unit filename="include/ComplexGraphicObject.h" />
+		<Unit filename="include/Coordinate.h" />
+		<Unit filename="include/Double.h" />
+		<Unit filename="include/FlatGraphicObject.h" />
+		<Unit filename="include/GeneralObject.h" />
+		<Unit filename="include/GraphicObject.h" />
+		<Unit filename="include/Light.h" />
+		<Unit filename="include/Location.h" />
+		<Unit filename="include/Motion.h" />
+		<Unit filename="include/Object.h" />
+		<Unit filename="include/PhysicalObject.h" />
+		<Unit filename="include/Quad.h" />
+		<Unit filename="include/Robot1.h" />
+		<Unit filename="include/Rotation.h" />
+		<Unit filename="include/Scale.h" />
+		<Unit filename="include/Vector3D.h" />
+		<Unit filename="include/VolumeGraphicObject.h" />
+		<Unit filename="include/Window.h" />
+		<Unit filename="include/World.h" />
 		<Unit filename="pkgconfig/DGL.pc" />
+		<Unit filename="src/BasicObject.cpp" />
 		<Unit filename="src/Box.cpp" />
-		<Unit filename="src/Box.h" />
 		<Unit filename="src/Camera.cpp" />
-		<Unit filename="src/Camera.h" />
 		<Unit filename="src/Color.cpp" />
-		<Unit filename="src/Color.h" />
+		<Unit filename="src/ComplexGraphicObject.cpp" />
+		<Unit filename="src/Coordinate.cpp" />
+		<Unit filename="src/Double.cpp" />
+		<Unit filename="src/FlatGraphicObject.cpp" />
+		<Unit filename="src/GeneralObject.cpp" />
+		<Unit filename="src/GraphicObject.cpp" />
 		<Unit filename="src/Light.cpp" />
-		<Unit filename="src/Light.h" />
+		<Unit filename="src/Location.cpp" />
 		<Unit filename="src/Motion.cpp" />
-		<Unit filename="src/Motion.h" />
 		<Unit filename="src/Object.cpp" />
-		<Unit filename="src/Object.h" />
-		<Unit filename="src/Position.cpp" />
-		<Unit filename="src/Position.h" />
+		<Unit filename="src/PhysicalObject.cpp" />
 		<Unit filename="src/Quad.cpp" />
-		<Unit filename="src/Quad.h" />
 		<Unit filename="src/Robot1.cpp" />
-		<Unit filename="src/Robot1.h" />
 		<Unit filename="src/Rotation.cpp" />
-		<Unit filename="src/Rotation.h" />
 		<Unit filename="src/Scale.cpp" />
-		<Unit filename="src/Scale.h" />
-		<Unit filename="src/Scene.cpp" />
-		<Unit filename="src/Scene.h" />
 		<Unit filename="src/Vector3D.cpp" />
-		<Unit filename="src/Vector3D.h" />
+		<Unit filename="src/VolumeGraphicObject.cpp" />
 		<Unit filename="src/Window.cpp" />
-		<Unit filename="src/Window.h" />
 		<Unit filename="src/World.cpp" />
-		<Unit filename="src/World.h" />
 		<Unit filename="src/main.cpp" />
 		<Extensions>
 			<DoxyBlocks>
 				<comment_style block="0" line="0" />
 				<doxyfile_project output_language="French" />
-				<doxyfile_build />
+				<doxyfile_build extract_all="1" extract_private="1" extract_static="1" />
 				<doxyfile_warnings />
 				<doxyfile_output />
 				<doxyfile_dot class_diagrams="1" have_dot="1" />

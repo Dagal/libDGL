@@ -10,7 +10,7 @@
 namespace DGL
 {
 	Quad::Quad(Object* parent) :
-	    Object(parent)
+	    FlatGraphicObject(parent)
 	{
 		longueur = 1;
 		// TODO Auto-generated constructor stub
@@ -18,7 +18,7 @@ namespace DGL
 	}
 
 	Quad::Quad(Object* parent, double x,double y,double z,double r) :
-	    Object(parent)
+	    FlatGraphicObject(parent)
 	{
 		longueur = r;
 	}

@@ -46,6 +46,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
       <li>
@@ -69,6 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -105,7 +107,7 @@ $(document).ready(function(){initNavTree('_box_8h_source.html','');});
 <div class="title">Box.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<a href="_box_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Box.h</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *  Created on: 26 janv. 2014</span></div>
@@ -115,34 +117,43 @@ $(document).ready(function(){initNavTree('_box_8h_source.html','');});
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef BOX_H_</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define BOX_H_</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;Object.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_volume_graphic_object_8h.html">VolumeGraphicObject.h</a>&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_d_g_l.html">DGL</a></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_d_g_l_1_1_box.html">   15</a></span>&#160;        <span class="keyword">class </span><a class="code" href="class_d_g_l_1_1_box.html">Box</a>: <span class="keyword">virtual</span> <span class="keyword">public</span> <a class="code" href="class_d_g_l_1_1_object.html">Object</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_d_g_l_1_1_box.html">   15</a></span>&#160;        <span class="keyword">class </span><a class="code" href="class_d_g_l_1_1_box.html">Box</a>: <span class="keyword">virtual</span> <span class="keyword">public</span> <a class="code" href="class_d_g_l_1_1_volume_graphic_object.html">VolumeGraphicObject</a></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        {</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                        <span class="keywordtype">double</span> x,y,z;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_d_g_l_1_1_box.html#ac22fee4c42e8b88f2d812a77bd2239d2">   18</a></span>&#160;                        <span class="keywordtype">double</span> <a class="code" href="class_d_g_l_1_1_box.html#a846d012d9db76245517b26ba569a00fe">x</a>,<a class="code" href="class_d_g_l_1_1_box.html#a8308feb25017d3e9a4aa52cc5ee8de9f">y</a>,<a class="code" href="class_d_g_l_1_1_box.html#ac22fee4c42e8b88f2d812a77bd2239d2">z</a>;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                        <a class="code" href="class_d_g_l_1_1_box.html">Box</a>(<a class="code" href="class_d_g_l_1_1_object.html">Object</a>* parent);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                        <span class="keyword">virtual</span> ~<a class="code" href="class_d_g_l_1_1_box.html">Box</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                        <a class="code" href="class_d_g_l_1_1_box.html#acd4cfd71414aa7f25467a17bfac8b92a">Box</a>(<a class="code" href="class_d_g_l_1_1_object.html">Object</a>* parent);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                        <span class="keyword">virtual</span> <a class="code" href="class_d_g_l_1_1_box.html#afa5306c55de8fe390478b20f43adeee1">~Box</a>();</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                        <span class="keywordtype">void</span> setTaille(<span class="keywordtype">double</span>,<span class="keywordtype">double</span>,<span class="keywordtype">double</span>);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                        <span class="keywordtype">void</span> drawObject(Uint32 timeEllapsed);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                        <span class="keywordtype">void</span> <a class="code" href="class_d_g_l_1_1_box.html#adaa4f756b29c1ec6034d037ba38533d8">setTaille</a>(<span class="keywordtype">double</span>,<span class="keywordtype">double</span>,<span class="keywordtype">double</span>);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                        <span class="keywordtype">void</span> <a class="code" href="class_d_g_l_1_1_box.html#a6237008d700d1587decaf52edce1cb30">drawObject</a>(Uint32 timeEllapsed);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        };</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* BOX_H_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="namespace_d_g_l_html"><div class="ttname"><a href="namespace_d_g_l.html">DGL</a></div><div class="ttdef"><b>Definition:</b> Rotation.h:13</div></div>
+<div class="ttc" id="class_d_g_l_1_1_box_html_acd4cfd71414aa7f25467a17bfac8b92a"><div class="ttname"><a href="class_d_g_l_1_1_box.html#acd4cfd71414aa7f25467a17bfac8b92a">DGL::Box::Box</a></div><div class="ttdeci">Box(Object *parent)</div><div class="ttdef"><b>Definition:</b> Box.cpp:11</div></div>
+<div class="ttc" id="class_d_g_l_1_1_box_html_afa5306c55de8fe390478b20f43adeee1"><div class="ttname"><a href="class_d_g_l_1_1_box.html#afa5306c55de8fe390478b20f43adeee1">DGL::Box::~Box</a></div><div class="ttdeci">virtual ~Box()</div><div class="ttdef"><b>Definition:</b> Box.cpp:20</div></div>
+<div class="ttc" id="class_d_g_l_1_1_box_html_a846d012d9db76245517b26ba569a00fe"><div class="ttname"><a href="class_d_g_l_1_1_box.html#a846d012d9db76245517b26ba569a00fe">DGL::Box::x</a></div><div class="ttdeci">double x</div><div class="ttdef"><b>Definition:</b> Box.h:18</div></div>
+<div class="ttc" id="class_d_g_l_1_1_box_html_a8308feb25017d3e9a4aa52cc5ee8de9f"><div class="ttname"><a href="class_d_g_l_1_1_box.html#a8308feb25017d3e9a4aa52cc5ee8de9f">DGL::Box::y</a></div><div class="ttdeci">double y</div><div class="ttdef"><b>Definition:</b> Box.h:18</div></div>
+<div class="ttc" id="class_d_g_l_1_1_box_html_ac22fee4c42e8b88f2d812a77bd2239d2"><div class="ttname"><a href="class_d_g_l_1_1_box.html#ac22fee4c42e8b88f2d812a77bd2239d2">DGL::Box::z</a></div><div class="ttdeci">double z</div><div class="ttdef"><b>Definition:</b> Box.h:18</div></div>
+<div class="ttc" id="namespace_d_g_l_html"><div class="ttname"><a href="namespace_d_g_l.html">DGL</a></div><div class="ttdef"><b>Definition:</b> Quad.h:17</div></div>
+<div class="ttc" id="class_d_g_l_1_1_box_html_a6237008d700d1587decaf52edce1cb30"><div class="ttname"><a href="class_d_g_l_1_1_box.html#a6237008d700d1587decaf52edce1cb30">DGL::Box::drawObject</a></div><div class="ttdeci">void drawObject(Uint32 timeEllapsed)</div><div class="ttdef"><b>Definition:</b> Box.cpp:31</div></div>
 <div class="ttc" id="class_d_g_l_1_1_box_html"><div class="ttname"><a href="class_d_g_l_1_1_box.html">DGL::Box</a></div><div class="ttdef"><b>Definition:</b> Box.h:15</div></div>
+<div class="ttc" id="_volume_graphic_object_8h_html"><div class="ttname"><a href="_volume_graphic_object_8h.html">VolumeGraphicObject.h</a></div></div>
 <div class="ttc" id="class_d_g_l_1_1_object_html"><div class="ttname"><a href="class_d_g_l_1_1_object.html">DGL::Object</a></div><div class="ttdef"><b>Definition:</b> Object.h:22</div></div>
+<div class="ttc" id="class_d_g_l_1_1_volume_graphic_object_html"><div class="ttname"><a href="class_d_g_l_1_1_volume_graphic_object.html">DGL::VolumeGraphicObject</a></div><div class="ttdef"><b>Definition:</b> VolumeGraphicObject.h:8</div></div>
+<div class="ttc" id="class_d_g_l_1_1_box_html_adaa4f756b29c1ec6034d037ba38533d8"><div class="ttname"><a href="class_d_g_l_1_1_box.html#adaa4f756b29c1ec6034d037ba38533d8">DGL::Box::setTaille</a></div><div class="ttdeci">void setTaille(double, double, double)</div><div class="ttdef"><b>Definition:</b> Box.cpp:24</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><b>Box.h</b></li>
-    <li class="footer">Généré le Vendredi 6 Novembre 2015 23:24:54 pour DGL par
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="_box_8h.html">Box.h</a></li>
+    <li class="footer">Généré le Dimanche 8 Novembre 2015 18:16:43 pour DGL par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

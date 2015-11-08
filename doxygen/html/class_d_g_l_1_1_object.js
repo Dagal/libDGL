@@ -12,5 +12,9 @@ var class_d_g_l_1_1_object =
     [ "getType", "class_d_g_l_1_1_object.html#a0d2f66ce37436b14b99192a43ec16e1b", null ],
     [ "setMatrixSaved", "class_d_g_l_1_1_object.html#a6ebd12b692f6362449c2f66c091a9f0b", null ],
     [ "setName", "class_d_g_l_1_1_object.html#a5a40b80cddf80aad50960db20c1b75e8", null ],
-    [ "setType", "class_d_g_l_1_1_object.html#aa39936087159e7a50694edaff5f92c70", null ]
+    [ "setType", "class_d_g_l_1_1_object.html#aa39936087159e7a50694edaff5f92c70", null ],
+    [ "mMatrixSaved", "class_d_g_l_1_1_object.html#a473f1888582b5f24da530e5238f99dd7", null ],
+    [ "mName", "class_d_g_l_1_1_object.html#a925542b5ab77cd7550a6995e1825b299", null ],
+    [ "mParent", "class_d_g_l_1_1_object.html#a1150c8a523bc8e95143b4e9c7a40718b", null ],
+    [ "mType", "class_d_g_l_1_1_object.html#a6cb165aed5bb00b18c65f8e9b761a175", null ]
 ];

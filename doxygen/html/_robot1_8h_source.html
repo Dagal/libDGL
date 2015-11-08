@@ -46,6 +46,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
       <li>
@@ -69,6 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -105,7 +107,7 @@ $(document).ready(function(){initNavTree('_robot1_8h_source.html','');});
 <div class="title">Robot1.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<a href="_robot1_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Robot1.h</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *  Created on: 26 janv. 2014</span></div>
@@ -116,41 +118,60 @@ $(document).ready(function(){initNavTree('_robot1_8h_source.html','');});
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define ROBOT1_H_</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;SDL/SDL.h&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;Box.h&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_d_g_l.html">DGL</a></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_d_g_l_1_1_robot1.html">   16</a></span>&#160;        <span class="keyword">class </span><a class="code" href="class_d_g_l_1_1_robot1.html">Robot1</a> : <span class="keyword">public</span> <a class="code" href="class_d_g_l_1_1_object.html">Object</a></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                        Uint32 lastTime, currentTime, ellapsedTime;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                        <a class="code" href="class_d_g_l_1_1_box.html">Box</a> tete;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                        <a class="code" href="class_d_g_l_1_1_box.html">Box</a> cou;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                        <span class="keywordtype">double</span> angleZCou, sensCou;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                        <a class="code" href="class_d_g_l_1_1_box.html">Box</a> tronc;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                        <a class="code" href="class_d_g_l_1_1_box.html">Box</a> brasGauche;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                        <a class="code" href="class_d_g_l_1_1_box.html">Box</a> brasDroit;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                        <a class="code" href="class_d_g_l_1_1_box.html">Box</a> jambeGauche;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                        <a class="code" href="class_d_g_l_1_1_box.html">Box</a> jambeDroite;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                        <a class="code" href="class_d_g_l_1_1_robot1.html">Robot1</a>(<a class="code" href="class_d_g_l_1_1_object.html">Object</a>* parent);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                        <span class="keyword">virtual</span> ~<a class="code" href="class_d_g_l_1_1_robot1.html">Robot1</a>();</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                        <span class="keywordtype">void</span> drawObject(Uint32 timeEllapsed);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        };</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ROBOT1_H_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="class_d_g_l_1_1_robot1_html"><div class="ttname"><a href="class_d_g_l_1_1_robot1.html">DGL::Robot1</a></div><div class="ttdef"><b>Definition:</b> Robot1.h:16</div></div>
-<div class="ttc" id="namespace_d_g_l_html"><div class="ttname"><a href="namespace_d_g_l.html">DGL</a></div><div class="ttdef"><b>Definition:</b> Rotation.h:13</div></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_box_8h.html">Box.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_complex_graphic_object_8h.html">ComplexGraphicObject.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_d_g_l.html">DGL</a></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_d_g_l_1_1_robot1.html">   17</a></span>&#160;        <span class="keyword">class </span><a class="code" href="class_d_g_l_1_1_robot1.html">Robot1</a> : <span class="keyword">public</span> <a class="code" href="class_d_g_l_1_1_complex_graphic_object.html">ComplexGraphicObject</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_d_g_l_1_1_robot1.html#adb5ed899c38cb953f023f716db99b0e8">   20</a></span>&#160;                        Uint32 <a class="code" href="class_d_g_l_1_1_robot1.html#adb5ed899c38cb953f023f716db99b0e8">lastTime</a>, <a class="code" href="class_d_g_l_1_1_robot1.html#a31c2bf5f97e461f3ea10813db72eafc2">currentTime</a>, <a class="code" href="class_d_g_l_1_1_robot1.html#a22898b0df27b87a5e610a9fa00500750">ellapsedTime</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_d_g_l_1_1_robot1.html#a1c6e2568a521e6186e2e76699c0ea7d5">   21</a></span>&#160;                        <a class="code" href="class_d_g_l_1_1_box.html">Box</a> <a class="code" href="class_d_g_l_1_1_robot1.html#a1c6e2568a521e6186e2e76699c0ea7d5">tete</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_d_g_l_1_1_robot1.html#ab26888f2b11c2e5f79e23a2c42cf28f5">   22</a></span>&#160;                        <a class="code" href="class_d_g_l_1_1_box.html">Box</a> <a class="code" href="class_d_g_l_1_1_robot1.html#ab26888f2b11c2e5f79e23a2c42cf28f5">cou</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_d_g_l_1_1_robot1.html#ab08c6a63db16e8a550185ad4f20a16ff">   23</a></span>&#160;                        <span class="keywordtype">double</span> <a class="code" href="class_d_g_l_1_1_robot1.html#a453bf875671a0df74c4af5d54dd7404d">angleZCou</a>, <a class="code" href="class_d_g_l_1_1_robot1.html#ab08c6a63db16e8a550185ad4f20a16ff">sensCou</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_d_g_l_1_1_robot1.html#a5f8f1696b3ce5e50ef4cf2c53d334ea2">   24</a></span>&#160;                        <a class="code" href="class_d_g_l_1_1_box.html">Box</a> <a class="code" href="class_d_g_l_1_1_robot1.html#a5f8f1696b3ce5e50ef4cf2c53d334ea2">tronc</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_d_g_l_1_1_robot1.html#a1d887057b8dd379057b4e4a32f984796">   25</a></span>&#160;                        <a class="code" href="class_d_g_l_1_1_box.html">Box</a> <a class="code" href="class_d_g_l_1_1_robot1.html#a1d887057b8dd379057b4e4a32f984796">brasGauche</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_d_g_l_1_1_robot1.html#a0547931d701830a97db606338bb3cefc">   26</a></span>&#160;                        <a class="code" href="class_d_g_l_1_1_box.html">Box</a> <a class="code" href="class_d_g_l_1_1_robot1.html#a0547931d701830a97db606338bb3cefc">brasDroit</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_d_g_l_1_1_robot1.html#a94dded4d1a63edb57f3d4c94f0d7fc50">   27</a></span>&#160;                        <a class="code" href="class_d_g_l_1_1_box.html">Box</a> <a class="code" href="class_d_g_l_1_1_robot1.html#a94dded4d1a63edb57f3d4c94f0d7fc50">jambeGauche</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_d_g_l_1_1_robot1.html#a43e89478b52cba311ef66a13f5105a6c">   28</a></span>&#160;                        <a class="code" href="class_d_g_l_1_1_box.html">Box</a> <a class="code" href="class_d_g_l_1_1_robot1.html#a43e89478b52cba311ef66a13f5105a6c">jambeDroite</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                        <a class="code" href="class_d_g_l_1_1_robot1.html#a934382524c871b0afa2c785556335803">Robot1</a>(<a class="code" href="class_d_g_l_1_1_object.html">Object</a>* parent);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                        <span class="keyword">virtual</span> <a class="code" href="class_d_g_l_1_1_robot1.html#a2c5115cd73aa76a827b0601a5098b41d">~Robot1</a>();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                        <span class="keywordtype">void</span> <a class="code" href="class_d_g_l_1_1_robot1.html#a87988b7b75f38c2601b8a68c9e473898">drawObject</a>(Uint32 timeEllapsed);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        };</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ROBOT1_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="class_d_g_l_1_1_robot1_html_a22898b0df27b87a5e610a9fa00500750"><div class="ttname"><a href="class_d_g_l_1_1_robot1.html#a22898b0df27b87a5e610a9fa00500750">DGL::Robot1::ellapsedTime</a></div><div class="ttdeci">Uint32 ellapsedTime</div><div class="ttdef"><b>Definition:</b> Robot1.h:20</div></div>
+<div class="ttc" id="class_d_g_l_1_1_robot1_html_a934382524c871b0afa2c785556335803"><div class="ttname"><a href="class_d_g_l_1_1_robot1.html#a934382524c871b0afa2c785556335803">DGL::Robot1::Robot1</a></div><div class="ttdeci">Robot1(Object *parent)</div><div class="ttdef"><b>Definition:</b> Robot1.cpp:12</div></div>
+<div class="ttc" id="class_d_g_l_1_1_robot1_html_ab26888f2b11c2e5f79e23a2c42cf28f5"><div class="ttname"><a href="class_d_g_l_1_1_robot1.html#ab26888f2b11c2e5f79e23a2c42cf28f5">DGL::Robot1::cou</a></div><div class="ttdeci">Box cou</div><div class="ttdef"><b>Definition:</b> Robot1.h:22</div></div>
+<div class="ttc" id="class_d_g_l_1_1_robot1_html_a94dded4d1a63edb57f3d4c94f0d7fc50"><div class="ttname"><a href="class_d_g_l_1_1_robot1.html#a94dded4d1a63edb57f3d4c94f0d7fc50">DGL::Robot1::jambeGauche</a></div><div class="ttdeci">Box jambeGauche</div><div class="ttdef"><b>Definition:</b> Robot1.h:27</div></div>
+<div class="ttc" id="class_d_g_l_1_1_robot1_html_adb5ed899c38cb953f023f716db99b0e8"><div class="ttname"><a href="class_d_g_l_1_1_robot1.html#adb5ed899c38cb953f023f716db99b0e8">DGL::Robot1::lastTime</a></div><div class="ttdeci">Uint32 lastTime</div><div class="ttdef"><b>Definition:</b> Robot1.h:20</div></div>
+<div class="ttc" id="class_d_g_l_1_1_robot1_html_a1d887057b8dd379057b4e4a32f984796"><div class="ttname"><a href="class_d_g_l_1_1_robot1.html#a1d887057b8dd379057b4e4a32f984796">DGL::Robot1::brasGauche</a></div><div class="ttdeci">Box brasGauche</div><div class="ttdef"><b>Definition:</b> Robot1.h:25</div></div>
+<div class="ttc" id="class_d_g_l_1_1_robot1_html_a43e89478b52cba311ef66a13f5105a6c"><div class="ttname"><a href="class_d_g_l_1_1_robot1.html#a43e89478b52cba311ef66a13f5105a6c">DGL::Robot1::jambeDroite</a></div><div class="ttdeci">Box jambeDroite</div><div class="ttdef"><b>Definition:</b> Robot1.h:28</div></div>
+<div class="ttc" id="class_d_g_l_1_1_robot1_html_a453bf875671a0df74c4af5d54dd7404d"><div class="ttname"><a href="class_d_g_l_1_1_robot1.html#a453bf875671a0df74c4af5d54dd7404d">DGL::Robot1::angleZCou</a></div><div class="ttdeci">double angleZCou</div><div class="ttdef"><b>Definition:</b> Robot1.h:23</div></div>
+<div class="ttc" id="class_d_g_l_1_1_robot1_html_a0547931d701830a97db606338bb3cefc"><div class="ttname"><a href="class_d_g_l_1_1_robot1.html#a0547931d701830a97db606338bb3cefc">DGL::Robot1::brasDroit</a></div><div class="ttdeci">Box brasDroit</div><div class="ttdef"><b>Definition:</b> Robot1.h:26</div></div>
+<div class="ttc" id="class_d_g_l_1_1_robot1_html_a5f8f1696b3ce5e50ef4cf2c53d334ea2"><div class="ttname"><a href="class_d_g_l_1_1_robot1.html#a5f8f1696b3ce5e50ef4cf2c53d334ea2">DGL::Robot1::tronc</a></div><div class="ttdeci">Box tronc</div><div class="ttdef"><b>Definition:</b> Robot1.h:24</div></div>
+<div class="ttc" id="class_d_g_l_1_1_robot1_html_a31c2bf5f97e461f3ea10813db72eafc2"><div class="ttname"><a href="class_d_g_l_1_1_robot1.html#a31c2bf5f97e461f3ea10813db72eafc2">DGL::Robot1::currentTime</a></div><div class="ttdeci">Uint32 currentTime</div><div class="ttdef"><b>Definition:</b> Robot1.h:20</div></div>
+<div class="ttc" id="_complex_graphic_object_8h_html"><div class="ttname"><a href="_complex_graphic_object_8h.html">ComplexGraphicObject.h</a></div></div>
+<div class="ttc" id="class_d_g_l_1_1_robot1_html"><div class="ttname"><a href="class_d_g_l_1_1_robot1.html">DGL::Robot1</a></div><div class="ttdef"><b>Definition:</b> Robot1.h:17</div></div>
+<div class="ttc" id="namespace_d_g_l_html"><div class="ttname"><a href="namespace_d_g_l.html">DGL</a></div><div class="ttdef"><b>Definition:</b> Quad.h:17</div></div>
+<div class="ttc" id="class_d_g_l_1_1_complex_graphic_object_html"><div class="ttname"><a href="class_d_g_l_1_1_complex_graphic_object.html">DGL::ComplexGraphicObject</a></div><div class="ttdef"><b>Definition:</b> ComplexGraphicObject.h:8</div></div>
 <div class="ttc" id="class_d_g_l_1_1_box_html"><div class="ttname"><a href="class_d_g_l_1_1_box.html">DGL::Box</a></div><div class="ttdef"><b>Definition:</b> Box.h:15</div></div>
+<div class="ttc" id="class_d_g_l_1_1_robot1_html_ab08c6a63db16e8a550185ad4f20a16ff"><div class="ttname"><a href="class_d_g_l_1_1_robot1.html#ab08c6a63db16e8a550185ad4f20a16ff">DGL::Robot1::sensCou</a></div><div class="ttdeci">double sensCou</div><div class="ttdef"><b>Definition:</b> Robot1.h:23</div></div>
+<div class="ttc" id="class_d_g_l_1_1_robot1_html_a2c5115cd73aa76a827b0601a5098b41d"><div class="ttname"><a href="class_d_g_l_1_1_robot1.html#a2c5115cd73aa76a827b0601a5098b41d">DGL::Robot1::~Robot1</a></div><div class="ttdeci">virtual ~Robot1()</div><div class="ttdef"><b>Definition:</b> Robot1.cpp:37</div></div>
+<div class="ttc" id="class_d_g_l_1_1_robot1_html_a87988b7b75f38c2601b8a68c9e473898"><div class="ttname"><a href="class_d_g_l_1_1_robot1.html#a87988b7b75f38c2601b8a68c9e473898">DGL::Robot1::drawObject</a></div><div class="ttdeci">void drawObject(Uint32 timeEllapsed)</div><div class="ttdef"><b>Definition:</b> Robot1.cpp:42</div></div>
 <div class="ttc" id="class_d_g_l_1_1_object_html"><div class="ttname"><a href="class_d_g_l_1_1_object.html">DGL::Object</a></div><div class="ttdef"><b>Definition:</b> Object.h:22</div></div>
+<div class="ttc" id="_box_8h_html"><div class="ttname"><a href="_box_8h.html">Box.h</a></div></div>
+<div class="ttc" id="class_d_g_l_1_1_robot1_html_a1c6e2568a521e6186e2e76699c0ea7d5"><div class="ttname"><a href="class_d_g_l_1_1_robot1.html#a1c6e2568a521e6186e2e76699c0ea7d5">DGL::Robot1::tete</a></div><div class="ttdeci">Box tete</div><div class="ttdef"><b>Definition:</b> Robot1.h:21</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><b>Robot1.h</b></li>
-    <li class="footer">Généré le Vendredi 6 Novembre 2015 23:24:54 pour DGL par
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="_robot1_8h.html">Robot1.h</a></li>
+    <li class="footer">Généré le Dimanche 8 Novembre 2015 18:16:43 pour DGL par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

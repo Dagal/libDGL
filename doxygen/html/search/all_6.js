@@ -1,4 +1,23 @@
 var searchData=
 [
-  ['quad',['Quad',['../class_d_g_l_1_1_quad.html',1,'DGL']]]
+  ['generalobject',['GeneralObject',['../class_d_g_l_1_1_general_object.html',1,'DGL']]],
+  ['generalobject',['GeneralObject',['../class_d_g_l_1_1_general_object.html#a019c1d7ff8acfa3192437e06b1eb3e9d',1,'DGL::GeneralObject']]],
+  ['generalobject_2ecpp',['GeneralObject.cpp',['../_general_object_8cpp.html',1,'']]],
+  ['generalobject_2eh',['GeneralObject.h',['../_general_object_8h.html',1,'']]],
+  ['geta',['getA',['../class_d_g_l_1_1_rotation.html#a3a6422077ea151ab5fbe1f7c5936c003',1,'DGL::Rotation::getA()'],['../class_d_g_l_1_1_color.html#aa7325ead3178f08a35f27a915f1978e2',1,'DGL::Color::getA()']]],
+  ['getb',['getB',['../class_d_g_l_1_1_color.html#a8c036c2c5a43eab2302c359761e0e001',1,'DGL::Color']]],
+  ['getcurrentworld',['getCurrentWorld',['../class_d_g_l_1_1_window.html#a51f22c0f5e4129dc712ca27ef5c493ab',1,'DGL::Window']]],
+  ['getg',['getG',['../class_d_g_l_1_1_color.html#ae3d7993d6c68203c2902973ac4941d3d',1,'DGL::Color']]],
+  ['getmatrixsaved',['getMatrixSaved',['../class_d_g_l_1_1_object.html#a8e9573930ddf8c770506f9820cb948f9',1,'DGL::Object']]],
+  ['getname',['getName',['../class_d_g_l_1_1_object.html#aae25debf20c07b4df02f3c24ad8e4af0',1,'DGL::Object']]],
+  ['getr',['getR',['../class_d_g_l_1_1_color.html#a2a12036e82ae21387de39da2fad7de5e',1,'DGL::Color']]],
+  ['gettype',['getType',['../class_d_g_l_1_1_object.html#a0d2f66ce37436b14b99192a43ec16e1b',1,'DGL::Object']]],
+  ['getval',['getVal',['../class_d_g_l_1_1_double.html#a8b6e780a9983e2c6ce6ff1c359bff8a0',1,'DGL::Double']]],
+  ['getx',['getX',['../class_d_g_l_1_1_vector3_d.html#ad77fa04485a8225f223219a9f0fa6f94',1,'DGL::Vector3D']]],
+  ['gety',['getY',['../class_d_g_l_1_1_vector3_d.html#ad85a882564dd693efebb0116f232df32',1,'DGL::Vector3D']]],
+  ['getz',['getZ',['../class_d_g_l_1_1_vector3_d.html#a974a7ad84ad56fa6ce7f4f1993c8c057',1,'DGL::Vector3D']]],
+  ['graphicobject',['GraphicObject',['../class_d_g_l_1_1_graphic_object.html#a4fdc1d13e85d86c32126808f62513f77',1,'DGL::GraphicObject']]],
+  ['graphicobject',['GraphicObject',['../class_d_g_l_1_1_graphic_object.html',1,'DGL']]],
+  ['graphicobject_2ecpp',['GraphicObject.cpp',['../_graphic_object_8cpp.html',1,'']]],
+  ['graphicobject_2eh',['GraphicObject.h',['../_graphic_object_8h.html',1,'']]]
 ];

@@ -46,6 +46,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Fichiers</span></a></li>
       <li>
@@ -71,6 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
       <li><a href="annotated.html"><span>Liste&#160;des&#160;classes</span></a></li>
       <li><a href="classes.html"><span>Index&#160;des&#160;classes</span></a></li>
       <li><a href="inherits.html"><span>Hiérarchie&#160;des&#160;classes</span></a></li>
+      <li><a href="functions.html"><span>Membres&#160;de&#160;classe</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -105,22 +107,25 @@ $(document).ready(function(){initNavTree('class_d_g_l_1_1_vector3_d.html','');})
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Fonctions membres publiques</a> &#124;
-<a href="#pro-attribs">Attributs protégés</a> &#124;
+<a href="#pri-attribs">Attributs privés</a> &#124;
 <a href="class_d_g_l_1_1_vector3_d-members.html">Liste de tous les membres</a>  </div>
   <div class="headertitle">
 <div class="title">Référence de la classe DGL::Vector3D</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_vector3_d_8h_source.html">Vector3D.h</a>&gt;</code></p>
 <div class="dynheader">
 Graphe d'héritage de DGL::Vector3D:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_d_g_l_1_1_vector3_d__inherit__graph.png" border="0" usemap="#_d_g_l_1_1_vector3_d_inherit__map" alt="Inheritance graph"/></div>
 <map name="_d_g_l_1_1_vector3_d_inherit__map" id="_d_g_l_1_1_vector3_d_inherit__map">
-<area shape="rect" id="node3" href="class_d_g_l_1_1_color.html" title="DGL::Color" alt="" coords="5,155,96,181"/>
-<area shape="rect" id="node4" href="class_d_g_l_1_1_position.html" title="DGL::Position" alt="" coords="120,155,227,181"/>
-<area shape="rect" id="node5" href="class_d_g_l_1_1_rotation.html" title="DGL::Rotation" alt="" coords="251,155,362,181"/>
-<area shape="rect" id="node6" href="class_d_g_l_1_1_scale.html" title="DGL::Scale" alt="" coords="386,155,478,181"/>
-<area shape="rect" id="node2" href="class_d_g_l_1_1_object.html" title="DGL::Object" alt="" coords="191,5,289,32"/>
+<area shape="rect" id="node4" href="class_d_g_l_1_1_color.html" title="DGL::Color" alt="" coords="5,229,96,256"/>
+<area shape="rect" id="node5" href="class_d_g_l_1_1_location.html" title="DGL::Location" alt="" coords="121,229,231,256"/>
+<area shape="rect" id="node6" href="class_d_g_l_1_1_rotation.html" title="DGL::Rotation" alt="" coords="255,229,366,256"/>
+<area shape="rect" id="node7" href="class_d_g_l_1_1_scale.html" title="DGL::Scale" alt="" coords="390,229,482,256"/>
+<area shape="rect" id="node2" href="class_d_g_l_1_1_basic_object.html" title="DGL::BasicObject" alt="" coords="177,80,308,107"/>
+<area shape="rect" id="node3" href="class_d_g_l_1_1_object.html" title="DGL::Object" alt="" coords="194,5,291,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">légende</a>]</span></center></div>
 <div class="dynheader">
@@ -128,97 +133,368 @@ Graphe de collaboration de DGL::Vector3D:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_d_g_l_1_1_vector3_d__coll__graph.png" border="0" usemap="#_d_g_l_1_1_vector3_d_coll__map" alt="Collaboration graph"/></div>
 <map name="_d_g_l_1_1_vector3_d_coll__map" id="_d_g_l_1_1_vector3_d_coll__map">
-<area shape="rect" id="node2" href="class_d_g_l_1_1_object.html" title="DGL::Object" alt="" coords="15,5,112,32"/>
+<area shape="rect" id="node2" href="class_d_g_l_1_1_basic_object.html" title="DGL::BasicObject" alt="" coords="5,81,136,108"/>
+<area shape="rect" id="node4" href="class_d_g_l_1_1_double.html" title="DGL::Double" alt="" coords="93,157,193,184"/>
+<area shape="rect" id="node3" href="class_d_g_l_1_1_object.html" title="DGL::Object" alt="" coords="22,5,119,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">légende</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
-<tr class="memitem:a9e92384b24e7f7e2fde879f399f9517d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9e92384b24e7f7e2fde879f399f9517d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Vector3D</b> (<a class="el" href="class_d_g_l_1_1_object.html">Object</a> *parent)</td></tr>
+<tr class="memitem:a9e92384b24e7f7e2fde879f399f9517d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_g_l_1_1_vector3_d.html#a9e92384b24e7f7e2fde879f399f9517d">Vector3D</a> (<a class="el" href="class_d_g_l_1_1_object.html">Object</a> *parent)</td></tr>
 <tr class="separator:a9e92384b24e7f7e2fde879f399f9517d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f6c5ccf6ac30cae0b44eafd4fb51962"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f6c5ccf6ac30cae0b44eafd4fb51962"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getX</b> ()</td></tr>
-<tr class="separator:a4f6c5ccf6ac30cae0b44eafd4fb51962"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83c0813df49b8e1402092b049f00979c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a83c0813df49b8e1402092b049f00979c"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getY</b> ()</td></tr>
-<tr class="separator:a83c0813df49b8e1402092b049f00979c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a251bbf9fbba82dccc03bccdc67ac16a8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a251bbf9fbba82dccc03bccdc67ac16a8"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getZ</b> ()</td></tr>
-<tr class="separator:a251bbf9fbba82dccc03bccdc67ac16a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cd7fbee6b883c4325e8cd9068c9bc61"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6cd7fbee6b883c4325e8cd9068c9bc61"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set</b> (double xv, double yv, double zv)</td></tr>
-<tr class="separator:a6cd7fbee6b883c4325e8cd9068c9bc61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d824a3dfd1c9ed08030caa063076f25"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8d824a3dfd1c9ed08030caa063076f25"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setX</b> (double val)</td></tr>
-<tr class="separator:a8d824a3dfd1c9ed08030caa063076f25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a755b1f5c5907b2e15c039c866580d86c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a755b1f5c5907b2e15c039c866580d86c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setY</b> (double val)</td></tr>
-<tr class="separator:a755b1f5c5907b2e15c039c866580d86c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ff2c33b94ba43f28a7c07385c6ccc0d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ff2c33b94ba43f28a7c07385c6ccc0d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setZ</b> (double val)</td></tr>
-<tr class="separator:a9ff2c33b94ba43f28a7c07385c6ccc0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c489a22317cbedb6b3965307cd8677f"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_g_l_1_1_vector3_d.html#a2c489a22317cbedb6b3965307cd8677f">~Vector3D</a> ()</td></tr>
+<tr class="separator:a2c489a22317cbedb6b3965307cd8677f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad77fa04485a8225f223219a9f0fa6f94"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_d_g_l_1_1_double.html">Double</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_g_l_1_1_vector3_d.html#ad77fa04485a8225f223219a9f0fa6f94">getX</a> () const </td></tr>
+<tr class="separator:ad77fa04485a8225f223219a9f0fa6f94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad85a882564dd693efebb0116f232df32"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_d_g_l_1_1_double.html">Double</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_g_l_1_1_vector3_d.html#ad85a882564dd693efebb0116f232df32">getY</a> () const </td></tr>
+<tr class="separator:ad85a882564dd693efebb0116f232df32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a974a7ad84ad56fa6ce7f4f1993c8c057"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_d_g_l_1_1_double.html">Double</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_g_l_1_1_vector3_d.html#a974a7ad84ad56fa6ce7f4f1993c8c057">getZ</a> () const </td></tr>
+<tr class="separator:a974a7ad84ad56fa6ce7f4f1993c8c057"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86394d8ca9717b0c6994c1cf9adcfb3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_g_l_1_1_vector3_d.html#a86394d8ca9717b0c6994c1cf9adcfb3f">set</a> (const <a class="el" href="class_d_g_l_1_1_double.html">Double</a> &amp;x, const <a class="el" href="class_d_g_l_1_1_double.html">Double</a> &amp;y, const <a class="el" href="class_d_g_l_1_1_double.html">Double</a> &amp;z)</td></tr>
+<tr class="separator:a86394d8ca9717b0c6994c1cf9adcfb3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a68e5fa11413ac194cc86e7bd1b5ae4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_g_l_1_1_vector3_d.html#a3a68e5fa11413ac194cc86e7bd1b5ae4">setX</a> (const <a class="el" href="class_d_g_l_1_1_double.html">Double</a> &amp;x)</td></tr>
+<tr class="separator:a3a68e5fa11413ac194cc86e7bd1b5ae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe0b5529dbd9b6e2c88e7055aeebf8fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_g_l_1_1_vector3_d.html#abe0b5529dbd9b6e2c88e7055aeebf8fb">setY</a> (const <a class="el" href="class_d_g_l_1_1_double.html">Double</a> &amp;y)</td></tr>
+<tr class="separator:abe0b5529dbd9b6e2c88e7055aeebf8fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9936bf338a0bd82c407f732a723e5422"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_g_l_1_1_vector3_d.html#a9936bf338a0bd82c407f732a723e5422">setZ</a> (const <a class="el" href="class_d_g_l_1_1_double.html">Double</a> &amp;z)</td></tr>
+<tr class="separator:a9936bf338a0bd82c407f732a723e5422"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_d_g_l_1_1_basic_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_d_g_l_1_1_basic_object')"><img src="closed.png" alt="-"/>&#160;Fonctions membres publiques hérités de <a class="el" href="class_d_g_l_1_1_basic_object.html">DGL::BasicObject</a></td></tr>
+<tr class="memitem:ace080fe1520c3a77f9af8e538c10fce6 inherit pub_methods_class_d_g_l_1_1_basic_object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_g_l_1_1_basic_object.html#ace080fe1520c3a77f9af8e538c10fce6">BasicObject</a> (<a class="el" href="class_d_g_l_1_1_object.html">Object</a> *parent)</td></tr>
+<tr class="separator:ace080fe1520c3a77f9af8e538c10fce6 inherit pub_methods_class_d_g_l_1_1_basic_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4242fb1d511984f7fe53b9c791f3fcb7 inherit pub_methods_class_d_g_l_1_1_basic_object"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_g_l_1_1_basic_object.html#a4242fb1d511984f7fe53b9c791f3fcb7">~BasicObject</a> ()</td></tr>
+<tr class="separator:a4242fb1d511984f7fe53b9c791f3fcb7 inherit pub_methods_class_d_g_l_1_1_basic_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_d_g_l_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_d_g_l_1_1_object')"><img src="closed.png" alt="-"/>&#160;Fonctions membres publiques hérités de <a class="el" href="class_d_g_l_1_1_object.html">DGL::Object</a></td></tr>
-<tr class="memitem:aa39936087159e7a50694edaff5f92c70 inherit pub_methods_class_d_g_l_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa39936087159e7a50694edaff5f92c70"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setType</b> (const int &amp;type)</td></tr>
+<tr class="memitem:aa39936087159e7a50694edaff5f92c70 inherit pub_methods_class_d_g_l_1_1_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_g_l_1_1_object.html#aa39936087159e7a50694edaff5f92c70">setType</a> (const int &amp;type)</td></tr>
 <tr class="separator:aa39936087159e7a50694edaff5f92c70 inherit pub_methods_class_d_g_l_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d2f66ce37436b14b99192a43ec16e1b inherit pub_methods_class_d_g_l_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0d2f66ce37436b14b99192a43ec16e1b"></a>
-const int &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getType</b> () const </td></tr>
+<tr class="memitem:a0d2f66ce37436b14b99192a43ec16e1b inherit pub_methods_class_d_g_l_1_1_object"><td class="memItemLeft" align="right" valign="top">const int &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_g_l_1_1_object.html#a0d2f66ce37436b14b99192a43ec16e1b">getType</a> () const </td></tr>
 <tr class="separator:a0d2f66ce37436b14b99192a43ec16e1b inherit pub_methods_class_d_g_l_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a40b80cddf80aad50960db20c1b75e8 inherit pub_methods_class_d_g_l_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a40b80cddf80aad50960db20c1b75e8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setName</b> (const std::string &amp;name)</td></tr>
+<tr class="memitem:a5a40b80cddf80aad50960db20c1b75e8 inherit pub_methods_class_d_g_l_1_1_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_g_l_1_1_object.html#a5a40b80cddf80aad50960db20c1b75e8">setName</a> (const std::string &amp;name)</td></tr>
 <tr class="separator:a5a40b80cddf80aad50960db20c1b75e8 inherit pub_methods_class_d_g_l_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae25debf20c07b4df02f3c24ad8e4af0 inherit pub_methods_class_d_g_l_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae25debf20c07b4df02f3c24ad8e4af0"></a>
-const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getName</b> () const </td></tr>
+<tr class="memitem:aae25debf20c07b4df02f3c24ad8e4af0 inherit pub_methods_class_d_g_l_1_1_object"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_g_l_1_1_object.html#aae25debf20c07b4df02f3c24ad8e4af0">getName</a> () const </td></tr>
 <tr class="separator:aae25debf20c07b4df02f3c24ad8e4af0 inherit pub_methods_class_d_g_l_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ebd12b692f6362449c2f66c091a9f0b inherit pub_methods_class_d_g_l_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ebd12b692f6362449c2f66c091a9f0b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setMatrixSaved</b> (const bool &amp;saved=true)</td></tr>
+<tr class="memitem:a6ebd12b692f6362449c2f66c091a9f0b inherit pub_methods_class_d_g_l_1_1_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_g_l_1_1_object.html#a6ebd12b692f6362449c2f66c091a9f0b">setMatrixSaved</a> (const bool &amp;saved=true)</td></tr>
 <tr class="separator:a6ebd12b692f6362449c2f66c091a9f0b inherit pub_methods_class_d_g_l_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e9573930ddf8c770506f9820cb948f9 inherit pub_methods_class_d_g_l_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e9573930ddf8c770506f9820cb948f9"></a>
-const bool &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getMatrixSaved</b> () const </td></tr>
+<tr class="memitem:a8e9573930ddf8c770506f9820cb948f9 inherit pub_methods_class_d_g_l_1_1_object"><td class="memItemLeft" align="right" valign="top">const bool &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_g_l_1_1_object.html#a8e9573930ddf8c770506f9820cb948f9">getMatrixSaved</a> () const </td></tr>
 <tr class="separator:a8e9573930ddf8c770506f9820cb948f9 inherit pub_methods_class_d_g_l_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac38a523c5a7cb552b15ed3d043788781 inherit pub_methods_class_d_g_l_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac38a523c5a7cb552b15ed3d043788781"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addObject</b> (<a class="el" href="class_d_g_l_1_1_object.html">Object</a> *object)</td></tr>
+<tr class="memitem:ac38a523c5a7cb552b15ed3d043788781 inherit pub_methods_class_d_g_l_1_1_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_g_l_1_1_object.html#ac38a523c5a7cb552b15ed3d043788781">addObject</a> (<a class="el" href="class_d_g_l_1_1_object.html">Object</a> *object)</td></tr>
 <tr class="separator:ac38a523c5a7cb552b15ed3d043788781 inherit pub_methods_class_d_g_l_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e509bfe94d0876937cbe93bce0e2d8a inherit pub_methods_class_d_g_l_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e509bfe94d0876937cbe93bce0e2d8a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>draw</b> (Uint32 timeEllapsed)</td></tr>
+<tr class="memitem:a2e509bfe94d0876937cbe93bce0e2d8a inherit pub_methods_class_d_g_l_1_1_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_g_l_1_1_object.html#a2e509bfe94d0876937cbe93bce0e2d8a">draw</a> (Uint32 timeEllapsed)</td></tr>
 <tr class="separator:a2e509bfe94d0876937cbe93bce0e2d8a inherit pub_methods_class_d_g_l_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a159ea6af66500936c329ed81324294cb inherit pub_methods_class_d_g_l_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a159ea6af66500936c329ed81324294cb"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>drawObject</b> (Uint32 timeEllapsed)</td></tr>
+<tr class="memitem:a159ea6af66500936c329ed81324294cb inherit pub_methods_class_d_g_l_1_1_object"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_g_l_1_1_object.html#a159ea6af66500936c329ed81324294cb">drawObject</a> (Uint32 timeEllapsed)</td></tr>
 <tr class="separator:a159ea6af66500936c329ed81324294cb inherit pub_methods_class_d_g_l_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa03a73fdfc5653f3aca7811d2ab6456c inherit pub_methods_class_d_g_l_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa03a73fdfc5653f3aca7811d2ab6456c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>drawChildren</b> (Uint32 timeEllapsed)</td></tr>
+<tr class="memitem:aa03a73fdfc5653f3aca7811d2ab6456c inherit pub_methods_class_d_g_l_1_1_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_g_l_1_1_object.html#aa03a73fdfc5653f3aca7811d2ab6456c">drawChildren</a> (Uint32 timeEllapsed)</td></tr>
 <tr class="separator:aa03a73fdfc5653f3aca7811d2ab6456c inherit pub_methods_class_d_g_l_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0baffc195b4b72aae203918eb1e46fef inherit pub_methods_class_d_g_l_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0baffc195b4b72aae203918eb1e46fef"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>drawCenter</b> ()</td></tr>
+<tr class="memitem:a0baffc195b4b72aae203918eb1e46fef inherit pub_methods_class_d_g_l_1_1_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_g_l_1_1_object.html#a0baffc195b4b72aae203918eb1e46fef">drawCenter</a> ()</td></tr>
 <tr class="separator:a0baffc195b4b72aae203918eb1e46fef inherit pub_methods_class_d_g_l_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b018ae069a275eb3207c54a08f9a6d3 inherit pub_methods_class_d_g_l_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b018ae069a275eb3207c54a08f9a6d3"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Object</b> (<a class="el" href="class_d_g_l_1_1_object.html">Object</a> *parent)</td></tr>
+<tr class="memitem:a4b018ae069a275eb3207c54a08f9a6d3 inherit pub_methods_class_d_g_l_1_1_object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_g_l_1_1_object.html#a4b018ae069a275eb3207c54a08f9a6d3">Object</a> (<a class="el" href="class_d_g_l_1_1_object.html">Object</a> *parent)</td></tr>
 <tr class="separator:a4b018ae069a275eb3207c54a08f9a6d3 inherit pub_methods_class_d_g_l_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdf99f90cf63e3c92397b7bebc307bb8 inherit pub_methods_class_d_g_l_1_1_object"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_g_l_1_1_object.html#acdf99f90cf63e3c92397b7bebc307bb8">~Object</a> ()</td></tr>
+<tr class="separator:acdf99f90cf63e3c92397b7bebc307bb8 inherit pub_methods_class_d_g_l_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Attributs protégés</h2></td></tr>
-<tr class="memitem:a37eecf2894d3ea3084c7f2cdeae0adbc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a37eecf2894d3ea3084c7f2cdeae0adbc"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>x</b></td></tr>
-<tr class="separator:a37eecf2894d3ea3084c7f2cdeae0adbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a514b16b99341421cd71c00af202f47c4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a514b16b99341421cd71c00af202f47c4"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>y</b></td></tr>
-<tr class="separator:a514b16b99341421cd71c00af202f47c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7ba3614188fbf92c5a14f9585bd6599"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa7ba3614188fbf92c5a14f9585bd6599"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>z</b></td></tr>
-<tr class="separator:aa7ba3614188fbf92c5a14f9585bd6599"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Attributs privés</h2></td></tr>
+<tr class="memitem:a2ec05419d8fa6a711837e14b1e78b450"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_d_g_l_1_1_double.html">Double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_g_l_1_1_vector3_d.html#a2ec05419d8fa6a711837e14b1e78b450">mX</a></td></tr>
+<tr class="separator:a2ec05419d8fa6a711837e14b1e78b450"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8887edaf2bf3d9d1c1513ee1b7104386"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_d_g_l_1_1_double.html">Double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_g_l_1_1_vector3_d.html#a8887edaf2bf3d9d1c1513ee1b7104386">mY</a></td></tr>
+<tr class="separator:a8887edaf2bf3d9d1c1513ee1b7104386"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1ae9b93e0dc0679dc7a772474aa11dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_d_g_l_1_1_double.html">Double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_g_l_1_1_vector3_d.html#ac1ae9b93e0dc0679dc7a772474aa11dc">mZ</a></td></tr>
+<tr class="separator:ac1ae9b93e0dc0679dc7a772474aa11dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a class="anchor" id="a9e92384b24e7f7e2fde879f399f9517d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DGL::Vector3D::Vector3D </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_d_g_l_1_1_object.html">Object</a> *&#160;</td>
+          <td class="paramname"><em>parent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2c489a22317cbedb6b3965307cd8677f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DGL::Vector3D::~Vector3D </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a class="anchor" id="ad77fa04485a8225f223219a9f0fa6f94"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double DGL::Vector3D::getX </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad85a882564dd693efebb0116f232df32"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double DGL::Vector3D::getY </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a974a7ad84ad56fa6ce7f4f1993c8c057"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double DGL::Vector3D::getZ </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a86394d8ca9717b0c6994c1cf9adcfb3f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DGL::Vector3D::set </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_d_g_l_1_1_double.html">Double</a> &amp;&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_d_g_l_1_1_double.html">Double</a> &amp;&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_d_g_l_1_1_double.html">Double</a> &amp;&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3a68e5fa11413ac194cc86e7bd1b5ae4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DGL::Vector3D::setX </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_d_g_l_1_1_double.html">Double</a> &amp;&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abe0b5529dbd9b6e2c88e7055aeebf8fb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DGL::Vector3D::setY </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_d_g_l_1_1_double.html">Double</a> &amp;&#160;</td>
+          <td class="paramname"><em>y</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9936bf338a0bd82c407f732a723e5422"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DGL::Vector3D::setZ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_d_g_l_1_1_double.html">Double</a> &amp;&#160;</td>
+          <td class="paramname"><em>z</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a class="anchor" id="a2ec05419d8fa6a711837e14b1e78b450"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_d_g_l_1_1_double.html">Double</a> DGL::Vector3D::mX</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8887edaf2bf3d9d1c1513ee1b7104386"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_d_g_l_1_1_double.html">Double</a> DGL::Vector3D::mY</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac1ae9b93e0dc0679dc7a772474aa11dc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_d_g_l_1_1_double.html">Double</a> DGL::Vector3D::mZ</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
 <li><a class="el" href="_vector3_d_8h_source.html">Vector3D.h</a></li>
-<li>Vector3D.cpp</li>
+<li><a class="el" href="_vector3_d_8cpp.html">Vector3D.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>DGL</b></li><li class="navelem"><a class="el" href="class_d_g_l_1_1_vector3_d.html">Vector3D</a></li>
-    <li class="footer">Généré le Vendredi 6 Novembre 2015 23:24:54 pour DGL par
+    <li class="navelem"><a class="el" href="namespace_d_g_l.html">DGL</a></li><li class="navelem"><a class="el" href="class_d_g_l_1_1_vector3_d.html">Vector3D</a></li>
+    <li class="footer">Généré le Dimanche 8 Novembre 2015 18:16:44 pour DGL par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

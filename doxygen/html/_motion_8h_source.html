@@ -46,6 +46,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
       <li>
@@ -69,6 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -105,7 +107,7 @@ $(document).ready(function(){initNavTree('_motion_8h_source.html','');});
 <div class="title">Motion.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<a href="_motion_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Motion.h</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *  Created on: 19 janv. 2014</span></div>
@@ -115,28 +117,32 @@ $(document).ready(function(){initNavTree('_motion_8h_source.html','');});
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef MOTION_H_</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define MOTION_H_</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;Object.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_physical_object_8h.html">PhysicalObject.h</a>&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_d_g_l.html">DGL</a></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_d_g_l_1_1_motion.html">   15</a></span>&#160;        <span class="keyword">class </span><a class="code" href="class_d_g_l_1_1_motion.html">Motion</a> : <span class="keyword">public</span> <a class="code" href="class_d_g_l_1_1_object.html">Object</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_d_g_l_1_1_motion.html">   15</a></span>&#160;        <span class="keyword">class </span><a class="code" href="class_d_g_l_1_1_motion.html">Motion</a> : <span class="keyword">public</span> <a class="code" href="class_d_g_l_1_1_physical_object.html">PhysicalObject</a></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        {</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                        <a class="code" href="class_d_g_l_1_1_motion.html">Motion</a>(<a class="code" href="class_d_g_l_1_1_object.html">Object</a>* parent);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                        <span class="keyword">virtual</span> ~<a class="code" href="class_d_g_l_1_1_motion.html">Motion</a>();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                        <a class="code" href="class_d_g_l_1_1_motion.html#a4e338bd27e6066ac6de376049f4d5da7">Motion</a>(<a class="code" href="class_d_g_l_1_1_object.html">Object</a>* parent);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                        <span class="keyword">virtual</span> <a class="code" href="class_d_g_l_1_1_motion.html#afcf49b7fd1f11ca9fe71306b4fedea7f">~Motion</a>();</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        };</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* MOTION_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="class_d_g_l_1_1_motion_html_a4e338bd27e6066ac6de376049f4d5da7"><div class="ttname"><a href="class_d_g_l_1_1_motion.html#a4e338bd27e6066ac6de376049f4d5da7">DGL::Motion::Motion</a></div><div class="ttdeci">Motion(Object *parent)</div><div class="ttdef"><b>Definition:</b> Motion.cpp:12</div></div>
+<div class="ttc" id="class_d_g_l_1_1_motion_html_afcf49b7fd1f11ca9fe71306b4fedea7f"><div class="ttname"><a href="class_d_g_l_1_1_motion.html#afcf49b7fd1f11ca9fe71306b4fedea7f">DGL::Motion::~Motion</a></div><div class="ttdeci">virtual ~Motion()</div><div class="ttdef"><b>Definition:</b> Motion.cpp:18</div></div>
 <div class="ttc" id="class_d_g_l_1_1_motion_html"><div class="ttname"><a href="class_d_g_l_1_1_motion.html">DGL::Motion</a></div><div class="ttdef"><b>Definition:</b> Motion.h:15</div></div>
-<div class="ttc" id="namespace_d_g_l_html"><div class="ttname"><a href="namespace_d_g_l.html">DGL</a></div><div class="ttdef"><b>Definition:</b> Rotation.h:13</div></div>
+<div class="ttc" id="class_d_g_l_1_1_physical_object_html"><div class="ttname"><a href="class_d_g_l_1_1_physical_object.html">DGL::PhysicalObject</a></div><div class="ttdef"><b>Definition:</b> PhysicalObject.h:8</div></div>
+<div class="ttc" id="namespace_d_g_l_html"><div class="ttname"><a href="namespace_d_g_l.html">DGL</a></div><div class="ttdef"><b>Definition:</b> Quad.h:17</div></div>
 <div class="ttc" id="class_d_g_l_1_1_object_html"><div class="ttname"><a href="class_d_g_l_1_1_object.html">DGL::Object</a></div><div class="ttdef"><b>Definition:</b> Object.h:22</div></div>
+<div class="ttc" id="_physical_object_8h_html"><div class="ttname"><a href="_physical_object_8h.html">PhysicalObject.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><b>Motion.h</b></li>
-    <li class="footer">Généré le Vendredi 6 Novembre 2015 23:24:54 pour DGL par
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="_motion_8h.html">Motion.h</a></li>
+    <li class="footer">Généré le Dimanche 8 Novembre 2015 18:16:43 pour DGL par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

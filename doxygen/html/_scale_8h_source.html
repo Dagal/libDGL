@@ -46,6 +46,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
       <li>
@@ -69,6 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -105,7 +107,7 @@ $(document).ready(function(){initNavTree('_scale_8h_source.html','');});
 <div class="title">Scale.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<a href="_scale_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Scale.h</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *  Created on: 17 févr. 2014</span></div>
@@ -115,7 +117,7 @@ $(document).ready(function(){initNavTree('_scale_8h_source.html','');});
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef SCALE_H_</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define SCALE_H_</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;Vector3D.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_vector3_d_8h.html">Vector3D.h</a>&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_d_g_l.html">DGL</a></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
@@ -125,26 +127,30 @@ $(document).ready(function(){initNavTree('_scale_8h_source.html','');});
 <div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_d_g_l_1_1_scale.html">   18</a></span>&#160;        <span class="keyword">class </span><a class="code" href="class_d_g_l_1_1_scale.html">Scale</a> : <span class="keyword">public</span> <a class="code" href="class_d_g_l_1_1_vector3_d.html">Vector3D</a></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        {</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                        <a class="code" href="class_d_g_l_1_1_scale.html">Scale</a>(<a class="code" href="class_d_g_l_1_1_object.html">Object</a>* parent);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                        <a class="code" href="class_d_g_l_1_1_scale.html#a5e9afb12d2ba1d5b9a00d38340fb96ea">Scale</a>(<a class="code" href="class_d_g_l_1_1_object.html">Object</a>* parent);</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                        <span class="keyword">virtual</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                                ~<a class="code" href="class_d_g_l_1_1_scale.html">Scale</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                                <a class="code" href="class_d_g_l_1_1_scale.html#a49fe845ec9b703371ed1ec7653214c90">~Scale</a>();</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                        <span class="keywordtype">void</span> drawObject(Uint32 ellapsedTime);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                        <span class="keywordtype">void</span> <a class="code" href="class_d_g_l_1_1_scale.html#a2f1359e6cb949d34d39b60e410132e7c">drawObject</a>(Uint32 ellapsedTime);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        };</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* SCALE_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="class_d_g_l_1_1_scale_html"><div class="ttname"><a href="class_d_g_l_1_1_scale.html">DGL::Scale</a></div><div class="ttdef"><b>Definition:</b> Scale.h:18</div></div>
-<div class="ttc" id="class_d_g_l_1_1_vector3_d_html"><div class="ttname"><a href="class_d_g_l_1_1_vector3_d.html">DGL::Vector3D</a></div><div class="ttdef"><b>Definition:</b> Vector3D.h:15</div></div>
-<div class="ttc" id="namespace_d_g_l_html"><div class="ttname"><a href="namespace_d_g_l.html">DGL</a></div><div class="ttdef"><b>Definition:</b> Rotation.h:13</div></div>
+<div class="ttc" id="_vector3_d_8h_html"><div class="ttname"><a href="_vector3_d_8h.html">Vector3D.h</a></div></div>
+<div class="ttc" id="class_d_g_l_1_1_scale_html_a2f1359e6cb949d34d39b60e410132e7c"><div class="ttname"><a href="class_d_g_l_1_1_scale.html#a2f1359e6cb949d34d39b60e410132e7c">DGL::Scale::drawObject</a></div><div class="ttdeci">void drawObject(Uint32 ellapsedTime)</div><div class="ttdef"><b>Definition:</b> Scale.cpp:23</div></div>
+<div class="ttc" id="class_d_g_l_1_1_vector3_d_html"><div class="ttname"><a href="class_d_g_l_1_1_vector3_d.html">DGL::Vector3D</a></div><div class="ttdef"><b>Definition:</b> Vector3D.h:16</div></div>
+<div class="ttc" id="namespace_d_g_l_html"><div class="ttname"><a href="namespace_d_g_l.html">DGL</a></div><div class="ttdef"><b>Definition:</b> Quad.h:17</div></div>
+<div class="ttc" id="class_d_g_l_1_1_scale_html_a49fe845ec9b703371ed1ec7653214c90"><div class="ttname"><a href="class_d_g_l_1_1_scale.html#a49fe845ec9b703371ed1ec7653214c90">DGL::Scale::~Scale</a></div><div class="ttdeci">virtual ~Scale()</div><div class="ttdef"><b>Definition:</b> Scale.cpp:18</div></div>
 <div class="ttc" id="class_d_g_l_1_1_object_html"><div class="ttname"><a href="class_d_g_l_1_1_object.html">DGL::Object</a></div><div class="ttdef"><b>Definition:</b> Object.h:22</div></div>
+<div class="ttc" id="class_d_g_l_1_1_scale_html_a5e9afb12d2ba1d5b9a00d38340fb96ea"><div class="ttname"><a href="class_d_g_l_1_1_scale.html#a5e9afb12d2ba1d5b9a00d38340fb96ea">DGL::Scale::Scale</a></div><div class="ttdeci">Scale(Object *parent)</div><div class="ttdef"><b>Definition:</b> Scale.cpp:12</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><b>Scale.h</b></li>
-    <li class="footer">Généré le Vendredi 6 Novembre 2015 23:24:54 pour DGL par
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="_scale_8h.html">Scale.h</a></li>
+    <li class="footer">Généré le Dimanche 8 Novembre 2015 18:16:43 pour DGL par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

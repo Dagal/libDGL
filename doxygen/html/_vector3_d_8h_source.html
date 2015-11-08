@@ -46,6 +46,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
       <li>
@@ -69,6 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -105,7 +107,7 @@ $(document).ready(function(){initNavTree('_vector3_d_8h_source.html','');});
 <div class="title">Vector3D.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<a href="_vector3_d_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Vector3D.h</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *  Created on: 25 janv. 2014</span></div>
@@ -115,51 +117,59 @@ $(document).ready(function(){initNavTree('_vector3_d_8h_source.html','');});
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef VECTOR3D_H_</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define VECTOR3D_H_</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;Object.h&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_d_g_l.html">DGL</a></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_d_g_l_1_1_vector3_d.html">   15</a></span>&#160;        <span class="keyword">class </span><a class="code" href="class_d_g_l_1_1_vector3_d.html">Vector3D</a> : <span class="keyword">public</span> <a class="code" href="class_d_g_l_1_1_object.html">Object</a></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                <span class="comment">// Variables</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_basic_object_8h.html">BasicObject.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_double_8h.html">Double.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_d_g_l.html">DGL</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_d_g_l_1_1_vector3_d.html">   16</a></span>&#160;        <span class="keyword">class </span><a class="code" href="class_d_g_l_1_1_vector3_d.html">Vector3D</a> : <span class="keyword">public</span> <a class="code" href="class_d_g_l_1_1_basic_object.html">BasicObject</a></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        {</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                        <span class="keywordtype">double</span> x;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                        <span class="keywordtype">double</span> y;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                        <span class="keywordtype">double</span> z;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                        <span class="comment">// Méthodes</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                        <a class="code" href="class_d_g_l_1_1_vector3_d.html">Vector3D</a>(<a class="code" href="class_d_g_l_1_1_object.html">Object</a>* parent);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                        <span class="keyword">virtual</span> ~<a class="code" href="class_d_g_l_1_1_vector3_d.html">Vector3D</a>();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                        <span class="keywordtype">double</span> getX();</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                        <span class="keywordtype">double</span> getY();</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                        <span class="keywordtype">double</span> getZ();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                        <span class="keywordtype">void</span> set(<span class="keywordtype">double</span> xv, <span class="keywordtype">double</span> yv, <span class="keywordtype">double</span> zv);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                        <span class="keywordtype">void</span> setX(<span class="keywordtype">double</span> val);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                        <span class="keywordtype">void</span> setY(<span class="keywordtype">double</span> val);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                        <span class="keywordtype">void</span> setZ(<span class="keywordtype">double</span> val);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        };</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* VECTOR3D_H_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="class_d_g_l_1_1_vector3_d_html"><div class="ttname"><a href="class_d_g_l_1_1_vector3_d.html">DGL::Vector3D</a></div><div class="ttdef"><b>Definition:</b> Vector3D.h:15</div></div>
-<div class="ttc" id="namespace_d_g_l_html"><div class="ttname"><a href="namespace_d_g_l.html">DGL</a></div><div class="ttdef"><b>Definition:</b> Rotation.h:13</div></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_d_g_l_1_1_vector3_d.html#a2ec05419d8fa6a711837e14b1e78b450">   19</a></span>&#160;                        <a class="code" href="class_d_g_l_1_1_double.html">Double</a> <a class="code" href="class_d_g_l_1_1_vector3_d.html#a2ec05419d8fa6a711837e14b1e78b450">mX</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_d_g_l_1_1_vector3_d.html#a8887edaf2bf3d9d1c1513ee1b7104386">   20</a></span>&#160;                        <a class="code" href="class_d_g_l_1_1_double.html">Double</a> <a class="code" href="class_d_g_l_1_1_vector3_d.html#a8887edaf2bf3d9d1c1513ee1b7104386">mY</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_d_g_l_1_1_vector3_d.html#ac1ae9b93e0dc0679dc7a772474aa11dc">   21</a></span>&#160;                        <a class="code" href="class_d_g_l_1_1_double.html">Double</a> <a class="code" href="class_d_g_l_1_1_vector3_d.html#ac1ae9b93e0dc0679dc7a772474aa11dc">mZ</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                        <a class="code" href="class_d_g_l_1_1_vector3_d.html#a9e92384b24e7f7e2fde879f399f9517d">Vector3D</a>(<a class="code" href="class_d_g_l_1_1_object.html">Object</a>* parent);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                        <span class="keyword">virtual</span> <a class="code" href="class_d_g_l_1_1_vector3_d.html#a2c489a22317cbedb6b3965307cd8677f">~Vector3D</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_d_g_l_1_1_vector3_d.html#ad77fa04485a8225f223219a9f0fa6f94">   27</a></span>&#160;                        <span class="keyword">const</span> <a class="code" href="class_d_g_l_1_1_double.html">Double</a>&amp; <a class="code" href="class_d_g_l_1_1_vector3_d.html#ad77fa04485a8225f223219a9f0fa6f94">getX</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <a class="code" href="class_d_g_l_1_1_vector3_d.html#a2ec05419d8fa6a711837e14b1e78b450">mX</a>;};</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_d_g_l_1_1_vector3_d.html#ad85a882564dd693efebb0116f232df32">   28</a></span>&#160;                        <span class="keyword">const</span> <a class="code" href="class_d_g_l_1_1_double.html">Double</a>&amp; <a class="code" href="class_d_g_l_1_1_vector3_d.html#ad85a882564dd693efebb0116f232df32">getY</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <a class="code" href="class_d_g_l_1_1_vector3_d.html#a8887edaf2bf3d9d1c1513ee1b7104386">mY</a>;};</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_d_g_l_1_1_vector3_d.html#a974a7ad84ad56fa6ce7f4f1993c8c057">   29</a></span>&#160;                        <span class="keyword">const</span> <a class="code" href="class_d_g_l_1_1_double.html">Double</a>&amp; <a class="code" href="class_d_g_l_1_1_vector3_d.html#a974a7ad84ad56fa6ce7f4f1993c8c057">getZ</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <a class="code" href="class_d_g_l_1_1_vector3_d.html#ac1ae9b93e0dc0679dc7a772474aa11dc">mZ</a>;};</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_d_g_l_1_1_vector3_d.html#a86394d8ca9717b0c6994c1cf9adcfb3f">   30</a></span>&#160;                        <span class="keywordtype">void</span> <a class="code" href="class_d_g_l_1_1_vector3_d.html#a86394d8ca9717b0c6994c1cf9adcfb3f">set</a>(<span class="keyword">const</span> <a class="code" href="class_d_g_l_1_1_double.html">Double</a>&amp; x, <span class="keyword">const</span> <a class="code" href="class_d_g_l_1_1_double.html">Double</a>&amp; y, <span class="keyword">const</span> <a class="code" href="class_d_g_l_1_1_double.html">Double</a>&amp; z) {mX=x; mY=y; mZ=z;};</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_d_g_l_1_1_vector3_d.html#a3a68e5fa11413ac194cc86e7bd1b5ae4">   31</a></span>&#160;                        <span class="keywordtype">void</span> <a class="code" href="class_d_g_l_1_1_vector3_d.html#a3a68e5fa11413ac194cc86e7bd1b5ae4">setX</a>(<span class="keyword">const</span> <a class="code" href="class_d_g_l_1_1_double.html">Double</a>&amp; x) {mX = x;};</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_d_g_l_1_1_vector3_d.html#abe0b5529dbd9b6e2c88e7055aeebf8fb">   32</a></span>&#160;                        <span class="keywordtype">void</span> <a class="code" href="class_d_g_l_1_1_vector3_d.html#abe0b5529dbd9b6e2c88e7055aeebf8fb">setY</a>(<span class="keyword">const</span> <a class="code" href="class_d_g_l_1_1_double.html">Double</a>&amp; y) {mY = y;};</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_d_g_l_1_1_vector3_d.html#a9936bf338a0bd82c407f732a723e5422">   33</a></span>&#160;                        <span class="keywordtype">void</span> <a class="code" href="class_d_g_l_1_1_vector3_d.html#a9936bf338a0bd82c407f732a723e5422">setZ</a>(<span class="keyword">const</span> <a class="code" href="class_d_g_l_1_1_double.html">Double</a>&amp; z) {mZ = z;};</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        };</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* VECTOR3D_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="class_d_g_l_1_1_vector3_d_html_a86394d8ca9717b0c6994c1cf9adcfb3f"><div class="ttname"><a href="class_d_g_l_1_1_vector3_d.html#a86394d8ca9717b0c6994c1cf9adcfb3f">DGL::Vector3D::set</a></div><div class="ttdeci">void set(const Double &amp;x, const Double &amp;y, const Double &amp;z)</div><div class="ttdef"><b>Definition:</b> Vector3D.h:30</div></div>
+<div class="ttc" id="class_d_g_l_1_1_double_html"><div class="ttname"><a href="class_d_g_l_1_1_double.html">DGL::Double</a></div><div class="ttdef"><b>Definition:</b> Double.h:8</div></div>
+<div class="ttc" id="class_d_g_l_1_1_vector3_d_html_abe0b5529dbd9b6e2c88e7055aeebf8fb"><div class="ttname"><a href="class_d_g_l_1_1_vector3_d.html#abe0b5529dbd9b6e2c88e7055aeebf8fb">DGL::Vector3D::setY</a></div><div class="ttdeci">void setY(const Double &amp;y)</div><div class="ttdef"><b>Definition:</b> Vector3D.h:32</div></div>
+<div class="ttc" id="class_d_g_l_1_1_vector3_d_html_a2ec05419d8fa6a711837e14b1e78b450"><div class="ttname"><a href="class_d_g_l_1_1_vector3_d.html#a2ec05419d8fa6a711837e14b1e78b450">DGL::Vector3D::mX</a></div><div class="ttdeci">Double mX</div><div class="ttdef"><b>Definition:</b> Vector3D.h:19</div></div>
+<div class="ttc" id="class_d_g_l_1_1_vector3_d_html_a9e92384b24e7f7e2fde879f399f9517d"><div class="ttname"><a href="class_d_g_l_1_1_vector3_d.html#a9e92384b24e7f7e2fde879f399f9517d">DGL::Vector3D::Vector3D</a></div><div class="ttdeci">Vector3D(Object *parent)</div><div class="ttdef"><b>Definition:</b> Vector3D.cpp:12</div></div>
+<div class="ttc" id="class_d_g_l_1_1_vector3_d_html_a8887edaf2bf3d9d1c1513ee1b7104386"><div class="ttname"><a href="class_d_g_l_1_1_vector3_d.html#a8887edaf2bf3d9d1c1513ee1b7104386">DGL::Vector3D::mY</a></div><div class="ttdeci">Double mY</div><div class="ttdef"><b>Definition:</b> Vector3D.h:20</div></div>
+<div class="ttc" id="class_d_g_l_1_1_vector3_d_html_a9936bf338a0bd82c407f732a723e5422"><div class="ttname"><a href="class_d_g_l_1_1_vector3_d.html#a9936bf338a0bd82c407f732a723e5422">DGL::Vector3D::setZ</a></div><div class="ttdeci">void setZ(const Double &amp;z)</div><div class="ttdef"><b>Definition:</b> Vector3D.h:33</div></div>
+<div class="ttc" id="class_d_g_l_1_1_vector3_d_html_a974a7ad84ad56fa6ce7f4f1993c8c057"><div class="ttname"><a href="class_d_g_l_1_1_vector3_d.html#a974a7ad84ad56fa6ce7f4f1993c8c057">DGL::Vector3D::getZ</a></div><div class="ttdeci">const Double &amp; getZ() const </div><div class="ttdef"><b>Definition:</b> Vector3D.h:29</div></div>
+<div class="ttc" id="class_d_g_l_1_1_vector3_d_html"><div class="ttname"><a href="class_d_g_l_1_1_vector3_d.html">DGL::Vector3D</a></div><div class="ttdef"><b>Definition:</b> Vector3D.h:16</div></div>
+<div class="ttc" id="namespace_d_g_l_html"><div class="ttname"><a href="namespace_d_g_l.html">DGL</a></div><div class="ttdef"><b>Definition:</b> Quad.h:17</div></div>
+<div class="ttc" id="class_d_g_l_1_1_vector3_d_html_ac1ae9b93e0dc0679dc7a772474aa11dc"><div class="ttname"><a href="class_d_g_l_1_1_vector3_d.html#ac1ae9b93e0dc0679dc7a772474aa11dc">DGL::Vector3D::mZ</a></div><div class="ttdeci">Double mZ</div><div class="ttdef"><b>Definition:</b> Vector3D.h:21</div></div>
+<div class="ttc" id="class_d_g_l_1_1_vector3_d_html_a2c489a22317cbedb6b3965307cd8677f"><div class="ttname"><a href="class_d_g_l_1_1_vector3_d.html#a2c489a22317cbedb6b3965307cd8677f">DGL::Vector3D::~Vector3D</a></div><div class="ttdeci">virtual ~Vector3D()</div><div class="ttdef"><b>Definition:</b> Vector3D.cpp:20</div></div>
+<div class="ttc" id="class_d_g_l_1_1_vector3_d_html_a3a68e5fa11413ac194cc86e7bd1b5ae4"><div class="ttname"><a href="class_d_g_l_1_1_vector3_d.html#a3a68e5fa11413ac194cc86e7bd1b5ae4">DGL::Vector3D::setX</a></div><div class="ttdeci">void setX(const Double &amp;x)</div><div class="ttdef"><b>Definition:</b> Vector3D.h:31</div></div>
+<div class="ttc" id="class_d_g_l_1_1_vector3_d_html_ad77fa04485a8225f223219a9f0fa6f94"><div class="ttname"><a href="class_d_g_l_1_1_vector3_d.html#ad77fa04485a8225f223219a9f0fa6f94">DGL::Vector3D::getX</a></div><div class="ttdeci">const Double &amp; getX() const </div><div class="ttdef"><b>Definition:</b> Vector3D.h:27</div></div>
 <div class="ttc" id="class_d_g_l_1_1_object_html"><div class="ttname"><a href="class_d_g_l_1_1_object.html">DGL::Object</a></div><div class="ttdef"><b>Definition:</b> Object.h:22</div></div>
+<div class="ttc" id="_double_8h_html"><div class="ttname"><a href="_double_8h.html">Double.h</a></div></div>
+<div class="ttc" id="class_d_g_l_1_1_vector3_d_html_ad85a882564dd693efebb0116f232df32"><div class="ttname"><a href="class_d_g_l_1_1_vector3_d.html#ad85a882564dd693efebb0116f232df32">DGL::Vector3D::getY</a></div><div class="ttdeci">const Double &amp; getY() const </div><div class="ttdef"><b>Definition:</b> Vector3D.h:28</div></div>
+<div class="ttc" id="_basic_object_8h_html"><div class="ttname"><a href="_basic_object_8h.html">BasicObject.h</a></div></div>
+<div class="ttc" id="class_d_g_l_1_1_basic_object_html"><div class="ttname"><a href="class_d_g_l_1_1_basic_object.html">DGL::BasicObject</a></div><div class="ttdef"><b>Definition:</b> BasicObject.h:8</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><b>Vector3D.h</b></li>
-    <li class="footer">Généré le Vendredi 6 Novembre 2015 23:24:54 pour DGL par
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="_vector3_d_8h.html">Vector3D.h</a></li>
+    <li class="footer">Généré le Dimanche 8 Novembre 2015 18:16:43 pour DGL par
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

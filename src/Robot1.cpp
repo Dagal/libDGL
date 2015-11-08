@@ -10,7 +10,7 @@
 namespace DGL
 {
 	Robot1::Robot1(Object* parent) :
-	    Object(parent),
+	    ComplexGraphicObject(parent),
 	    tete(this),
 	    cou(this),
 	    tronc(this),

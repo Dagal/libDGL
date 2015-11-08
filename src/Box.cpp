@@ -9,7 +9,7 @@
 namespace DGL
 {
 	Box::Box(Object* parent) :
-	    Object(parent)
+	    VolumeGraphicObject(parent)
 	{
 		setType(1000);
 		x = y = z = 1;

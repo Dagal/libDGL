@@ -10,11 +10,11 @@
 namespace DGL
 {
 	Vector3D::Vector3D(Object* parent) :
-	    Object(parent)
+	    BasicObject(parent).
+	    mX(this),
+	    mY(this),
+	    mZ(this)
 	{
-		x = 0;
-		y = 0;
-		z = 0;
 	}
 
 	Vector3D::~Vector3D() {

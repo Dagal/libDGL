@@ -48,9 +48,9 @@ SYMBOL_CACHE_SIZE      = 0
 #---------------------------------------------------------------------------
 # Build related configuration options
 #---------------------------------------------------------------------------
-EXTRACT_ALL            = NO
-EXTRACT_PRIVATE        = NO
-EXTRACT_STATIC         = NO
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
 EXTRACT_LOCAL_CLASSES  = YES
 EXTRACT_LOCAL_METHODS  = NO
 EXTRACT_ANON_NSPACES   = NO
@@ -96,37 +96,53 @@ WARN_LOGFILE            = "/home/dagal/dev/DGL/doxygen/doxygen.log"
 # configuration options related to the input files
 #---------------------------------------------------------------------------
 INPUT                  = \
-	"../src/Rotation.h" \
+	"../include/Quad.h" \
+	"../src/PhysicalObject.cpp" \
+	"../include/Light.h" \
+	"../include/Camera.h" \
+	"../include/Rotation.h" \
+	"../include/ComplexGraphicObject.h" \
+	"../include/Box.h" \
 	"../src/Scale.cpp" \
 	"../src/Light.cpp" \
-	"../src/Scale.h" \
-	"../src/World.h" \
-	"../src/Color.h" \
-	"../src/Object.h" \
-	"../src/Vector3D.h" \
+	"../src/FlatGraphicObject.cpp" \
+	"../include/Scale.h" \
+	"../include/Robot1.h" \
+	"../include/World.h" \
+	"../include/Window.h" \
+	"../src/BasicObject.cpp" \
+	"../include/Color.h" \
+	"../include/PhysicalObject.h" \
 	"../src/Camera.cpp" \
-	"../src/Robot1.h" \
+	"../include/GraphicObject.h" \
 	"../src/Box.cpp" \
-	"../src/Quad.h" \
+	"../include/FlatGraphicObject.h" \
+	"../include/Motion.h" \
+	"../include/VolumeGraphicObject.h" \
 	"../src/Robot1.cpp" \
 	"../src/Quad.cpp" \
 	"../src/Window.cpp" \
 	"../src/Vector3D.cpp" \
-	"../src/Position.h" \
+	"../include/Coordinate.h" \
 	"../src/World.cpp" \
+	"../src/Coordinate.cpp" \
+	"../src/VolumeGraphicObject.cpp" \
 	"../src/Object.cpp" \
 	"../src/Color.cpp" \
-	"../src/Motion.h" \
-	"../src/Scene.cpp" \
-	"../src/Box.h" \
-	"../src/Camera.h" \
-	"../src/Light.h" \
-	"../src/Scene.h" \
+	"../include/Object.h" \
+	"../include/Vector3D.h" \
+	"../src/ComplexGraphicObject.cpp" \
+	"../src/GeneralObject.cpp" \
+	"../src/Double.cpp" \
+	"../include/Double.h" \
+	"../include/GeneralObject.h" \
+	"../include/BasicObject.h" \
+	"../src/Location.cpp" \
 	"../src/Motion.cpp" \
 	"../src/main.cpp" \
-	"../src/Window.h" \
 	"../src/Rotation.cpp" \
-	"../src/Position.cpp" 
+	"../include/Location.h" \
+	"../src/GraphicObject.cpp" 
 INPUT_ENCODING         = UTF-8
 FILE_PATTERNS          =
 RECURSIVE              = NO

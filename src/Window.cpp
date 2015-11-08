@@ -10,7 +10,7 @@
 namespace DGL
 {
 	Window::Window(Object* parent) :
-	    Object(parent)
+	    GeneralObject(parent)
 	{
 		setType(1);
 		setName("Window1");
@@ -30,7 +30,7 @@ namespace DGL
 	Window::~Window()
 	{
 		SDL_Quit();
-		cout << "Window: Quitter SDL" << endl;
+		std::cout << "Window: Quitter SDL" << std::endl;
 	}
 
 	void Window::loop()
@@ -49,10 +49,10 @@ namespace DGL
 						animation = !animation;
 						break;
 					case SDL_MOUSEBUTTONDOWN:
-						getCurrentWorld()->getCurrentScene()->getCurrentCamera()->onMouseButton(ev.button);
+//						getCurrentWorld()->getCurrentScene()->getCurrentCamera()->onMouseButton(ev.button);
 						break;
 					case SDL_VIDEORESIZE:
-						cout << "Resize event" << endl;
+						std::cout << "Resize event" << std::endl;
 						onResize(ev);
 						break;
 					default:
@@ -91,37 +91,37 @@ namespace DGL
 	void Window::exec()
 	{
 		// Initialisation de la librairie SDL
-		cout << "Window : Exec!" << endl;
-		cout << "Window : Initialisation SDL Video!" << endl;
+		std::cout << "Window : Exec!" << std::endl;
+		std::cout << "Window : Initialisation SDL Video!" << std::endl;
 		SDL_Init(SDL_INIT_VIDEO);
-		cout << "Window : Renommer la fenêtre!" << endl;
+		std::cout << "Window : Renommer la fenêtre!" << std::endl;
 		SDL_WM_SetCaption("DamierGL", NULL);
-		cout << "Window : Définir la taille de la fenêtre!" << endl;
+		std::cout << "Window : Définir la taille de la fenêtre!" << std::endl;
 		ecran = SDL_SetVideoMode(640, 480, 32, SDL_OPENGL|SDL_RESIZABLE);
 
 		// Début des fonctions opengl
 
 		glMatrixMode(GL_PROJECTION);
-		cout << "Window : Mode Projection!" << endl;
+		std::cout << "Window : Mode Projection!" << std::endl;
 		glLoadIdentity();
 		gluPerspective(70, (double)640/480, 1, 1000);
-		cout << "Window : Définition de la perspective!" << endl;
+		std::cout << "Window : Définition de la perspective!" << std::endl;
 		glEnable(GL_DEPTH_TEST);
-		cout << "Window : Test de profondeur activé!" << endl;
+		std::cout << "Window : Test de profondeur activé!" << std::endl;
 		glEnable(GL_COLOR_MATERIAL);
-		cout << "Window : Color Material activé!" << endl;
+		std::cout << "Window : Color Material activé!" << std::endl;
 		glEnable(GL_LIGHTING);
 		glEnable(GL_LIGHT0);
-		cout << "Window : Lumière 0 activée!" << endl;
+		std::cout << "Window : Lumière 0 activée!" << std::endl;
 		glClearColor(0.5,0.5,1.0,1.0);
-		cout << "Window : Couleur de fond bleu clair!" << endl;
+		std::cout << "Window : Couleur de fond bleu clair!" << std::endl;
 
 		loop();
 	}
 
 	void Window::onResize(SDL_Event &ev)
 	{
-		cout << "Resize proc" << endl;
+		std::cout << "Resize proc" << std::endl;
 		ecran = SDL_SetVideoMode(ev.resize.w, ev.resize.h, 32, SDL_OPENGL|SDL_HWSURFACE|SDL_DOUBLEBUF|SDL_RESIZABLE);
 		glMatrixMode(GL_PROJECTION);
 		glLoadIdentity();
