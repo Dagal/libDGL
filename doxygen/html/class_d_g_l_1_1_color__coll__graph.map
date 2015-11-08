@@ -1,6 +1,6 @@
 <map id="DGL::Color" name="DGL::Color">
-<area shape="rect" id="node2" href="$class_d_g_l_1_1_vector3_d.html" title="DGL::Vector3D" alt="" coords="5,276,121,303"/>
-<area shape="rect" id="node3" href="$class_d_g_l_1_1_basic_object.html" title="DGL::BasicObject" alt="" coords="14,81,145,108"/>
-<area shape="rect" id="node5" href="$class_d_g_l_1_1_double.html" title="DGL::Double" alt="" coords="101,157,201,184"/>
-<area shape="rect" id="node4" href="$class_d_g_l_1_1_object.html" title="DGL::Object" alt="" coords="31,5,128,32"/>
+<area shape="rect" id="node2" href="$class_d_g_l_1_1_basic_object.html" title="DGL::BasicObject" alt="" coords="5,124,136,151"/>
+<area shape="rect" id="node3" href="$class_d_g_l_1_1_object.html" title="DGL::Object" alt="" coords="22,5,119,32"/>
+<area shape="rect" id="node4" href="$class_d_g_l_1_1_vector3_d.html" title="DGL::Vector3D" alt="" coords="234,124,350,151"/>
+<area shape="rect" id="node5" href="$class_d_g_l_1_1_double.html" title="DGL::Double" alt="" coords="229,5,329,32"/>
 </map>

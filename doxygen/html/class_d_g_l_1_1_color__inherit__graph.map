@@ -1,5 +1,5 @@
 <map id="DGL::Color" name="DGL::Color">
-<area shape="rect" id="node2" href="$class_d_g_l_1_1_vector3_d.html" title="DGL::Vector3D" alt="" coords="13,155,129,181"/>
-<area shape="rect" id="node3" href="$class_d_g_l_1_1_basic_object.html" title="DGL::BasicObject" alt="" coords="5,80,136,107"/>
-<area shape="rect" id="node4" href="$class_d_g_l_1_1_object.html" title="DGL::Object" alt="" coords="22,5,119,32"/>
+<area shape="rect" id="node2" href="$class_d_g_l_1_1_basic_object.html" title="DGL::BasicObject" alt="" coords="5,80,136,107"/>
+<area shape="rect" id="node3" href="$class_d_g_l_1_1_object.html" title="DGL::Object" alt="" coords="22,5,119,32"/>
+<area shape="rect" id="node4" href="$class_d_g_l_1_1_vector3_d.html" title="DGL::Vector3D" alt="" coords="161,80,277,107"/>
 </map>

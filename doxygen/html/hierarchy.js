@@ -1,15 +1,10 @@
 var hierarchy =
 [
+    [ "DGL::Double", "class_d_g_l_1_1_double.html", null ],
     [ "DGL::Light", "class_d_g_l_1_1_light.html", null ],
     [ "DGL::Object", "class_d_g_l_1_1_object.html", [
       [ "DGL::BasicObject", "class_d_g_l_1_1_basic_object.html", [
-        [ "DGL::Double", "class_d_g_l_1_1_double.html", null ],
-        [ "DGL::Vector3D", "class_d_g_l_1_1_vector3_d.html", [
-          [ "DGL::Color", "class_d_g_l_1_1_color.html", null ],
-          [ "DGL::Location", "class_d_g_l_1_1_location.html", null ],
-          [ "DGL::Rotation", "class_d_g_l_1_1_rotation.html", null ],
-          [ "DGL::Scale", "class_d_g_l_1_1_scale.html", null ]
-        ] ]
+        [ "DGL::Color", "class_d_g_l_1_1_color.html", null ]
       ] ],
       [ "DGL::GeneralObject", "class_d_g_l_1_1_general_object.html", [
         [ "DGL::Camera", "class_d_g_l_1_1_camera.html", null ],
@@ -31,5 +26,11 @@ var hierarchy =
         [ "DGL::Coordinate", "class_d_g_l_1_1_coordinate.html", null ],
         [ "DGL::Motion", "class_d_g_l_1_1_motion.html", null ]
       ] ]
+    ] ],
+    [ "DGL::Vector3D", "class_d_g_l_1_1_vector3_d.html", [
+      [ "DGL::Color", "class_d_g_l_1_1_color.html", null ],
+      [ "DGL::Location", "class_d_g_l_1_1_location.html", null ],
+      [ "DGL::Rotation", "class_d_g_l_1_1_rotation.html", null ],
+      [ "DGL::Scale", "class_d_g_l_1_1_scale.html", null ]
     ] ]
 ];

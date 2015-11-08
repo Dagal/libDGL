@@ -9,19 +9,13 @@
 
 namespace DGL
 {
-	Scale::Scale(Object* parent) :
-	    Vector3D(parent)
+	Scale::Scale() :
+	    Vector3D()
 	{
-		setMatrixSaved(false);
 	}
 
 	Scale::~Scale()
 	{
 		// TODO Auto-generated destructor stub
-	}
-
-	void Scale::drawObject(Uint32 ellapsedTime)
-	{
-		glScaled(getX(), getY(), getZ());
 	}
 }

@@ -28,7 +28,7 @@
 	"Object.h"
 	"Camera.h"
 
-1447000702 source:/home/dagal/dev/DGL/src/Color.cpp
+1447016397 source:/home/dagal/dev/DGL/src/Color.cpp
 	"Color.h"
 
 1446848128 /home/dagal/dev/DGL/src/Color.h
@@ -74,13 +74,13 @@
 	<SDL/SDL.h>
 	"Box.h"
 
-1447002939 source:/home/dagal/dev/DGL/src/Rotation.cpp
+1447020324 source:/home/dagal/dev/DGL/src/Rotation.cpp
 	"Rotation.h"
 
 1446848205 /home/dagal/dev/DGL/src/Rotation.h
 	"Vector3D.h"
 
-1446848236 source:/home/dagal/dev/DGL/src/Scale.cpp
+1447016803 source:/home/dagal/dev/DGL/src/Scale.cpp
 	"Scale.h"
 
 1446848236 /home/dagal/dev/DGL/src/Scale.h
@@ -98,7 +98,7 @@
 	"Light.h"
 	"Object.h"
 
-1446920694 source:/home/dagal/dev/DGL/src/Vector3D.cpp
+1447017012 source:/home/dagal/dev/DGL/src/Vector3D.cpp
 	"Vector3D.h"
 
 1446921543 source:/home/dagal/dev/DGL/src/Window.cpp
@@ -130,11 +130,11 @@
 	<SDL/SDL.h>
 	"GeneralObject.h"
 
-1446978775 /home/dagal/dev/DGL/include/Color.h
+1447016263 /home/dagal/dev/DGL/include/Color.h
+	"BasicObject.h"
 	"Vector3D.h"
 
-1446977835 /home/dagal/dev/DGL/include/Vector3D.h
-	"BasicObject.h"
+1447013036 /home/dagal/dev/DGL/include/Vector3D.h
 	"Double.h"
 
 1446798417 /home/dagal/dev/DGL/include/Light.h
@@ -151,10 +151,10 @@
 	"Box.h"
 	"ComplexGraphicObject.h"
 
-1447002900 /home/dagal/dev/DGL/include/Rotation.h
+1447020311 /home/dagal/dev/DGL/include/Rotation.h
 	"Vector3D.h"
 
-1446848236 /home/dagal/dev/DGL/include/Scale.h
+1447020348 /home/dagal/dev/DGL/include/Scale.h
 	"Vector3D.h"
 
 1446921543 /home/dagal/dev/DGL/include/Window.h
@@ -164,17 +164,17 @@
 	<list>
 	"GeneralObject.h"
 
-1446919443 source:/home/dagal/dev/DGL/src/Location.cpp
+1447016619 source:/home/dagal/dev/DGL/src/Location.cpp
 	"Location.h"
 
-1446919379 /home/dagal/dev/DGL/include/Location.h
+1447016659 /home/dagal/dev/DGL/include/Location.h
 	"Vector3D.h"
 
-1447002034 source:/home/dagal/dev/DGL/src/Double.cpp
+1447016587 source:/home/dagal/dev/DGL/src/Double.cpp
 	"Double.h"
 
-1447001474 /home/dagal/dev/DGL/include/Double.h
-	"BasicObject.h"
+1447018495 /home/dagal/dev/DGL/include/Double.h
+	<string>
 
 1446920492 source:/home/dagal/dev/DGL/src/BasicObject.cpp
 	"BasicObject.h"
@@ -218,10 +218,10 @@
 1446934775 /home/dagal/dev/DGL/include/PhysicalObject.h
 	"Object.h"
 
-1446976832 source:/home/dagal/dev/DGL/src/Coordinate.cpp
+1447017351 source:/home/dagal/dev/DGL/src/Coordinate.cpp
 	"Coordinate.h"
 
-1446976923 /home/dagal/dev/DGL/include/Coordinate.h
+1447017351 /home/dagal/dev/DGL/include/Coordinate.h
 	"PhysicalObject.h"
 	"Location.h"
 	"Rotation.h"

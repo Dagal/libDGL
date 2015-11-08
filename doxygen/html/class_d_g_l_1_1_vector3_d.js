@@ -1,10 +1,10 @@
 var class_d_g_l_1_1_vector3_d =
 [
-    [ "Vector3D", "class_d_g_l_1_1_vector3_d.html#a9e92384b24e7f7e2fde879f399f9517d", null ],
+    [ "Vector3D", "class_d_g_l_1_1_vector3_d.html#a542f9b47e21548867361fec87c8c60ec", null ],
     [ "~Vector3D", "class_d_g_l_1_1_vector3_d.html#a2c489a22317cbedb6b3965307cd8677f", null ],
-    [ "getX", "class_d_g_l_1_1_vector3_d.html#ad77fa04485a8225f223219a9f0fa6f94", null ],
-    [ "getY", "class_d_g_l_1_1_vector3_d.html#ad85a882564dd693efebb0116f232df32", null ],
-    [ "getZ", "class_d_g_l_1_1_vector3_d.html#a974a7ad84ad56fa6ce7f4f1993c8c057", null ],
+    [ "getX", "class_d_g_l_1_1_vector3_d.html#a547d02f90eae936e2b9dbd49e47c764a", null ],
+    [ "getY", "class_d_g_l_1_1_vector3_d.html#aab475a2a46f7531f176bc8efebf2a0d3", null ],
+    [ "getZ", "class_d_g_l_1_1_vector3_d.html#a9b9284511e6b8864b304db53485a92b5", null ],
     [ "set", "class_d_g_l_1_1_vector3_d.html#a86394d8ca9717b0c6994c1cf9adcfb3f", null ],
     [ "setX", "class_d_g_l_1_1_vector3_d.html#a3a68e5fa11413ac194cc86e7bd1b5ae4", null ],
     [ "setY", "class_d_g_l_1_1_vector3_d.html#abe0b5529dbd9b6e2c88e7055aeebf8fb", null ],

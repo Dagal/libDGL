@@ -10,8 +10,9 @@
 namespace DGL
 {
 	Color::Color(Object* parent) :
-	    Vector3D(parent),
-	    mA(this)
+	    BasicObject(parent),
+	    Vector3D(),
+	    mA()
 	{
 		setMatrixSaved(false);
 		// TODO Auto-generated constructor stub

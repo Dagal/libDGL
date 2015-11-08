@@ -9,10 +9,9 @@
 
 namespace DGL
 {
-	Rotation::Rotation(Object* parent) :
-	    Vector3D(parent)
+	Rotation::Rotation() :
+	    Vector3D()
 	{
-		setMatrixSaved(false);
 		a = 0;
 	}
 
@@ -37,10 +36,5 @@ namespace DGL
 		setX(ax);
 		setY(ay);
 		setZ(az);
-	}
-
-	void Rotation::drawObject(Uint32 ellapsedTime)
-	{
-		glRotated(a, getX(), getY(), getZ());
 	}
 }

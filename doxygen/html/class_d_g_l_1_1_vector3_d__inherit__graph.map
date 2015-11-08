@@ -1,8 +1,6 @@
 <map id="DGL::Vector3D" name="DGL::Vector3D">
-<area shape="rect" id="node4" href="$class_d_g_l_1_1_color.html" title="DGL::Color" alt="" coords="5,229,96,256"/>
-<area shape="rect" id="node5" href="$class_d_g_l_1_1_location.html" title="DGL::Location" alt="" coords="121,229,231,256"/>
-<area shape="rect" id="node6" href="$class_d_g_l_1_1_rotation.html" title="DGL::Rotation" alt="" coords="255,229,366,256"/>
-<area shape="rect" id="node7" href="$class_d_g_l_1_1_scale.html" title="DGL::Scale" alt="" coords="390,229,482,256"/>
-<area shape="rect" id="node2" href="$class_d_g_l_1_1_basic_object.html" title="DGL::BasicObject" alt="" coords="177,80,308,107"/>
-<area shape="rect" id="node3" href="$class_d_g_l_1_1_object.html" title="DGL::Object" alt="" coords="194,5,291,32"/>
+<area shape="rect" id="node2" href="$class_d_g_l_1_1_color.html" title="DGL::Color" alt="" coords="5,80,96,107"/>
+<area shape="rect" id="node3" href="$class_d_g_l_1_1_location.html" title="DGL::Location" alt="" coords="121,80,231,107"/>
+<area shape="rect" id="node4" href="$class_d_g_l_1_1_rotation.html" title="DGL::Rotation" alt="" coords="255,80,366,107"/>
+<area shape="rect" id="node5" href="$class_d_g_l_1_1_scale.html" title="DGL::Scale" alt="" coords="390,80,482,107"/>
 </map>
