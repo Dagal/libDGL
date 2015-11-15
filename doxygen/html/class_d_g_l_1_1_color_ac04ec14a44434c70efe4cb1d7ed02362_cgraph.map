@@ -1,0 +1,9 @@
+<map id="DGL::Color::set" name="DGL::Color::set">
+<area shape="rect" id="node2" href="$class_d_g_l_1_1_color.html#a85b55708be76e6ec1a9ab2b7a5daaa2d" title="DGL::Color::setR" alt="" coords="169,5,296,32"/>
+<area shape="rect" id="node4" href="$class_d_g_l_1_1_color.html#ab9ea6d3e69aa9a5b61e6de1dfc4a1d00" title="DGL::Color::setG" alt="" coords="169,56,296,83"/>
+<area shape="rect" id="node6" href="$class_d_g_l_1_1_color.html#a1f12ee7c53594322a28bd149a0dadb52" title="DGL::Color::setB" alt="" coords="170,107,295,133"/>
+<area shape="rect" id="node8" href="$class_d_g_l_1_1_color.html#ad9e68c8ce4ae703cd2b9acd5f54f3509" title="DGL::Color::setA" alt="" coords="170,157,295,184"/>
+<area shape="rect" id="node3" href="$class_d_g_l_1_1_vector3_d.html#a3a68e5fa11413ac194cc86e7bd1b5ae4" title="DGL::Vector3D::setX" alt="" coords="344,5,495,32"/>
+<area shape="rect" id="node5" href="$class_d_g_l_1_1_vector3_d.html#abe0b5529dbd9b6e2c88e7055aeebf8fb" title="DGL::Vector3D::setY" alt="" coords="344,56,495,83"/>
+<area shape="rect" id="node7" href="$class_d_g_l_1_1_vector3_d.html#a9936bf338a0bd82c407f732a723e5422" title="DGL::Vector3D::setZ" alt="" coords="344,107,495,133"/>
+</map>

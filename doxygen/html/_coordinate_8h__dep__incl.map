@@ -1,0 +1,11 @@
+<map id="Coordinate.h" name="Coordinate.h">
+<area shape="rect" id="node2" href="$_speed_8h.html" title="Speed.h" alt="" coords="125,80,199,107"/>
+<area shape="rect" id="node6" href="$_coordinate_8cpp.html" title="Coordinate.cpp" alt="" coords="223,80,341,107"/>
+<area shape="rect" id="node7" href="$_angular_velocity_8h.html" title="AngularVelocity.h" alt="" coords="365,80,495,107"/>
+<area shape="rect" id="node3" href="$_acceleration_8h.html" title="Acceleration.h" alt="" coords="13,155,124,181"/>
+<area shape="rect" id="node5" href="$_speed_8cpp.html" title="Speed.cpp" alt="" coords="148,155,237,181"/>
+<area shape="rect" id="node4" href="$_acceleration_8cpp.html" title="Acceleration.cpp" alt="" coords="5,229,132,256"/>
+<area shape="rect" id="node8" href="$_angular_acceleration_8h.html" title="AngularAcceleration.h" alt="" coords="321,155,480,181"/>
+<area shape="rect" id="node10" href="$_angular_velocity_8cpp.html" title="AngularVelocity.cpp" alt="" coords="504,155,649,181"/>
+<area shape="rect" id="node9" href="$_angular_acceleration_8cpp.html" title="AngularAcceleration.cpp" alt="" coords="313,229,488,256"/>
+</map>

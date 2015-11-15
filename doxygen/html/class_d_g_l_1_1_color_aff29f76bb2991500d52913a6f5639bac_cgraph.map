@@ -1,0 +1,8 @@
+<map id="DGL::Color::drawObject" name="DGL::Color::drawObject">
+<area shape="rect" id="node2" href="$class_d_g_l_1_1_color.html#a2a12036e82ae21387de39da2fad7de5e" title="DGL::Color::getR" alt="" coords="222,5,349,32"/>
+<area shape="rect" id="node4" href="$class_d_g_l_1_1_color.html#ae3d7993d6c68203c2902973ac4941d3d" title="DGL::Color::getG" alt="" coords="221,56,349,83"/>
+<area shape="rect" id="node6" href="$class_d_g_l_1_1_color.html#a8c036c2c5a43eab2302c359761e0e001" title="DGL::Color::getB" alt="" coords="222,107,349,133"/>
+<area shape="rect" id="node3" href="$class_d_g_l_1_1_vector3_d.html#a547d02f90eae936e2b9dbd49e47c764a" title="DGL::Vector3D::getX" alt="" coords="397,5,548,32"/>
+<area shape="rect" id="node5" href="$class_d_g_l_1_1_vector3_d.html#aab475a2a46f7531f176bc8efebf2a0d3" title="DGL::Vector3D::getY" alt="" coords="397,56,548,83"/>
+<area shape="rect" id="node7" href="$class_d_g_l_1_1_vector3_d.html#a9b9284511e6b8864b304db53485a92b5" title="DGL::Vector3D::getZ" alt="" coords="397,107,548,133"/>
+</map>

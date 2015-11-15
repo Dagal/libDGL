@@ -1,0 +1,7 @@
+<map id="DGL::Window::loop" name="DGL::Window::loop">
+<area shape="rect" id="node2" href="$class_d_g_l_1_1_window.html#a1fb8aa99bba991ea319338fcd05ed1a9" title="DGL::Window::onResize" alt="" coords="193,5,365,32"/>
+<area shape="rect" id="node3" href="$class_d_g_l_1_1_window.html#ab6f9b7d1314fdb6fe8ba24ca1220ea77" title="DGL::Window::draw" alt="" coords="207,56,351,83"/>
+<area shape="rect" id="node4" href="$class_d_g_l_1_1_object.html#aae25debf20c07b4df02f3c24ad8e4af0" title="DGL::Object::getName" alt="" coords="679,56,839,83"/>
+<area shape="rect" id="node5" href="$class_d_g_l_1_1_window.html#a51f22c0f5e4129dc712ca27ef5c493ab" title="DGL::Window::getCurrentWorld" alt="" coords="413,56,631,83"/>
+<area shape="rect" id="node6" href="$class_d_g_l_1_1_world.html#a784371e7114e6e10b772117d36c19aed" title="DGL::World::draw" alt="" coords="457,107,587,133"/>
+</map>

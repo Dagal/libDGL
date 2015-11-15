@@ -1,0 +1,9 @@
+<map id="DGL::GraphicObject" name="DGL::GraphicObject">
+<area shape="rect" id="node3" href="$class_d_g_l_1_1_complex_graphic_object.html" title="DGL::ComplexGraphicObject" alt="" coords="5,155,208,181"/>
+<area shape="rect" id="node5" href="$class_d_g_l_1_1_flat_graphic_object.html" title="DGL::FlatGraphicObject" alt="" coords="232,155,403,181"/>
+<area shape="rect" id="node7" href="$class_d_g_l_1_1_volume_graphic_object.html" title="DGL::VolumeGraphicObject" alt="" coords="427,155,621,181"/>
+<area shape="rect" id="node2" href="$class_d_g_l_1_1_object.html" title="DGL::Object" alt="" coords="269,5,366,32"/>
+<area shape="rect" id="node4" href="$class_d_g_l_1_1_robot1.html" title="DGL::Robot1" alt="" coords="55,229,158,256"/>
+<area shape="rect" id="node6" href="$class_d_g_l_1_1_quad.html" title="DGL::Quad" alt="" coords="272,229,363,256"/>
+<area shape="rect" id="node8" href="$class_d_g_l_1_1_box.html" title="DGL::Box" alt="" coords="483,229,565,256"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="DGL::Acceleration" name="DGL::Acceleration">
+<area shape="rect" id="node2" href="$class_d_g_l_1_1_speed.html" title="DGL::Speed" alt="" coords="252,365,351,392"/>
+<area shape="rect" id="node3" href="$class_d_g_l_1_1_coordinate.html" title="DGL::Coordinate" alt="" coords="238,289,365,316"/>
+<area shape="rect" id="node4" href="$class_d_g_l_1_1_physical_object.html" title="DGL::PhysicalObject" alt="" coords="5,200,155,227"/>
+<area shape="rect" id="node5" href="$class_d_g_l_1_1_object.html" title="DGL::Object" alt="" coords="31,124,129,151"/>
+<area shape="rect" id="node6" href="$class_d_g_l_1_1_rotation.html" title="DGL::Rotation" alt="" coords="179,200,290,227"/>
+<area shape="rect" id="node7" href="$class_d_g_l_1_1_vector3_d.html" title="DGL::Vector3D" alt="" coords="311,124,427,151"/>
+<area shape="rect" id="node9" href="$class_d_g_l_1_1_location.html" title="DGL::Location" alt="" coords="314,200,425,227"/>
+<area shape="rect" id="node10" href="$class_d_g_l_1_1_scale.html" title="DGL::Scale" alt="" coords="449,200,541,227"/>
+<area shape="rect" id="node8" href="$class_d_g_l_1_1_double.html" title="DGL::Double" alt="" coords="319,5,419,32"/>
+</map>

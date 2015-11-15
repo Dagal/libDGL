@@ -1,0 +1,5 @@
+<map id="DGL::World::World" name="DGL::World::World">
+<area shape="rect" id="node2" href="$class_d_g_l_1_1_object.html#aa39936087159e7a50694edaff5f92c70" title="DGL::Object::setType" alt="" coords="214,5,369,32"/>
+<area shape="rect" id="node3" href="$class_d_g_l_1_1_object.html#a5a40b80cddf80aad50960db20c1b75e8" title="DGL::Object::setName" alt="" coords="212,56,371,83"/>
+<area shape="rect" id="node4" href="$class_d_g_l_1_1_object.html#a6ebd12b692f6362449c2f66c091a9f0b" title="DGL::Object::setMatrixSaved" alt="" coords="191,107,392,133"/>
+</map>

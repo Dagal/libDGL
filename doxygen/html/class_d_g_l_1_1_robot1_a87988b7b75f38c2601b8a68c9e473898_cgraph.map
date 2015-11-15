@@ -1,0 +1,5 @@
+<map id="DGL::Robot1::drawObject" name="DGL::Robot1::drawObject">
+<area shape="rect" id="node2" href="$class_d_g_l_1_1_object.html#a2e509bfe94d0876937cbe93bce0e2d8a" title="DGL::Object::draw" alt="" coords="232,31,367,57"/>
+<area shape="rect" id="node3" href="$class_d_g_l_1_1_object.html#aa03a73fdfc5653f3aca7811d2ab6456c" title="DGL::Object::drawChildren" alt="" coords="415,5,601,32"/>
+<area shape="rect" id="node4" href="$class_d_g_l_1_1_object.html#a159ea6af66500936c329ed81324294cb" title="DGL::Object::drawObject" alt="" coords="421,56,595,83"/>
+</map>

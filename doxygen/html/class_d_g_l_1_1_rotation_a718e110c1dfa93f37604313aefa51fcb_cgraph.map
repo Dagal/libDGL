@@ -1,0 +1,5 @@
+<map id="DGL::Rotation::drawObject" name="DGL::Rotation::drawObject">
+<area shape="rect" id="node2" href="$class_d_g_l_1_1_vector3_d.html#a547d02f90eae936e2b9dbd49e47c764a" title="DGL::Vector3D::getX" alt="" coords="240,5,391,32"/>
+<area shape="rect" id="node3" href="$class_d_g_l_1_1_vector3_d.html#aab475a2a46f7531f176bc8efebf2a0d3" title="DGL::Vector3D::getY" alt="" coords="240,56,391,83"/>
+<area shape="rect" id="node4" href="$class_d_g_l_1_1_vector3_d.html#a9b9284511e6b8864b304db53485a92b5" title="DGL::Vector3D::getZ" alt="" coords="240,107,391,133"/>
+</map>
