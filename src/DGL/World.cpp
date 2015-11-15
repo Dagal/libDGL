@@ -5,7 +5,7 @@
  *      Author: dagal
  */
 
-#include "World.h"
+#include "DGL/World.h"
 
 namespace DGL
 {

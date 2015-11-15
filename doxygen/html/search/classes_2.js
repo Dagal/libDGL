@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['double',['Double',['../class_d_g_l_1_1_double.html',1,'DGL']]]
+  ['camera',['Camera',['../class_d_g_l_1_1_camera.html',1,'DGL']]],
+  ['color',['Color',['../class_d_g_l_1_1_color.html',1,'DGL']]],
+  ['complexgraphicobject',['ComplexGraphicObject',['../class_d_g_l_1_1_complex_graphic_object.html',1,'DGL']]],
+  ['coordinate',['Coordinate',['../class_d_g_l_1_1_coordinate.html',1,'DGL']]]
 ];

@@ -5,7 +5,7 @@
  *      Author: dagal
  */
 
-#include "Box.h"
+#include "DGL/Box.h"
 namespace DGL
 {
 	Box::Box(Object* parent) :

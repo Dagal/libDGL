@@ -5,7 +5,7 @@
  *      Author: dagal
  */
 
-#include "Color.h"
+#include "DGL/Color.h"
 
 namespace DGL
 {

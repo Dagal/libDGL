@@ -1,5 +1,17 @@
 var files =
 [
+    [ "Acceleration.cpp", "_acceleration_8cpp.html", null ],
+    [ "Acceleration.h", "_acceleration_8h.html", [
+      [ "Acceleration", "class_d_g_l_1_1_acceleration.html", "class_d_g_l_1_1_acceleration" ]
+    ] ],
+    [ "AngularAcceleration.cpp", "_angular_acceleration_8cpp.html", null ],
+    [ "AngularAcceleration.h", "_angular_acceleration_8h.html", [
+      [ "AngularAcceleration", "class_d_g_l_1_1_angular_acceleration.html", "class_d_g_l_1_1_angular_acceleration" ]
+    ] ],
+    [ "AngularVelocity.cpp", "_angular_velocity_8cpp.html", null ],
+    [ "AngularVelocity.h", "_angular_velocity_8h.html", [
+      [ "AngularVelocity", "class_d_g_l_1_1_angular_velocity.html", "class_d_g_l_1_1_angular_velocity" ]
+    ] ],
     [ "BasicObject.cpp", "_basic_object_8cpp.html", null ],
     [ "BasicObject.h", "_basic_object_8h.html", [
       [ "BasicObject", "class_d_g_l_1_1_basic_object.html", "class_d_g_l_1_1_basic_object" ]
@@ -49,10 +61,6 @@ var files =
       [ "Location", "class_d_g_l_1_1_location.html", "class_d_g_l_1_1_location" ]
     ] ],
     [ "main.cpp", "main_8cpp.html", "main_8cpp" ],
-    [ "Motion.cpp", "_motion_8cpp.html", null ],
-    [ "Motion.h", "_motion_8h.html", [
-      [ "Motion", "class_d_g_l_1_1_motion.html", "class_d_g_l_1_1_motion" ]
-    ] ],
     [ "Object.cpp", "_object_8cpp.html", null ],
     [ "Object.h", "_object_8h.html", [
       [ "Object", "class_d_g_l_1_1_object.html", "class_d_g_l_1_1_object" ]
@@ -60,6 +68,10 @@ var files =
     [ "PhysicalObject.cpp", "_physical_object_8cpp.html", null ],
     [ "PhysicalObject.h", "_physical_object_8h.html", [
       [ "PhysicalObject", "class_d_g_l_1_1_physical_object.html", "class_d_g_l_1_1_physical_object" ]
+    ] ],
+    [ "Position.cpp", "_position_8cpp.html", null ],
+    [ "Position.h", "_position_8h.html", [
+      [ "Position", "class_d_g_l_1_1_position.html", "class_d_g_l_1_1_position" ]
     ] ],
     [ "Quad.cpp", "_quad_8cpp.html", null ],
     [ "Quad.h", "_quad_8h.html", [
@@ -77,10 +89,15 @@ var files =
     [ "Scale.h", "_scale_8h.html", [
       [ "Scale", "class_d_g_l_1_1_scale.html", "class_d_g_l_1_1_scale" ]
     ] ],
+    [ "Speed.cpp", "_speed_8cpp.html", null ],
+    [ "Speed.h", "_speed_8h.html", [
+      [ "Speed", "class_d_g_l_1_1_speed.html", "class_d_g_l_1_1_speed" ]
+    ] ],
     [ "Vector3D.cpp", "_vector3_d_8cpp.html", null ],
     [ "Vector3D.h", "_vector3_d_8h.html", [
       [ "Vector3D", "class_d_g_l_1_1_vector3_d.html", "class_d_g_l_1_1_vector3_d" ]
     ] ],
+    [ "version.h", "version_8h.html", "version_8h" ],
     [ "VolumeGraphicObject.cpp", "_volume_graphic_object_8cpp.html", null ],
     [ "VolumeGraphicObject.h", "_volume_graphic_object_8h.html", [
       [ "VolumeGraphicObject", "class_d_g_l_1_1_volume_graphic_object.html", "class_d_g_l_1_1_volume_graphic_object" ]

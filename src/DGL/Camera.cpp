@@ -5,7 +5,7 @@
  *      Author: dagal
  */
 
-#include "Camera.h"
+#include "DGL/Camera.h"
 
 namespace DGL
 {

@@ -5,7 +5,7 @@
  *      Author: dagal
  */
 
-#include "Object.h"
+#include "DGL/Object.h"
 
 namespace DGL
 {

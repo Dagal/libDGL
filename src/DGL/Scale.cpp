@@ -5,7 +5,7 @@
  *      Author: dagal
  */
 
-#include "Scale.h"
+#include "DGL/Scale.h"
 
 namespace DGL
 {

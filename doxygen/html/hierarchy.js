@@ -23,13 +23,20 @@ var hierarchy =
         ] ]
       ] ],
       [ "DGL::PhysicalObject", "class_d_g_l_1_1_physical_object.html", [
-        [ "DGL::Coordinate", "class_d_g_l_1_1_coordinate.html", null ],
-        [ "DGL::Motion", "class_d_g_l_1_1_motion.html", null ]
+        [ "DGL::Coordinate", "class_d_g_l_1_1_coordinate.html", [
+          [ "DGL::AngularVelocity", "class_d_g_l_1_1_angular_velocity.html", [
+            [ "DGL::AngularAcceleration", "class_d_g_l_1_1_angular_acceleration.html", null ]
+          ] ],
+          [ "DGL::Speed", "class_d_g_l_1_1_speed.html", [
+            [ "DGL::Acceleration", "class_d_g_l_1_1_acceleration.html", null ]
+          ] ]
+        ] ]
       ] ]
     ] ],
     [ "DGL::Vector3D", "class_d_g_l_1_1_vector3_d.html", [
       [ "DGL::Color", "class_d_g_l_1_1_color.html", null ],
       [ "DGL::Location", "class_d_g_l_1_1_location.html", null ],
+      [ "DGL::Position", "class_d_g_l_1_1_position.html", null ],
       [ "DGL::Rotation", "class_d_g_l_1_1_rotation.html", null ],
       [ "DGL::Scale", "class_d_g_l_1_1_scale.html", null ]
     ] ]

@@ -5,7 +5,7 @@
  *      Author: dagal
  */
 
-#include "Rotation.h"
+#include "DGL/Rotation.h"
 
 namespace DGL
 {

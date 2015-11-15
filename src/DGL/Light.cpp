@@ -5,7 +5,7 @@
  *      Author: dagal
  */
 
-#include "Light.h"
+#include "DGL/Light.h"
 
 namespace DGL
 {

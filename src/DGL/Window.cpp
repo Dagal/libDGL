@@ -5,7 +5,7 @@
  *      Author: dagal
  */
 
-#include "Window.h"
+#include "DGL/Window.h"
 
 namespace DGL
 {

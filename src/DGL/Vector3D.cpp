@@ -5,7 +5,7 @@
  *      Author: dagal
  */
 
-#include "Vector3D.h"
+#include "DGL/Vector3D.h"
 
 namespace DGL
 {

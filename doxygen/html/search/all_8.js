@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['lasttime',['lastTime',['../class_d_g_l_1_1_robot1.html#adb5ed899c38cb953f023f716db99b0e8',1,'DGL::Robot1::lastTime()'],['../class_d_g_l_1_1_window.html#a99ce7d449f7ad6f9eb22e3b3e9c5a3b7',1,'DGL::Window::lastTime()']]],
+  ['lasttime',['lastTime',['../class_d_g_l_1_1_window.html#a99ce7d449f7ad6f9eb22e3b3e9c5a3b7',1,'DGL::Window::lastTime()'],['../class_d_g_l_1_1_robot1.html#adb5ed899c38cb953f023f716db99b0e8',1,'DGL::Robot1::lastTime()']]],
   ['light',['Light',['../class_d_g_l_1_1_light.html#a3baf67aaa9caae588d7c87dd51f33817',1,'DGL::Light']]],
   ['light',['Light',['../class_d_g_l_1_1_light.html',1,'DGL']]],
   ['light_2ecpp',['Light.cpp',['../_light_8cpp.html',1,'']]],

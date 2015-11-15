@@ -30,7 +30,7 @@ namespace DGL
 		protected:
 
 		public:
-			Position(Object* parent);
+			Position();
 			virtual ~Position();
 
 			void drawObject(Uint32 ellapsedTime);

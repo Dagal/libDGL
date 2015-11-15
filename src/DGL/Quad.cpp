@@ -5,7 +5,7 @@
  *      Author: dagal
  */
 
-#include "Quad.h"
+#include "DGL/Quad.h"
 
 namespace DGL
 {
